@@ -1,0 +1,76 @@
+.slide-effect {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer_data {
+  position: absolute;
+  text-align: center;
+  vertical-align: middle;
+  top: 20%;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.slide {
+  width: 100%;
+  overflow: hidden;
+  margin-left: 0px;
+  max-width: 100%;
+}
+
+.slide-r{
+  width: 100%;
+  animation: 8s slide-right infinite;
+  animation-delay: 3s;
+}
+
+@keyframes slide-right {
+  from {
+    margin-left: -200px;
+  }
+
+  to {
+    margin-left: 100;
+  }
+}
+.slide-l{
+  width: 100%;
+  animation: 15s slide-left infinite;
+  animation-delay: 3s;
+  transform: translateZ(1px);
+}
+
+@keyframes slide-left {
+  from {
+    margin-left: -200%;
+  }
+
+  to {
+    margin-left: 0;
+  }
+}
+
+
+@media only screen and (max-width: 500px) {
+  .slide-effect,
+  .textFoot,
+  .slideDown,
+  .slideUp {
+    font-size: 10px;
+  }
+  .footer_data {
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+    top: 20%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

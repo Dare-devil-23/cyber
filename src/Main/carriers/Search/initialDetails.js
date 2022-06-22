@@ -1,0 +1,73 @@
+const initialDetails = [
+    {
+      id: 1,
+      imgPath: "https://source.unsplash.com/zh7GEuORbUw/600x799",
+      name: "Jane Doe",
+      department: "one" , email: "janedoe@gmail.com",
+      address: "New Delhi, India",
+    },
+    {
+      id: 2,
+      imgPath: "https://source.unsplash.com/NQSWvyVRIJk/800x599",
+      name: "Mary Rosamund",
+      department: "two" , email: "agra@rosie.com",
+      address: "Tbilisi, India",
+    },
+    {
+      id: 3,
+      imgPath: "https://source.unsplash.com/epcsn8Ed8kY/600x799",
+      name: "Sherlock Watson",
+      department: "three" , email: "irene@johnlock.com",
+      address: "Baker Street, India",
+    },
+    {
+      id: 4,
+      imgPath: "https://source.unsplash.com/iecJiKe_RNg/600x799",
+      name: "John Holmes",
+      department: "four" , email: "mary@johnlock.com",
+      address: "Baker Street, India",
+    },
+    {
+      id: 5,
+      imgPath: "https://source.unsplash.com/qDkso9nvCg0/600x799",
+      name: "Mycroft Lestrade",
+      department: "five" , email: "britishgovt@gmail.com",
+      address: "London, India",
+    },
+    {
+      id: 6,
+      imgPath: "https://source.unsplash.com/zh7GEuORbUw/600x799",
+      name: "Jane Doe",
+      department: "one" , email: "janedoe@gmail.com",
+      address: "New Delhi, India",
+    },
+    {
+      id: 7,
+      imgPath: "https://source.unsplash.com/NQSWvyVRIJk/800x599",
+      name: "Mary Rosamund",
+      department: "two" , email: "agra@rosie.com",
+      address: "Tbilisi, India",
+    },
+    {
+      id: 8,
+      imgPath: "https://source.unsplash.com/epcsn8Ed8kY/600x799",
+      name: "Sherlock Watson",
+      department: "three" , email: "irene@johnlock.com",
+      address: "Baker Street, India",
+    },
+    {
+      id: 9,
+      imgPath: "https://source.unsplash.com/iecJiKe_RNg/600x799",
+      name: "John Holmes",
+      department: "four" , email: "mary@johnlock.com",
+      address: "Baker Street, India",
+    },
+    {
+      id: 10,
+      imgPath: "https://source.unsplash.com/qDkso9nvCg0/600x799",
+      name: "Mycroft Lestrade",
+      department: "five" , email: "britishgovt@gmail.com",
+      address: "London, India",
+    },
+  ];
+  export default initialDetails;

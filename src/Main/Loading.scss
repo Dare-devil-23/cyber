@@ -1,0 +1,32 @@
+.fingerprint {
+  width : "207.000000pt" ;
+  height : "307.000000pt" ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    
+    stroke-dasharray: 20000;
+    stroke-dashoffset: 20000;
+    animation-name: draw;
+    animation-duration: 5.2s;
+    animation-fill-mode: forwards; // Stay on the last frame
+    animation-iteration-count: infinite; // Run only once
+    animation-timing-function: linear;
+  }
+  @keyframes draw {
+    to {
+      stroke-dashoffset: 1;
+    }
+  }
+  .is-active{
+    stroke: rgb(36, 228, 36);
+    filter: drop-shadow(0 0 20px #00c40d);
+  }
+@media screen and (max-width: 500px) {
+  .scan{
+        width : "107.000000pt" ;
+        height : "207.000000pt" ;
+    }
+}
