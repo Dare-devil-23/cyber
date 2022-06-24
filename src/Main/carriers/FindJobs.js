@@ -62,9 +62,9 @@ function FindJobs() {
               }}
             />
           </div>
-          <div className="col mt-4">
+          {/* <div className="col mt-4">
             <Button variant="secondary">Search Jobs</Button>
-          </div>
+          </div> */}
         <div >
           <div  className="container">
             <div className="row">
@@ -84,7 +84,7 @@ function FindJobs() {
                   <div className="col-sm-3 gy-3" key = {key}>
                     <Link to="/jdetail" style={{textDecoration:"none"}} state={{from:val}}>
                     <Card>
-                      <Card.Img variant="top" src={val.imgPath} style={{objectFit:"cover",height:"300px"}}/>
+                      {/* <Card.Img variant="top" src={val.imgPath} style={{objectFit:"cover",height:"300px"}}/> */}
                       <Card.Body>
                         <Card.Title>{val.name}</Card.Title>
                         <Card.Text>{val.address}</Card.Text>

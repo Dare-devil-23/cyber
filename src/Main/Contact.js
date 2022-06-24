@@ -68,11 +68,11 @@ class Contact extends Component {
             <div className="row">
               <div className="col">
                 <div className="nft_coll_pp">
-                  <span onClick={() => window.open("/home", "_self")}>
+                  <span>
                     <img
                       style={{ imgStyle }}
                       className="lazy"
-                      src="./img/author/author-1.jpg"
+                      src="https://img.icons8.com/external-flat-satawat-anukul/64/000000/external-communication-communication-flat-flat-satawat-anukul-28.png"
                       alt=""
                     />
                   </span>
@@ -90,7 +90,7 @@ class Contact extends Component {
                     proident est nisi.
                   </span>
                   <div
-                    onClick={() => window.open("/#", "_self")}
+                    onClick={() => window.open("/comingsoon", "_self")}
                     className="btn-main lead m-auto my-5"
                   >
                     Request A Demo
@@ -99,17 +99,17 @@ class Contact extends Component {
               </div>
               <div className="col">
                 <div className="nft_coll_pp">
-                  <span onClick={() => window.open("/home", "_self")}>
+                  <span>
                     <img
                       className="lazy"
-                      src="./img/author/author-2.jpg"
+                      src="https://img.icons8.com/external-icongeek26-outline-colour-icongeek26/64/000000/external-sales-due-diligence-icongeek26-outline-colour-icongeek26.png"
                       alt=""
                     />
                   </span>
                   {/* <i className="fa fa-check"></i> */}
                 </div>
                 <div className="nft_coll_info">
-                  <span onClick={() => window.open("/home", "_self")}>
+                  <span>
                     <h4>Sales Inquiry</h4>
                   </span>
                   <span>
@@ -120,7 +120,7 @@ class Contact extends Component {
                     proident est nisi.
                   </span>
                   <div
-                    onClick={() => window.open("/#", "_self")}
+                    onClick={() => window.open("/comingsoon", "_self")}
                     className="btn-main lead m-auto my-5"
                   >
                     Sales Inquiry
@@ -129,17 +129,17 @@ class Contact extends Component {
               </div>
               <div className="col">
                 <div className="nft_coll_pp">
-                  <span onClick={() => window.open("/home", "_self")}>
+                  <span >
                     <img
                       className="lazy"
-                      src="./img/author/author-3.jpg"
+                      src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/000000/external-author-literature-flaticons-lineal-color-flat-icons-4.png"
                       alt=""
                     />
                   </span>
                   {/* <i className="fa fa-check"></i> */}
                 </div>
                 <div className="nft_coll_info">
-                  <span onClick={() => window.open("/home", "_self")}>
+                  <span >
                     <h4>Customer Support</h4>
                   </span>
                   <span>
@@ -150,7 +150,7 @@ class Contact extends Component {
                     proident est nisi.
                   </span>
                   <div
-                    onClick={() => window.open("/#", "_self")}
+                    onClick={() => window.open("/comingsoon", "_self")}
                     className="btn-main lead m-auto my-5"
                   >
                     Customer Support
@@ -169,7 +169,7 @@ class Contact extends Component {
           
         >
             <div className="contact-info">
-              <h3>Corporate Headquarters</h3>
+              {/* <h3>Corporate Headquarters</h3>
               <p></p>
               <p>Corporate Headquarters</p>
               <p>Achieve3000</p>
@@ -197,7 +197,9 @@ class Contact extends Component {
               <p>First name </p>
               <p>Last name </p>
               <p>Email</p>
-              <p>Phone </p>
+              <p>Phone </p> */}
+
+              
             </div>
 
         </Reveal>
