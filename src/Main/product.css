@@ -1,0 +1,11 @@
+.images {
+    display: flex;
+    width: 50%;
+    margin: auto;
+    object-fit: contain;
+    justify-content: center;
+}
+.image-section{
+    height: 30%;
+}
+    

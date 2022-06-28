@@ -1,12 +1,13 @@
 import React from "react";
 import "./headerMain.css";
 import logo from "../../assets/logo.png";
-import { Link } from "@reach/router";
+import { Link ,Router} from "@reach/router";
 import { useState, useLayoutEffect } from "react";
 import Rev from "../../Main/Rev";
 import "react-dropdown/style.css";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+
 
 const useStickyHeader = (offset = 0) => {
   const [stick, setStick] = useState(false);
@@ -26,7 +27,7 @@ const useStickyHeader = (offset = 0) => {
 
 const HeaderMain = () => {
   const [active, setActive] = useState("menu");
-  const [icon, setIcon] = useState(false);
+  const [icon, setIcon] = useState(true);
   const [mobIcon, setMobicon] = useState(false);
   const navToggle = () => {
     if (active === "menu") {
@@ -56,6 +57,8 @@ const HeaderMain = () => {
   const changeIcon = () => {
     setIcon(!icon);
   };
+ 
+  
   return (
     <div className={headerClasses}>
       <div className="logoContainer">
@@ -63,17 +66,19 @@ const HeaderMain = () => {
       </div>
 
       <div className={active}>
-        <div className="dropdown navbar-item" >
-          <button className="dropbtn" >
+        <div className="dropdown navbar-item">
+          <button className="dropbtn">
             <Rev data="Services" />
             {icon ? <IoIosArrowDown /> : <IoIosArrowUp />}
           </button>
           <div className="dropdown-content">
+          {/* {`/product/${product.lable.toLowerCase().replace(' ' , '_')}`} */}
             {data.map((product) => (
-              <Link key={product.id} to="/comingsoon" className="drop-item">
+              <Link to={`/product/${product.lable.toLowerCase().replace(' ' , '_')}`} className="drop-item" key={product.id}>
                 <Rev data={product.lable} />
               </Link>
             ))}
+            
           </div>
         </div>
 
@@ -98,6 +103,7 @@ const HeaderMain = () => {
       ) : (
         <AiOutlineMenu className="nav-toggle" onClick={navToggle} />
       )}
+     
     </div>
   );
 };

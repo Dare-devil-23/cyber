@@ -31,7 +31,6 @@ import Accordion from './pages/accordion';
 import Alerts from './pages/alerts';
 import Progressbar from './pages/progressbar';
 import Tabs from './pages/tabs';
-
 import { createGlobalStyle } from 'styled-components';
 import ImageGallery from './components/ImageGallery';
 import Product from '../Main/Product';
@@ -79,7 +78,8 @@ const app= () => (
         </Home>
         <ComingSoon path="/comingsoon"/>
         <Training path="/training" />
-        <Product path="/product" />
+        <Product path="/product/:id" />
+          
         <Carrier path="/carrier" />
         <Jobdetails path = "/jdetail" />
         <Contact path = "/contact"/>

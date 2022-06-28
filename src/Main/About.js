@@ -78,10 +78,10 @@ const About = () => (
             />
           </div>
           <div className="col-lg-6">
-            <Slide direction="right">
+            <Slide >
               <h1 className="">2.Maintenance</h1>
             </Slide>
-            <Slide direction="right">
+            <Slide>
               <p className=" lead">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy

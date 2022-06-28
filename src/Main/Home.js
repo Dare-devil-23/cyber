@@ -26,6 +26,7 @@ const fadeInUp = keyframes`
   }
 `;
 
+
 const GlobalStyles = createGlobalStyle`
   
   header#myHeader.navbar.sticky.white {
