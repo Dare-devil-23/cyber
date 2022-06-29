@@ -8,11 +8,28 @@ import ReactRotatingText from "react-rotating-text";
 import Cards from "./Cards";
 import HeaderMain from "./menu/HeaderMain";
 import Loading from "./Loading.js";
-import About from './About';
 import { Component } from "react";
 import HeaderSmall from "./menu/HeaderSmall";
 import "../App.css";
 import AboutNew from "./AboutNew";
+import {
+  Animator,
+  ScrollContainer,
+  ScrollPage,
+  batch,
+  Fade,
+  FadeIn,
+  FadeOut,
+  Move,
+  MoveIn,
+  MoveOut,
+  Sticky,
+  StickyIn,
+  StickyOut,
+  Zoom,
+  ZoomIn,
+  ZoomOut,
+} from "react-scroll-motion";
 
 const fadeInUp = keyframes`
   0% {
@@ -26,7 +43,6 @@ const fadeInUp = keyframes`
     transform: translateY(0);
   }
 `;
-
 
 const GlobalStyles = createGlobalStyle`
   
@@ -87,6 +103,7 @@ export default class Home extends Component {
   componentDidMount() {
     setInterval(() => this.setState({ loading: false }), 4500);
   }
+
   render() {
     return (
       <>
@@ -95,79 +112,86 @@ export default class Home extends Component {
             <HeaderSmall />
             <HeaderMain />
             <GlobalStyles />
-            <section className="jumbotron">
-              <div className="container my-0">
-                <div className="row align-items-center">
-                  <div className="col-lg-7">
-                    <div className="spacer-single"></div>
-                    <div className="spacer-10"></div>
-                    <Reveal
-                      className="onStep"
-                      keyframes={fadeInUp}
-                      delay={300}
-                      duration={600}
-                      triggerOnce
-                    >
-                      <h1>
-                        Is it &nbsp;
-                        <ReactRotatingText
-                          className="text-success font-weight-bold heroMob"
-                          style={{ textAlign: "left" }}
-                          items={[
-                            "Digital Services",
-                            "Cyber Security",
-                            "BlockChain Technology",
-                            "Qantum Computing",
-                            "Medical IT",
-                            "DevOps & Automation",
-                            "AI & IOT",
-                            "Testing Services",
-                            "Staffing / Recruitment",
-                          ]}
-                        />
-                        <br />
-                        You are looking for ?
-                      </h1>
-                    </Reveal>
-                    <Reveal
-                      className="onStep"
-                      keyframes={fadeInUp}
-                      delay={600}
-                      duration={600}
-                      triggerOnce
-                    >
-                      <p className="lead">
-                        Unit of data stored on a digital ledger, called a
-                        blockchain, that certifies a digital asset to be unique
-                        and therefore not interchangeable
-                      </p>
-                    </Reveal>
-                    <div className="spacer-10"></div>
-                    <Reveal
-                      className="onStep"
-                      keyframes={fadeInUp}
-                      delay={800}
-                      duration={900}
-                      triggerOnce
-                    >
-                      <span
-                        onClick={() => window.open("/#", "_self")}
-                        className="btn-main lead"
-                      >
-                        Explore
-                      </span>
-                      <div className="mb-sm-30"></div>
-                    </Reveal>
-                    <div className="spacer-double"></div>
-                  </div>
-                  <div className="col-lg-5 px-0 my-5">
-                    <SliderCarouselsingle />
-                  </div>
-                </div>
-              </div>
-            </section>
-
-            <section className="cards">
+            <ScrollContainer>
+              <ScrollPage>
+                <Animator animation={batch(Fade(), Move(), Sticky(50,60))}>
+                  <section className="jumbotron scrollanim">
+                    <div className="container my-0">
+                      <div className="row align-items-center">
+                        <div className="col-lg-7">
+                          <div className="spacer-single"></div>
+                          <div className="spacer-10"></div>
+                          <Reveal
+                            className="onStep"
+                            keyframes={fadeInUp}
+                            delay={300}
+                            duration={600}
+                            triggerOnce
+                          >
+                            <h1>
+                              Is it &nbsp;
+                              <ReactRotatingText
+                                className="text-success font-weight-bold heroMob"
+                                style={{ textAlign: "left" }}
+                                items={[
+                                  "Digital Services",
+                                  "Cyber Security",
+                                  "BlockChain Technology",
+                                  "Qantum Computing",
+                                  "Medical IT",
+                                  "DevOps & Automation",
+                                  "AI & IOT",
+                                  "Testing Services",
+                                  "Staffing / Recruitment",
+                                ]}
+                              />
+                              <br />
+                              You are looking for ?
+                            </h1>
+                          </Reveal>
+                          <Reveal
+                            className="onStep"
+                            keyframes={fadeInUp}
+                            delay={600}
+                            duration={600}
+                            triggerOnce
+                          >
+                            <p className="lead">
+                              Unit of data stored on a digital ledger, called a
+                              blockchain, that certifies a digital asset to be
+                              unique and therefore not interchangeable
+                            </p>
+                          </Reveal>
+                          <div className="spacer-10"></div>
+                          <Reveal
+                            className="onStep"
+                            keyframes={fadeInUp}
+                            delay={800}
+                            duration={900}
+                            triggerOnce
+                          >
+                            <span
+                              onClick={() => window.open("/#", "_self")}
+                              className="btn-main lead"
+                            >
+                              Explore
+                            </span>
+                            <div className="mb-sm-30"></div>
+                          </Reveal>
+                          <div className="spacer-double"></div>
+                        </div>
+                        <div className="col-lg-5 px-0 my-5">
+                          <SliderCarouselsingle />
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </Animator>
+              </ScrollPage>
+            
+              <ScrollPage>
+                <Animator animation={batch(Fade() , Move() ,Zoom(1,1))}>  
+            <section className="cards scrollanim">
               <div className="container">
                 <div className="row">
                   <div className="col-lg-12">
@@ -177,9 +201,17 @@ export default class Home extends Component {
                 <Cards />
               </div>
             </section>
-            <AboutNew />
+            </Animator>
+              </ScrollPage>
+              
+            <section className="scrollanim">
+              <AboutNew />
+            </section>
+            
+            </ScrollContainer>
             <Footer />
           </div>
+
         )}
         {this.state.loading && (
           <>
