@@ -1,6 +1,14 @@
 .App {
   text-align: center;
 }
+.our{
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+}
+.itm{
+  height: 100%;
+}
 .glow { 
   text-shadow: 0 0 10px #00ccff; 
 }
@@ -32,8 +40,9 @@
   padding:0%;
 }
 .cards{
-  padding-top: 10rem;
+  padding-top: 0rem;
 }
+
 @media screen and (max-width :480px){
   .cards{
     padding-top: 20rem;

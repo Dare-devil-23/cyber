@@ -54,20 +54,22 @@ const HeaderMain = () => {
     { id: 8, lable: "Staffing or Recruitment" },
   ];
 
-  const changeIcon = () => {
+  const changeIcon = (icon) => {
     setIcon(!icon);
+    // console.log(icon)
   };
  
   
   return (
     <div className={headerClasses}>
       <div className="logoContainer">
-        <img src={logo} alt="logo" className="cyberLogo" />
+        <Link to="/home"><img src={logo} alt="logo" className="cyberLogo" /></Link>
       </div>
 
-      <div className={active}>
-        <div className="dropdown navbar-item">
-          <button className="dropbtn">
+      <div className={active} >
+        <div className="spaces">
+        <div className="dropdown" onMouseEnter={()=>changeIcon()} onMouseLeave={()=>changeIcon(icon)}>
+          <button className="dropbtn navbar-item" >
             <Rev data="Services" />
             {icon ? <IoIosArrowDown /> : <IoIosArrowUp />}
           </button>
@@ -96,6 +98,7 @@ const HeaderMain = () => {
           <Link to="/contact">
             <Rev data="Contact" />
           </Link>
+        </div>
         </div>
       </div>
       {mobIcon ? (

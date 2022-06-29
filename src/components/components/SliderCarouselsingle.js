@@ -89,7 +89,7 @@ export default class Responsive extends Component {
                       </span>
                   </span>
                   <div className="nft_pic_wrap">
-                      <img width = '300px' height= '300px' src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" className="lazy img-fluid" alt=""/>
+                      <img  src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" className="lazy img-fluid" alt=""/>
                   </div>
               </div>
             </CustomSlide>
@@ -103,7 +103,7 @@ export default class Responsive extends Component {
                       </span>
                   </span>
                   <div className="nft_pic_wrap">
-                      <img width = '300px' height= '300px' src="https://images.unsplash.com/photo-1643139114208-aeb54ff4da72?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=792&q=80" className="lazy img-fluid" alt=""/>
+                      <img  src="https://images.unsplash.com/photo-1643139114208-aeb54ff4da72?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=792&q=80" className="lazy img-fluid" alt=""/>
                   </div>
               </div>
             </CustomSlide>
@@ -117,7 +117,7 @@ export default class Responsive extends Component {
                       </span>
                   </span>
                   <div className="nft_pic_wrap">
-                      <img width = '300px' height= '300px' src="https://images.unsplash.com/photo-1526378800651-c32d170fe6f8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80" className="lazy img-fluid" alt=""/>
+                      <img src="https://images.unsplash.com/photo-1526378800651-c32d170fe6f8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80" className="lazy img-fluid" alt=""/>
                   </div>
               </div>
             </CustomSlide>
@@ -131,7 +131,7 @@ export default class Responsive extends Component {
                       </span>
                   </span>
                   <div className="nft_pic_wrap">
-                      <img width = '300px' height= '300px' src="https://images.unsplash.com/photo-1609151376730-f246ec0b99e5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" className="lazy img-fluid" alt=""/>
+                      <img src="https://images.unsplash.com/photo-1609151376730-f246ec0b99e5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" className="lazy img-fluid" alt=""/>
                   </div>
               </div>
             </CustomSlide>
@@ -145,7 +145,7 @@ export default class Responsive extends Component {
                       </span>
                   </span>
                   <div className="nft_pic_wrap">
-                      <img width = '300px' height= '300px' src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" className="lazy img-fluid" alt=""/>
+                      <img  src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" className="lazy img-fluid" alt=""/>
                   </div>
               </div>
             </CustomSlide>
@@ -158,7 +158,7 @@ export default class Responsive extends Component {
                       </span>
                   </span>
                   <div className="nft_pic_wrap">
-                      <img width = '300px' height= '300px' src="https://images.unsplash.com/photo-1648134859211-4a1b57575f4e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1160&q=80" className="lazy img-fluid" alt=""/>
+                      <img src="https://images.unsplash.com/photo-1648134859211-4a1b57575f4e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1160&q=80" className="lazy img-fluid" alt=""/>
                   </div>
               </div>
             </CustomSlide>
@@ -171,7 +171,7 @@ export default class Responsive extends Component {
                       </span>
                   </span>
                   <div className="nft_pic_wrap">
-                      <img width = '300px' height= '300px' src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=578&q=80" className="lazy img-fluid" alt=""/>
+                      <img src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=578&q=80" className="lazy img-fluid" alt=""/>
                   </div>
               </div>
             </CustomSlide>
@@ -184,7 +184,7 @@ export default class Responsive extends Component {
                       </span>
                   </span>
                   <div className="nft_pic_wrap">
-                      <img width = '300px' height= '300px' src="https://images.unsplash.com/photo-1579154204601-01588f351e67?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" className="lazy img-fluid" alt=""/>
+                      <img src="https://images.unsplash.com/photo-1579154204601-01588f351e67?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" className="lazy img-fluid" alt=""/>
                   </div>
               </div>
             </CustomSlide>
@@ -197,7 +197,7 @@ export default class Responsive extends Component {
                       </span>
                   </span>
                   <div className="nft_pic_wrap">
-                      <img width = '300px' height= '300px' src="https://images.unsplash.com/photo-1559523182-a284c3fb7cff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" className="lazy img-fluid" alt=""/>
+                      <img src="https://images.unsplash.com/photo-1559523182-a284c3fb7cff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" className="lazy img-fluid" alt=""/>
                   </div>
               </div>
             </CustomSlide>

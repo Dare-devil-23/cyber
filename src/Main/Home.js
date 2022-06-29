@@ -12,6 +12,7 @@ import About from './About';
 import { Component } from "react";
 import HeaderSmall from "./menu/HeaderSmall";
 import "../App.css";
+import AboutNew from "./AboutNew";
 
 const fadeInUp = keyframes`
   0% {
@@ -94,7 +95,7 @@ export default class Home extends Component {
             <HeaderSmall />
             <HeaderMain />
             <GlobalStyles />
-            <section className="jumbotron section1">
+            <section className="jumbotron">
               <div className="container my-0">
                 <div className="row align-items-center">
                   <div className="col-lg-7">
@@ -166,17 +167,17 @@ export default class Home extends Component {
               </div>
             </section>
 
-            <section className="cards mt-2 pt-2 section2">
+            <section className="cards">
               <div className="container">
                 <div className="row">
                   <div className="col-lg-12">
-                    <h1 className="style-2">Our Services</h1>
+                    <h1 className="our">Our Services</h1>
                   </div>
                 </div>
                 <Cards />
               </div>
             </section>
-            <About />
+            <AboutNew />
             <Footer />
           </div>
         )}

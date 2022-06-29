@@ -7,7 +7,7 @@ const HeaderSmall = () => {
   return (
     <div className="top-navbar">
       
-          <div className='left-side'><Link to='/Home'><Rev data="Home" /></Link></div>
+          {/* <div className='left-side'><Link to='/Home'><Rev data="Home" /></Link></div> */}
           <div className='right-side'>
             <div className="item"><Link to='/comingsoon'><Rev data="Media" /></Link></div>
             <div className="item"><Link to='/login'><Rev data="Login" /></Link></div>

@@ -1,5 +1,4 @@
 import React from "react";
-// import { Link } from '@reach/router';
 import { Component } from "react";
 import { keyframes } from "@emotion/react";
 import "../../App.css";
@@ -7,32 +6,13 @@ import "./footer.css"
 
 import "./footerlogo.scss";
 
-// const footer = () => (
-//     <footer className="footer-light">
-//         <div className="container">
-//             {/* <div className="d-flex justify-content-center"> */}
-
-//                 <div className="widget">
-
-//                     <ul>
-//                         <li><Link to="">Privacy Policy</Link></li>
-//                         <li><Link to="">Terms and conditions</Link></li>
-//                     </ul>
-//                 </div>
-//             {/* </div> */}
-//         </div>
-//     </footer>
-// );
 import {
   FaFacebook,
   FaInstagram,
   FaTwitterSquare,
   FaPinterest,
 } from "react-icons/fa";
-// import Reveal from "react-awesome-reveal";
-// import Rev from "../../Main/Rev";
 import { useRandomReveal } from "react-random-reveal";
-// import FooterParticles from "./FooterParticles";
 
 class Footer extends Component {
   render() {
@@ -65,7 +45,6 @@ class Footer extends Component {
       100%{
         visibility="visible" ,
       }`;
-    // let fadeInLeft={{visibility: "visible", animation-delay: "0.6s", animation-name: "fadeInleft"}};
     return (
       <footer className="new_footer_area bg_color">
         <div className="new_footer_top">
@@ -184,28 +163,7 @@ class Footer extends Component {
               </div>
             </div>
           </div>
-          {/* <div className="footer_bg">
-              <div className="footer_bg_one"></div> 
-              <div className="footer_bg_two"></div>
-              <div className="footer_bg_three"></div>
-              <div className="footer_bg_four"></div>
-              <div className="footer_bg_five"></div>
-              <div className="footer_bg_six"></div>
-              <div className="footer_bg_seven"></div>
-            </div> */}
         </div>
-        {/* <div className="footer_bottom">
-            <div className="container">
-              <div className="row align-items-center">
-                <div className="col-lg-6 col-sm-7">
-                  <p className="mb-0 f_400">© cyberInfo 2022 All rights reserved.</p>
-                </div>
-                <div className="col-lg-6 col-sm-5 text-right">
-                  <p>Made with <i className="icon_heart"></i> in <a href="http://cayberInfo.com" rel="noreferrer" target="_blank">CyberInfo</a></p>
-                </div>
-              </div>
-            </div>
-          </div> */}
 
         <div className="wavefoot">
           <svg viewBox="0 0 120 28" className="svgWave">
@@ -258,18 +216,16 @@ class Footer extends Component {
                 <stop offset="100%" style={{stopColor:"rgb(255,0,0)",stopOpacity:'1'}} />
               </linearGradient>
             </defs>
+            
+            <g className="gooeff">
+              <use id="wave1" className="wave" xlinkHref="#wave" x="0" y="1" />
+            </g>
             <g className="toplogo">
               <text
                 x="70"
                 y="8"
                 fill="url(#grad1)"
               >CyberInfo</text>
-            </g>
-            <g className="gooeff">
-              <circle className="drop drop1" cx="20" cy="2" r="1.8" />
-              <circle className="drop drop2" cx="25" cy="2.5" r="1.5" />
-              <circle className="drop drop3" cx="16" cy="2.8" r="1.2" />
-              <use id="wave1" className="wave" xlinkHref="#wave" x="0" y="1" />
             </g>
           </svg>
         </div>
