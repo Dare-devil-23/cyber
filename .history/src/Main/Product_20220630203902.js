@@ -183,8 +183,7 @@ const Product = (props) => {
                       infiniteLoop={true}
                       dynamicHeight={true}
                       transitionTime={500}
-                      width={350}
-                      className="curosole"
+                      width={1000}
                     >
                       {Object.keys(product.images).map((img, index) => (
                         <img
