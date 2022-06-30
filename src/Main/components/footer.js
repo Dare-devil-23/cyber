@@ -12,35 +12,12 @@ import {
   FaTwitterSquare,
   FaPinterest,
 } from "react-icons/fa";
-import { useRandomReveal } from "react-random-reveal";
 
 class Footer extends Component {
   render() {
     let circleClasses = "rounded-full ";
     let none = { display: "none" };
     let iconStyles = { color: "white", fontSize: "1.5em", margin: "10px" };
-    const Cyber = () => {
-      const characters = useRandomReveal({
-        isPlaying: true,
-        duration: 1.5,
-        revealDuration: 0.6,
-        characters: "Cyber",
-        updateInterval: 0.05,
-      });
-
-      return characters;
-    };
-    const Info = () => {
-      const characters = useRandomReveal({
-        isPlaying: true,
-        duration: 1.5,
-        revealDuration: 0.6,
-        characters: " Info",
-        updateInterval: 0.05,
-      });
-
-      return characters;
-    };
     const fadeInLeft = keyframes`
       100%{
         visibility="visible" ,
@@ -60,12 +37,12 @@ class Footer extends Component {
                   <h3 className="f-title f_600 t_color f_size_18">
                     Get in Touch
                   </h3>
-                  <p>
+                  <p className="f_600 f_size_18">
                     Don't miss any new updates on Cyber Security and
                     technologies.!
                   </p>
                   <form
-                    action="/"
+                    action="/comingsoon"
                     className="f_subscribe_two mailchimp"
                     _lpchecked="1"
                   >
@@ -85,22 +62,22 @@ class Footer extends Component {
                   <h3 className="f-title f_600 t_color f_size_18">Download</h3>
                   <ul className="list-unstyled f_list">
                     <li>
-                      <a href="/">Company</a>
+                      <a href="/comingsoon">Company</a>
                     </li>
                     <li>
-                      <a href="/">Android App</a>
+                      <a href="/comingsoon">Android App</a>
                     </li>
                     <li>
-                      <a href="/">ios App</a>
+                      <a href="/comingsoon">ios App</a>
                     </li>
                     <li>
-                      <a href="/">Desktop</a>
+                      <a href="/comingsoon">Desktop</a>
                     </li>
                     <li>
-                      <a href="/">Projects</a>
+                      <a href="/comingsoon">Projects</a>
                     </li>
                     <li>
-                      <a href="/">My tasks</a>
+                      <a href="/comingsoon">My tasks</a>
                     </li>
                   </ul>
                 </div>
@@ -115,22 +92,22 @@ class Footer extends Component {
                   <h3 className="f-title f_600 t_color f_size_18">Help</h3>
                   <ul className="list-unstyled f_list">
                     <li>
-                      <a href="/">FAQ</a>
+                      <a href="/comingsoon">FAQ</a>
                     </li>
                     <li>
-                      <a href="/">Term &amp; conditions</a>
+                      <a href="/comingsoon">Term &amp; conditions</a>
                     </li>
                     <li>
-                      <a href="/">Reporting</a>
+                      <a href="/comingsoon">Reporting</a>
                     </li>
                     <li>
-                      <a href="/">Documentation</a>
+                      <a href="/comingsoon">Documentation</a>
                     </li>
                     <li>
-                      <a href="/">Support Policy</a>
+                      <a href="/comingsoon">Support Policy</a>
                     </li>
                     <li>
-                      <a href="/">Privacy</a>
+                      <a href="/comingsoon">Privacy</a>
                     </li>
                   </ul>
                 </div>
