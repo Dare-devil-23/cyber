@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/cyber/static/css/main.fd1e1968.css",
-    "main.js": "/cyber/static/js/main.34b2a947.js",
+    "main.css": "/cyber/static/css/main.21f08880.css",
+    "main.js": "/cyber/static/js/main.8d2247bc.js",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/cyber/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
     "static/media/ElegantIcons.svg": "/cyber/static/media/ElegantIcons.a3709f859357b50798d9.svg",
     "static/media/et-line.svg": "/cyber/static/media/et-line.613c7311d2d5a1dd7e49.svg",
@@ -24,11 +24,11 @@
     "static/media/slick.ttf": "/cyber/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/cyber/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/cyber/index.html",
-    "main.fd1e1968.css.map": "/cyber/static/css/main.fd1e1968.css.map",
-    "main.34b2a947.js.map": "/cyber/static/js/main.34b2a947.js.map"
+    "main.21f08880.css.map": "/cyber/static/css/main.21f08880.css.map",
+    "main.8d2247bc.js.map": "/cyber/static/js/main.8d2247bc.js.map"
   },
   "entrypoints": [
-    "static/css/main.fd1e1968.css",
-    "static/js/main.34b2a947.js"
+    "static/css/main.21f08880.css",
+    "static/js/main.8d2247bc.js"
   ]
 }
