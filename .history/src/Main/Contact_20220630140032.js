@@ -1,11 +1,11 @@
-import React, { Component, useState } from "react";
+import React ,{ Component , useState} from "react";
 import HeaderSmall from "./menu/HeaderSmall";
 import HeaderMain from "./menu/HeaderMain";
 import Footer from "./components/footer";
 import { keyframes } from "@emotion/react";
 import Reveal from "react-awesome-reveal";
-import "./contact.css";
-import { useJsApiLoader, GoogleMap } from "@react-google-maps/api";
+import './contact.css';
+import {useJsApiLoader} from "@react-google-maps/api";
 
 const fadeLeft = keyframes`
   0% {
@@ -26,138 +26,112 @@ const fadeLeft = keyframes`
 `;
 
 const Form = () => {
+ 
   // States for registration
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [query, setQuery] = useState("");
-
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [query, setQuery] = useState('');
+ 
   // States for checking the errors
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState(false);
-
+ 
   // Handling the name change
   const handleName = (e) => {
     setName(e.target.value);
     setSubmitted(false);
   };
-
+ 
   // Handling the email change
   const handleEmail = (e) => {
     setEmail(e.target.value);
     setSubmitted(false);
   };
-
+ 
   // Handling the password change
   const handleQuery = (e) => {
     setQuery(e.target.value);
     setSubmitted(false);
   };
-
+ 
   // Handling the form submission
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (name === "" || email === "" || query === "") {
+    if (name === '' || email === '' || query === '') {
       setError(true);
     } else {
       setSubmitted(true);
       setError(false);
     }
   };
-
+ 
   // Showing success message
   const successMessage = () => {
     return (
       <div
         className="success"
         style={{
-          display: submitted ? "" : "none",
-        }}
-      >
+          display: submitted ? '' : 'none',
+        }}>
         <p>Hey {name} your query successfully registered!!</p>
       </div>
     );
   };
-
+ 
   // Showing error message if error is true
   const errorMessage = () => {
     return (
       <div
         className="error"
         style={{
-          display: error ? "" : "none",
-        }}
-      >
+          display: error ? '' : 'none',
+        }}>
         <p>Please enter all the fields</p>
       </div>
     );
   };
-
+  
   return (
     <div className="form">
       <div>
         <h1>User Registration</h1>
       </div>
-
+ 
       {/* Calling to the methods */}
       <div className="messages">
         {errorMessage()}
         {successMessage()}
       </div>
-
+ 
       <form>
         {/* Labels and inputs for form data */}
         <label className="label">Name</label>
-        <input
-          onChange={handleName}
-          className="input"
-          value={name}
-          type="text"
-        />
-
+        <input onChange={handleName} className="input"
+          value={name} type="text" />
+ 
         <label className="label">Email</label>
-        <input
-          onChange={handleEmail}
-          className="input"
-          value={email}
-          type="email"
-        />
-
+        <input onChange={handleEmail} className="input"
+          value={email} type="email" />
+ 
         <label className="label">Query</label>
-        <input
-          onChange={handleQuery}
-          className="input"
-          value={query}
-          type="text"
-        />
-
-        <button onClick={handleSubmit} className="btn-main lead m-auto my-5" type="submit">
+        <input onChange={handleQuery} className="input"
+          value={query} type="text" />
+ 
+        <button onClick={handleSubmit} className="btn" type="submit">
           Submit
         </button>
       </form>
     </div>
   );
-};
-const Maps = () => {
-  const {isLoaded} = useJsApiLoader({
-    googleMapsApiKey: process.env.MAPS_API,
-  });
-  const respo = { width: '350px', height: '350px' ,padding:'30px' ,margin:'40px' }
-  if (isLoaded){
-    return (
-      <div>
-        <h1 className="map-title">Map Location</h1>
+}
+const Maps = ()=>{
+  const [isLoaded] = useJsApiLoader({
+    googleMapsApiKey : process.env.MAPS_API,
+  })
+  return(<>
       
-      <GoogleMap
-        center={{ lat: 48.8584, lng: 2.2945 }}
-        zoom={15}
-        mapContainerStyle={respo }
-      ></GoogleMap>
-      </div>
-    )}
-
-    return(<></>)
-
-};
+  </>)
+}
 class Contact extends Component {
   render() {
     const imgStyle = {
@@ -170,7 +144,7 @@ class Contact extends Component {
         <HeaderMain />
         <div className="contact">
           <div className="mb-5 pb-5">
-            <h1 className="mx-5 px-2"> Reason for inquiry</h1>
+            <h1> Reason for inquiry</h1>
             <span>
               <center>Please select the purpose for your inquiry</center>
             </span>
@@ -240,7 +214,7 @@ class Contact extends Component {
               </div>
               <div className="col">
                 <div className="nft_coll_pp">
-                  <span>
+                  <span >
                     <img
                       className="lazy"
                       src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/000000/external-author-literature-flaticons-lineal-color-flat-icons-4.png"
@@ -250,7 +224,7 @@ class Contact extends Component {
                   {/* <i className="fa fa-check"></i> */}
                 </div>
                 <div className="nft_coll_info">
-                  <span>
+                  <span >
                     <h4>Customer Support</h4>
                   </span>
                   <span>
@@ -270,17 +244,19 @@ class Contact extends Component {
               </div>
             </div>
           </div>
+         
         </div>
         <Reveal
           className="onStep"
           keyframes={fadeLeft}
           // delay={300}
-          duration={800}
+          duration={800}   
         >
-          <div className="contact-info ">
-            <div><Form /></div>
-            <div><Maps /></div>
-          </div>
+            <div className="contact-info ">
+              <Form />
+              <Maps />
+            </div>
+
         </Reveal>
         <Footer />
       </>

@@ -10,7 +10,6 @@ import BreadCrumbNav from "./BreadCrumbNav";
 import Reveal from "react-awesome-reveal";
 import { keyframes } from "@emotion/react";
 import "./product.css";
-import Pro from "./Pro";
 
 const fadeLeft = keyframes`
   0% {
@@ -182,6 +181,9 @@ const Product = (props) => {
                       showArrows={false}
                       showStatus={false}
                       infiniteLoop={true}
+                      dynamicHeight={true}
+                      transitionTime={500}
+                      
                     >
                       {Object.keys(product.images).map((img, index) => (
                         <img
@@ -190,6 +192,7 @@ const Product = (props) => {
                           src={product.images[img]}
                           alt="image"
                           key={index}
+                          style={{borderRadius:"10px"}}
                         />
                       ))}
                     </Carousel>

@@ -81,7 +81,7 @@ function FindJobs() {
                 
               }).map((val, key) => {
                 return (
-                  <div className="col-sm-4 gy-4" key = {key} >
+                  <div className="col-sm gy-3" key = {key} >
                     <Link to="/jdetail" style={{textDecoration:"none" }} state={{from:val}}>
                     <Card style={{ backgroundColor:"#1c1c1e"}}>
                       {/* <Card.Img variant="top" src={val.imgPath} style={{objectFit:"cover",height:"300px"}}/> */}

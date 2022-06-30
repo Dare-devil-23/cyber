@@ -141,16 +141,16 @@ const Maps = () => {
   const {isLoaded} = useJsApiLoader({
     googleMapsApiKey: process.env.MAPS_API,
   });
-  const respo = { width: '350px', height: '350px' ,padding:'30px' ,margin:'40px' }
+  const respo = { width: '350px', height: '350px' }
   if (isLoaded){
     return (
       <div>
-        <h1 className="map-title">Map Location</h1>
+        <h1>Map Location</h1>
       
       <GoogleMap
         center={{ lat: 48.8584, lng: 2.2945 }}
         zoom={15}
-        mapContainerStyle={respo }
+        mapContainerStyle={respo}
       ></GoogleMap>
       </div>
     )}
@@ -170,7 +170,7 @@ class Contact extends Component {
         <HeaderMain />
         <div className="contact">
           <div className="mb-5 pb-5">
-            <h1 className="mx-5 px-2"> Reason for inquiry</h1>
+            <h1 className="mx-3 px-2"> Reason for inquiry</h1>
             <span>
               <center>Please select the purpose for your inquiry</center>
             </span>

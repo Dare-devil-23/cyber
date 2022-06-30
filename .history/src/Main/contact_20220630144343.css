@@ -56,14 +56,10 @@
   flex-direction: row;
   justify-content: space-evenly;
 }
-.map-title{
-  display: flex;
-  justify-content: center;
-}
+
 @media screen and (max-width: 760px) {
   .contact-info{
     margin: 30px;
-    padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;

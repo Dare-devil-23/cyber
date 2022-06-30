@@ -130,7 +130,7 @@ const Form = () => {
           type="text"
         />
 
-        <button onClick={handleSubmit} className="btn-main lead m-auto my-5" type="submit">
+        <button onClick={handleSubmit} className="btn" type="submit">
           Submit
         </button>
       </form>
@@ -141,18 +141,13 @@ const Maps = () => {
   const {isLoaded} = useJsApiLoader({
     googleMapsApiKey: process.env.MAPS_API,
   });
-  const respo = { width: '350px', height: '350px' ,padding:'30px' ,margin:'40px' }
   if (isLoaded){
     return (
-      <div>
-        <h1 className="map-title">Map Location</h1>
-      
       <GoogleMap
         center={{ lat: 48.8584, lng: 2.2945 }}
         zoom={15}
-        mapContainerStyle={respo }
+        mapContainerStyle={{ width: "300px", height: "300px" }}
       ></GoogleMap>
-      </div>
     )}
 
     return(<></>)
@@ -170,7 +165,7 @@ class Contact extends Component {
         <HeaderMain />
         <div className="contact">
           <div className="mb-5 pb-5">
-            <h1 className="mx-5 px-2"> Reason for inquiry</h1>
+            <h1> Reason for inquiry</h1>
             <span>
               <center>Please select the purpose for your inquiry</center>
             </span>
@@ -278,8 +273,8 @@ class Contact extends Component {
           duration={800}
         >
           <div className="contact-info ">
-            <div><Form /></div>
-            <div><Maps /></div>
+            <Form />
+            <Maps />
           </div>
         </Reveal>
         <Footer />

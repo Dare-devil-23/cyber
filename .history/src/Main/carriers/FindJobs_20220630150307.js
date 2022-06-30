@@ -20,7 +20,7 @@ function FindJobs() {
 
         <div className="spacer-single"></div>
         <div className="row">
-          <div className="col-sm">
+          <div className="col-sm-3">
             <h5>SearchFor </h5>
             <input
               type="text"
@@ -34,7 +34,7 @@ function FindJobs() {
               }}
             />
           </div>
-          <div className="col-sm">
+          <div className="col-sm-3">
             <h5>Where</h5>
             <input
               type="text"
@@ -48,7 +48,7 @@ function FindJobs() {
               }}
             />
           </div>
-          <div className="col-sm">
+          <div className="col-sm-3">
             <h5>Department</h5>
             <input
               type="text"

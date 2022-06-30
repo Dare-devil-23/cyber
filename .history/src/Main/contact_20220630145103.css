@@ -56,9 +56,8 @@
   flex-direction: row;
   justify-content: space-evenly;
 }
-.map-title{
-  display: flex;
-  justify-content: center;
+.contact-info div{
+  width: 50%;
 }
 @media screen and (max-width: 760px) {
   .contact-info{

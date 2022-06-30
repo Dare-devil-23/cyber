@@ -20,7 +20,7 @@ function FindJobs() {
 
         <div className="spacer-single"></div>
         <div className="row">
-          <div className="col-sm">
+          <div className="col-sm-4">
             <h5>SearchFor </h5>
             <input
               type="text"
@@ -34,7 +34,7 @@ function FindJobs() {
               }}
             />
           </div>
-          <div className="col-sm">
+          <div className="col-sm-3">
             <h5>Where</h5>
             <input
               type="text"
@@ -48,7 +48,7 @@ function FindJobs() {
               }}
             />
           </div>
-          <div className="col-sm">
+          <div className="col-sm-3">
             <h5>Department</h5>
             <input
               type="text"
@@ -81,7 +81,7 @@ function FindJobs() {
                 
               }).map((val, key) => {
                 return (
-                  <div className="col-sm-4 gy-4" key = {key} >
+                  <div className="col-sm-3 gy-3" key = {key} >
                     <Link to="/jdetail" style={{textDecoration:"none" }} state={{from:val}}>
                     <Card style={{ backgroundColor:"#1c1c1e"}}>
                       {/* <Card.Img variant="top" src={val.imgPath} style={{objectFit:"cover",height:"300px"}}/> */}

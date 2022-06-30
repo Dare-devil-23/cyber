@@ -145,7 +145,7 @@ const Maps = () => {
   if (isLoaded){
     return (
       <div>
-        <h1 className="map-title">Map Location</h1>
+        <h1>Map Location</h1>
       
       <GoogleMap
         center={{ lat: 48.8584, lng: 2.2945 }}
