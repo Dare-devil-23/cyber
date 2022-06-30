@@ -2,6 +2,7 @@ import React from "react";
 import Slide from "react-awesome-reveal";
 import Reveal from "react-awesome-reveal";
 import { keyframes } from "styled-components";
+import Rev from "./Rev";
 
 const fadeLeft = keyframes`
   0% {
@@ -31,13 +32,11 @@ const About = () => (
           <div className="col-lg-6">
             <div className="spacer-single"></div>
             <div className="spacer-10"></div>
-            <Reveal
-              className="onStep"
-              keyframes={fadeLeft}
-              duration={800}
+            <Rev
+              data="1.Quality"
             >
-              <h1>1.Quality</h1>
-            </Reveal>
+              <h1></h1>
+            </Rev>
             <Slide
               
             >

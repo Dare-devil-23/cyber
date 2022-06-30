@@ -1,7 +1,14 @@
 import React from "react";
+import { createGlobalStyle } from "styled-components";
 import Slide from "react-awesome-reveal";
 import Reveal from "react-awesome-reveal";
 import { keyframes } from "styled-components";
+
+const GlobalStyles = createGlobalStyle`
+  header#myHeader.navbar.white {
+    background: #212428;
+  }
+`;
 
 const fadeLeft = keyframes`
   0% {
@@ -23,7 +30,7 @@ const fadeLeft = keyframes`
 
 const About = () => (
   <>
-    {/* <GlobalStyles /> */}
+    <GlobalStyles />
 
     <section className="jumbotron no-bg hero">
       <div className="container hero">

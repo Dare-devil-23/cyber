@@ -2,6 +2,7 @@ import React from "react";
 import Slide from "react-awesome-reveal";
 import Reveal from "react-awesome-reveal";
 import { keyframes } from "styled-components";
+import Rev from "./Rev";
 
 const fadeLeft = keyframes`
   0% {

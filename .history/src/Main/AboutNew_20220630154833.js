@@ -43,7 +43,7 @@ const AboutNew = () => {
         <div className="content">
           <h1>1.Quality</h1>
           <Reveal
-            // className="onStep"
+            className="onStep"
             keyframes={fadeRight}
             // delay={300}
             duration={800}

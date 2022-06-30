@@ -1,29 +1,31 @@
 import React from "react";
+import { createGlobalStyle } from "styled-components";
 import Slide from "react-awesome-reveal";
 import Reveal from "react-awesome-reveal";
 import { keyframes } from "styled-components";
 
-const fadeLeft = keyframes`
+const GlobalStyles = createGlobalStyle`
+  header#myHeader.navbar.white {
+    background: #212428;
+  }
+`;
+
+const fadeInUp = keyframes`
   0% {
     opacity: 0;
-    -webkit-transform: translateX(40px);
-    transform: translateX(40px);
-  }
-  50% {
-    opacity: 0;
-    -webkit-transform: translateX(80px);
-    transform: translateX(80px);
+    -webkit-transform: translateY(40px);
+    transform: translateY(40px);
   }
   100% {
     opacity: 1;
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
   }
 `;
 
 const About = () => (
   <>
-    {/* <GlobalStyles /> */}
+    <GlobalStyles />
 
     <section className="jumbotron no-bg hero">
       <div className="container hero">
@@ -32,9 +34,7 @@ const About = () => (
             <div className="spacer-single"></div>
             <div className="spacer-10"></div>
             <Reveal
-              className="onStep"
-              keyframes={fadeLeft}
-              duration={800}
+              keyframes={fadeInUp}
             >
               <h1>1.Quality</h1>
             </Reveal>

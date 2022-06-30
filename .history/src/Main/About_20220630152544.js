@@ -1,4 +1,5 @@
 import React from "react";
+import { createGlobalStyle } from "styled-components";
 import Slide from "react-awesome-reveal";
 import Reveal from "react-awesome-reveal";
 import { keyframes } from "styled-components";
