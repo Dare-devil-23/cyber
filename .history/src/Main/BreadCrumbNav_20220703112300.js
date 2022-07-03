@@ -18,7 +18,7 @@ class BreadCrumbNav extends Component {
             <Link to={`/${this.props.data[0]}`}>{this.props.data[0]}</Link>
           </Breadcrumb.Item>
           <Breadcrumb.Item>
-            <Link to={`/${this.props.data[1]}`}>{this.props.data[1]}</Link>
+            <Link to={`/${this.props.data[0]}`}>{this.props.data[0]}</Link>
           </Breadcrumb.Item>
         </Breadcrumb>
       </>

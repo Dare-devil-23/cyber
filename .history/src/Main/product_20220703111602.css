@@ -1,6 +1,6 @@
 .images {
     display: flex;
-    width: 90%;
+    width: 50%;
     margin: auto;
     object-fit: contain;
     justify-content: center;
@@ -9,3 +9,9 @@
     height: 30%;
 }
 
+@media screen and (max-width: 360px) {
+    .curosole{
+        width: 500;
+    }
+    
+}

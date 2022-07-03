@@ -70,17 +70,13 @@
   .dropdown-content a:hover {
     background-color: #34343b;
     padding: 10px;
-    
 }
   
   .dropdown:hover .dropdown-content {
     display: block;
-    animation: fadeIn 2s;
+    
   }
-  @keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-  }
+  
   .dropdown:hover .dropbtn {
     background-color: none;
   }

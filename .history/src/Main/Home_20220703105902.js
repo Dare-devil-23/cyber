@@ -107,7 +107,17 @@ const Home = () => {
           <GlobalStyles />
           <motion.section
             className="jumbotron scrollanim"
-                        
+            animate={{
+              y: !scrollAction ? 1 : 0,
+            }}
+            transition={{
+              duration : 2,
+            }}
+            initial={{
+              y: scrollAction ? -100 : 0,
+            }}
+
+            
           >
             <div className="container my-0 pt-0" >
               <div className="row align-items-center">

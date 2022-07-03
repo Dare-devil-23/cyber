@@ -7,10 +7,31 @@ import Rev from "../../Main/Rev";
 import "react-dropdown/style.css";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import { motion } from "framer-motion";
 
 
 const useStickyHeader = (offset = 0) => {
-  
+  const subMenuAnimate = {
+    enter: {
+      opacity: 1,
+      rotateX: 0,
+      transition: {
+        duration: 0.5
+      },
+      display: "block"
+    },
+    exit: {
+      opacity: 0,
+      rotateX: -15,
+      transition: {
+        duration: 0.5,
+        delay: 0.3
+      },
+      transitionEnd: {
+        display: "none"
+      }
+    }
+  };
   const [stick, setStick] = useState(false);
   const handleScroll = () => {
     setStick(window.scrollY > offset);
