@@ -61,7 +61,7 @@ const HeaderMain = () => {
  
   
   return (
-    <div className={headerClasses} >
+    <div className={headerClasses} style={{oveFlow:"hidden"}}>
       <div className="logoContainer">
         <Link to="/home"><img src={logo} alt="logo" className="cyberLogo" /></Link>
       </div>

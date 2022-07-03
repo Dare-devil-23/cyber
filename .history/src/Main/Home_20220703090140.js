@@ -86,7 +86,7 @@ const Home = () => {
     setInterval(() => setLoading(false), 4500);
     const handleScroll = () => {
       const ypos = window.scrollY;
-      const isScrollingUp = ypos > lastYpos;
+      const isScrollingUp = ypos < lastYpos;
 
       setScrollAction(isScrollingUp);
       setLastYpos(ypos);
@@ -99,7 +99,7 @@ const Home = () => {
   });
 
   return (
-    <div >
+    <>
       {!loading && (
         <div className="sections">
           <HeaderSmall />
@@ -108,20 +108,20 @@ const Home = () => {
           <motion.section
             className="jumbotron scrollanim"
             animate={{
-              opacity: !scrollAction ? 1 : 0,
-              scale: scrollAction ? 1.2 : 1,
-              // y : scrollAction ? 0 : -100
+              // opacity: scrollAction ? 1 : 0,
+              scale: scrollAction ? 1 : 1.2,
+              y : scrollAction ? 0 : -100
             }}
-            // transition={{
-            //   duration:0.5,
-            // }}
+            transition={{
+              duration:0.5,
+            }}
             initial={{
-              opacity: !scrollAction ? 1 : 0,
-              scale: scrollAction ? 1.2 : 1,
-              // y : scrollAction ? 0 : 100,
+              // opacity: scrollAction ? 0 : 1,
+              scale: scrollAction ? 1.2 :1,
+              y : scrollAction ? 0 : 100,
             }}
 
-            
+            style={{oveFlow:"hidden"}}
           >
             <div className="container my-0 pt-0" >
               <div className="row align-items-center">
@@ -208,7 +208,7 @@ const Home = () => {
           <Loading />
         </>
       )}
-    </div>
+    </>
   );
 };
 

@@ -26,17 +26,14 @@
     font-size: large;
     padding: 15px;
     overflow: hidden;
-
   }
 
   .right-side {
     display: flex;
     width: 100%;
     justify-content: flex-end;
-    overflow: hidden;
   }
   .item {
     margin: 0px 10px;
-    overflow: hidden;
   }
 }

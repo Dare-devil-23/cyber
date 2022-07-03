@@ -102,7 +102,6 @@
     .nav-toggle{
         display: block;
         z-index: 100;
-        overflow: hidden;
       }
       .spaces{
         display: flex;

@@ -84,7 +84,6 @@
     display: flex;
     justify-content: space-between;
     z-index: 100;
-    overflow: hidden;
   }
   .navbar-item{
     margin:0px 30px;
@@ -92,7 +91,6 @@
   .nav-toggle{
     margin: 0px 20px;
     display:none;
-    
   }
   .spaces{
     display: flex;
@@ -102,7 +100,6 @@
     .nav-toggle{
         display: block;
         z-index: 100;
-        overflow: hidden;
       }
       .spaces{
         display: flex;
@@ -127,7 +124,6 @@
       .dropdown-content {
         width: 60%;
         z-index: 1;
-        overflow: hidden;
       }
   }
   .active {

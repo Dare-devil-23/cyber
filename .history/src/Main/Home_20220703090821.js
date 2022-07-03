@@ -99,7 +99,7 @@ const Home = () => {
   });
 
   return (
-    <div >
+    <>
       {!loading && (
         <div className="sections">
           <HeaderSmall />
@@ -121,7 +121,7 @@ const Home = () => {
               // y : scrollAction ? 0 : 100,
             }}
 
-            
+            style={{oveFlow:"hidden"}}
           >
             <div className="container my-0 pt-0" >
               <div className="row align-items-center">
@@ -208,7 +208,7 @@ const Home = () => {
           <Loading />
         </>
       )}
-    </div>
+    </>
   );
 };
 

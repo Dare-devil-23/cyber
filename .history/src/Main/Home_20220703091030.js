@@ -99,7 +99,7 @@ const Home = () => {
   });
 
   return (
-    <div >
+    <div style={{oveFlow:"hidden"}}>
       {!loading && (
         <div className="sections">
           <HeaderSmall />
