@@ -79,23 +79,10 @@ const GlobalStyles = createGlobalStyle`
 
 const Home = () => {
   const [loading, setLoading] = useState(true);
-  const [scrollAction, setScrollAction] = useState(false);
-  const [lastYpos, setLastYpos] = useState(0);
+  const { scrollYProgress } = useViewportScroll();
 
   useEffect(() => {
     setInterval(() => setLoading(false), 4500);
-    const handleScroll = () => {
-      const ypos = window.scrollY;
-      const isScrollingUp = ypos < lastYpos;
-
-      setScrollAction(isScrollingUp);
-      setLastYpos(ypos);
-    };
-    window.addEventListener("scroll", handleScroll, false);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll, false);
-    };
   });
 
   return (
@@ -107,18 +94,7 @@ const Home = () => {
           <GlobalStyles />
           <motion.section
             className="jumbotron scrollanim"
-            animate={{
-              opacity: scrollAction ? 1 : 0,
-               scale: scrollAction ? 1 : 1.2,
-              y : scrollAction ? 0 : -100
-            }}
-            transition={{
-              duration:0.5,
-            }}
-            initial={{
-              opacity: scrollAction ? 0 : 1,
-              y : scrollAction ? 0 : 100,
-            }}
+            style={{ pathLength: scrollYProgress }}
           >
             <div className="container my-0 pt-0">
               <div className="row align-items-center">

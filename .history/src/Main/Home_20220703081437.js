@@ -108,7 +108,7 @@ const Home = () => {
           <motion.section
             className="jumbotron scrollanim"
             animate={{
-              opacity: scrollAction ? 1 : 0,
+              // opacity: scrollAction ? 1 : 0,
                scale: scrollAction ? 1 : 1.2,
               y : scrollAction ? 0 : -100
             }}

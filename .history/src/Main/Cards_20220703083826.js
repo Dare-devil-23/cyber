@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import Reveal from "react-awesome-reveal";
+import { keyframes } from "@emotion/react";
 import "./cards.css";
 import { motion } from "framer-motion";
 

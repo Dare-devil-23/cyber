@@ -13,7 +13,8 @@ import HeaderSmall from "./menu/HeaderSmall";
 import "../App.css";
 import AboutNew from "./AboutNew";
 import "./gradients.css";
-import { motion, useViewportScroll } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { motion, useViewportScroll , useAnimation } from "framer-motion";
 
 const fadeInUp = keyframes`
   0% {
@@ -79,25 +80,21 @@ const GlobalStyles = createGlobalStyle`
 
 const Home = () => {
   const [loading, setLoading] = useState(true);
-  const [scrollAction, setScrollAction] = useState(false);
-  const [lastYpos, setLastYpos] = useState(0);
+  const controls = useAnimation();
+  const [ref, inView] = useInView();
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [controls, inView]);
 
   useEffect(() => {
     setInterval(() => setLoading(false), 4500);
-    const handleScroll = () => {
-      const ypos = window.scrollY;
-      const isScrollingUp = ypos < lastYpos;
-
-      setScrollAction(isScrollingUp);
-      setLastYpos(ypos);
-    };
-    window.addEventListener("scroll", handleScroll, false);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll, false);
-    };
   });
-
+  const squareVariants = {
+    visible: { opacity: 1, y: -10, transition: { duration: 3 } },
+    hidden: { opacity: 0, y: 0 }
+  };
   return (
     <>
       {!loading && (
@@ -107,18 +104,11 @@ const Home = () => {
           <GlobalStyles />
           <motion.section
             className="jumbotron scrollanim"
-            animate={{
-              opacity: scrollAction ? 1 : 0,
-               scale: scrollAction ? 1 : 1.2,
-              y : scrollAction ? 0 : -100
-            }}
-            transition={{
-              duration:0.5,
-            }}
-            initial={{
-              opacity: scrollAction ? 0 : 1,
-              y : scrollAction ? 0 : 100,
-            }}
+            ref={ref}
+            animate={controls}
+            
+            initial="hidden"
+            variants={squareVariants}
           >
             <div className="container my-0 pt-0">
               <div className="row align-items-center">

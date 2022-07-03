@@ -109,15 +109,14 @@ const Home = () => {
             className="jumbotron scrollanim"
             animate={{
               opacity: scrollAction ? 1 : 0,
-               scale: scrollAction ? 1 : 1.2,
-              y : scrollAction ? 0 : -100
+              scale: scrollAction ? 1 : 2,
             }}
             transition={{
-              duration:0.5,
+              duration:2,
             }}
             initial={{
               opacity: scrollAction ? 0 : 1,
-              y : scrollAction ? 0 : 100,
+              
             }}
           >
             <div className="container my-0 pt-0">

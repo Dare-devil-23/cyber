@@ -68,7 +68,7 @@ const AboutNew = () => {
             // delay={300}
             duration={800}
           >
-            <motion.img whileTap={{ scale: 0.9 }}
+            <motion.img
               className="homeimg"
               src="https://images.unsplash.com/photo-1558402529-d2638a7023e9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
               alt="one"
@@ -84,7 +84,7 @@ const AboutNew = () => {
             // delay={300}
             duration={800}
           >
-          <motion.img whileTap={{ scale: 0.9 }}
+          <motion.img
             className="homeimg"
             src="https://images.unsplash.com/photo-1572021335469-31706a17aaef?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
             alt="two"
@@ -117,7 +117,7 @@ const AboutNew = () => {
             // delay={300}
             duration={800}
           >
-            <motion.img whileTap={{ scale: 0.9 }}
+            <motion.img
               className="homeimg"
               src="https://images.unsplash.com/photo-1572021335469-31706a17aaef?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
               alt="two"
@@ -152,7 +152,7 @@ const AboutNew = () => {
             // delay={300}
             duration={800}
           >
-            <motion.img whileTap={{ scale: 0.9 }}
+            <motion.img
               className="homeimg"
               src="https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
               alt="three"
