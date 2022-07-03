@@ -94,7 +94,7 @@ const Home = () => {
     "Testing Services",
     "Staffing or Recruitment",
   ];
-  const [count, setCount] = useState(-1);
+  const [count, setCount] = useState(0);
   return (
     <div>
       {!loading && (
@@ -119,8 +119,8 @@ const Home = () => {
                         className="text-success font-weight-bold heroMob"
                         style={{ textAlign: "left" }}
                         items={items}
-                        onTypingEnd={() => {
-                          setCount((count + 1) % items.length);
+                        onTypingStart={() => {
+                          setCount((count + 1) % items.length-1);
                         }}
                       />
                       <br />
@@ -141,11 +141,8 @@ const Home = () => {
                     </p>
                   </Reveal>
                   <div className="spacer-10"></div>
-                  <Link
-                    to={`/product/${items[count]
-                      ?.toLowerCase()
-                      .replace(" ", "_")}`}
-                  >
+                      {console.log(`/product/${items[(count - 1) % items.length]?.toLowerCase().replace(" ", "_")}`)}
+                  <Link to={`/product/${items[count-1]?.toLowerCase().replace(" ", "_")}`}>
                     <span className="btn-main lead">Explore</span>
                   </Link>
 

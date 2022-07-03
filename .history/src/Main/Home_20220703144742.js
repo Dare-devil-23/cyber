@@ -141,11 +141,9 @@ const Home = () => {
                     </p>
                   </Reveal>
                   <div className="spacer-10"></div>
-                  <Link
-                    to={`/product/${items[count]
-                      ?.toLowerCase()
-                      .replace(" ", "_")}`}
-                  >
+                        {console.log(count)}
+                      {console.log(`/product/${items[count ]?.toLowerCase().replace(" ", "_")}`)}
+                  <Link to={`/product/${items[count]?.toLowerCase().replace(" ", "_")}`}>
                     <span className="btn-main lead">Explore</span>
                   </Link>
 

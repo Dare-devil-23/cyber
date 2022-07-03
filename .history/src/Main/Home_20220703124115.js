@@ -14,7 +14,7 @@ import "../App.css";
 import AboutNew from "./AboutNew";
 import "./gradients.css";
 import { motion } from "framer-motion";
-import { Link } from "@reach/router";
+import DelayedList from "react-delayed-list";
 
 const fadeInUp = keyframes`
   0% {
@@ -92,20 +92,25 @@ const Home = () => {
     "DevOps & Automation",
     "AI & IOT",
     "Testing Services",
-    "Staffing or Recruitment",
-  ];
-  const [count, setCount] = useState(-1);
+    "Staffing / Recruitment",
+  ]
+  items.forEach((item , i)=>{
+    setTimeout(3000)
+  })
   return (
-    <div>
+    <div >
       {!loading && (
         <div className="sections">
           <HeaderSmall />
           <HeaderMain />
           <GlobalStyles />
-          <motion.section className="jumbotron scrollanim">
-            <div className="container my-0 pt-0">
+          <motion.section
+            className="jumbotron scrollanim"
+                        
+          >
+            <div className="container my-0 pt-0" >
               <div className="row align-items-center">
-                <div className="col-lg-7">
+                <div className="col-lg-7" >
                   <Reveal
                     className="onStep"
                     keyframes={fadeInUp}
@@ -119,9 +124,6 @@ const Home = () => {
                         className="text-success font-weight-bold heroMob"
                         style={{ textAlign: "left" }}
                         items={items}
-                        onTypingEnd={() => {
-                          setCount((count + 1) % items.length);
-                        }}
                       />
                       <br />
                       You are looking for ?
@@ -141,13 +143,17 @@ const Home = () => {
                     </p>
                   </Reveal>
                   <div className="spacer-10"></div>
-                  <Link
-                    to={`/product/${items[count]
-                      ?.toLowerCase()
-                      .replace(" ", "_")}`}
+                  <DelayedList delay="3000">
+                    {items.map((item)=>{
+                      console.log(item)
+                    })}
+                  </DelayedList>
+                  <span
+                    onClick={() => window.open("/#", "_self")}
+                    className="btn-main lead"
                   >
-                    <span className="btn-main lead">Explore</span>
-                  </Link>
+                    Explore
+                  </span>
 
                   <div className="spacer-double"></div>
                 </div>

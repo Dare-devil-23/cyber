@@ -57,7 +57,7 @@ const Cards = () => (
           <div className="text">
             <h4 className="">Add your NFT's</h4>
 
-            <div className="break-text">
+            <p className="break-text">
               <ReadMore>
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                 accusantium doloremque laudantium, totam rem.accusantium
@@ -66,7 +66,7 @@ const Cards = () => (
                 laudantium, totam rem.accusantium doloremque laudantium, totam
                 rem.
               </ReadMore>
-            </div>
+            </p>
           </div>
           <i className="wm icon_tags_alt"></i>
         </div>
@@ -83,7 +83,7 @@ const Cards = () => (
           <div className="text">
             <h4 className="">Add your NFT's</h4>
 
-            <div className="break-text">
+            <p className="break-text">
               <ReadMore>
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                 accusantium doloremque laudantium, totam rem.accusantium
@@ -92,7 +92,7 @@ const Cards = () => (
                 laudantium, totam rem.accusantium doloremque laudantium, totam
                 rem.
               </ReadMore>
-            </div>
+            </p>
           </div>
           <i className="wm icon_wallet"></i>
         </div>

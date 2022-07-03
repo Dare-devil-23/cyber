@@ -14,7 +14,6 @@ import "../App.css";
 import AboutNew from "./AboutNew";
 import "./gradients.css";
 import { motion } from "framer-motion";
-import { Link } from "@reach/router";
 
 const fadeInUp = keyframes`
   0% {
@@ -92,9 +91,9 @@ const Home = () => {
     "DevOps & Automation",
     "AI & IOT",
     "Testing Services",
-    "Staffing or Recruitment",
+    "Staffing / Recruitment",
   ];
-  const [count, setCount] = useState(-1);
+  const [count, setCount] = useState(0);
   return (
     <div>
       {!loading && (
@@ -119,7 +118,7 @@ const Home = () => {
                         className="text-success font-weight-bold heroMob"
                         style={{ textAlign: "left" }}
                         items={items}
-                        onTypingEnd={() => {
+                        onTypingStart={() => {
                           setCount((count + 1) % items.length);
                         }}
                       />
@@ -141,11 +140,8 @@ const Home = () => {
                     </p>
                   </Reveal>
                   <div className="spacer-10"></div>
-                  <Link
-                    to={`/product/${items[count]
-                      ?.toLowerCase()
-                      .replace(" ", "_")}`}
-                  >
+
+                  <Link to={`/product/${items[count]}`}>
                     <span className="btn-main lead">Explore</span>
                   </Link>
 
