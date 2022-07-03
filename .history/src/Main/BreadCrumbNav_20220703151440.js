@@ -10,13 +10,13 @@ class BreadCrumbNav extends Component {
     return (
       <>
         <Breadcrumb>
-          <Breadcrumb.Item href="/" target="_self">
+          <Breadcrumb.Item href="/" target="_blank">
             Home
           </Breadcrumb.Item >
-          <Breadcrumb.Item href={`/${this.props.data[0]}`} target="_self">
+          <Breadcrumb.Item href={`/${this.props.data[0]}`} target="_blank">
             {this.props.data[0]}
           </Breadcrumb.Item>
-          <Breadcrumb.Item to={`/${this.props.data[1]}`} target="_self">
+          <Breadcrumb.Item to={`/${this.props.data[1]}`} target="_blank">
             {this.props.data[1]}
           </Breadcrumb.Item>
         </Breadcrumb>
