@@ -37,7 +37,7 @@ import Product from '../Main/products/Product';
 import Carrier from '../Main/Carrier';
 import Jobdetails from '../Main/Jobdetails';
 import Contact from '../Main/Contact';
-import Training from '../Main/trainings/Training';
+import Training from '../Main/Training';
 import ComingSoon from '../Main/components/ComingSoon';
 import AboutNew from '../Main/AboutNew';
 import { AnimatePresence } from 'framer-motion';

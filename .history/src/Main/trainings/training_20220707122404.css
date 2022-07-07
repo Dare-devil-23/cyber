@@ -1,0 +1,10 @@
+.tabs ul{
+    display: flex;
+}
+li{
+    list-style: none;
+}
+.icon{
+    width: 80px;
+    height: 80px;
+}

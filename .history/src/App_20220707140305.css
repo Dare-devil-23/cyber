@@ -101,7 +101,7 @@ a{
 }
 a:hover{
   text-decoration: none;
-  color: white;
+ 
 }
 .App-header {
   background-color:#000000; 
@@ -300,9 +300,6 @@ color:white;
   color: #4b505e;
 } */
 .new_footer_top .f_widget.about-widget .f_list li  {
-  color: #fdfdfd;
-}
-.new_footer_top .f_widget.about-widget .f_list li  a:hover{
   color: #fdfdfd;
 }
 

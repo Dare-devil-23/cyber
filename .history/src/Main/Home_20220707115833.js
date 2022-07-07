@@ -12,7 +12,7 @@ import { useState, useEffect } from "react";
 import HeaderSmall from "./menu/HeaderSmall";
 import "../App.css";
 import AboutNew from "./AboutNew";
-import "./scrollbar.css";
+import "./srollbar.css";
 import { motion } from "framer-motion";
 import { Link } from "@reach/router";
 

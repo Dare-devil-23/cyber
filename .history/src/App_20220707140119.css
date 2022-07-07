@@ -101,7 +101,7 @@ a{
 }
 a:hover{
   text-decoration: none;
-  color: white;
+ 
 }
 .App-header {
   background-color:#000000; 
@@ -299,10 +299,7 @@ color:white;
 /* h1, h2, h3, h4, h5, h6 {
   color: #4b505e;
 } */
-.new_footer_top .f_widget.about-widget .f_list li  {
-  color: #fdfdfd;
-}
-.new_footer_top .f_widget.about-widget .f_list li  a:hover{
+.new_footer_top .f_widget.about-widget .f_list li a {
   color: #fdfdfd;
 }
 

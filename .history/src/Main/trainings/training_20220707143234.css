@@ -1,0 +1,23 @@
+.tabs ul{
+    display: flex;
+}
+li{
+    list-style: none;
+}
+.icon{
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    margin: 10px auto;
+}
+.tab{
+    margin: auto;
+    
+}
+.tabText{
+    font-size: large;
+    font-weight: 600;
+}
+#tabs1 tab:hover{
+    color: white;
+}
