@@ -80,10 +80,7 @@ li {
         justify-content: space-evenly;
     }
     .form{
-        width: 250px;
-    }
-    .maindiv div{
-        margin: auto;
+        width: 400px;
     }
 }
 

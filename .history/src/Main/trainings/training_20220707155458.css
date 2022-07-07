@@ -54,7 +54,7 @@ li {
   justify-content: center;
 }
 .form{
-    width: 500px;
+    width: 50%;
 }
 .error {
   display: block;
@@ -74,17 +74,7 @@ li {
 
 
 @media screen and (max-width: 760px) {
-    .maindiv{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-    }
-    .form{
-        width: 250px;
-    }
-    .maindiv div{
-        margin: auto;
-    }
+ 
 }
 
 .maindiv{

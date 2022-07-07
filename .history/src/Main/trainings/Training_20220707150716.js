@@ -1,4 +1,4 @@
-import React , {useState} from "react";
+import React from "react";
 import HeaderMain from "../menu/HeaderMain";
 import HeaderSmall from "../menu/HeaderSmall";
 import Footer from "../components/footer";
@@ -31,113 +31,13 @@ const fadeLeft = keyframes`
     transform: translateX(0);
   }
 `;
-
-const Form = () => {
-  // States for registration
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-
-  // States for checking the errors
-  const [submitted, setSubmitted] = useState(false);
-  const [error, setError] = useState(false);
-
-  // Handling the email change
-  const handleEmail = (e) => {
-    setEmail(e.target.value);
-    setSubmitted(false);
-  };
-
-  const handlePassword = (e) => {
-    setPassword(e.target.value);
-    setSubmitted(false);
-  };
-
-  // Handling the form submission
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (email === "" || password === "") {
-      setError(true);
-    } else {
-      setSubmitted(true);
-      setError(false);
-    }
-  };
-
-  const successMessage = () => {
-    return (
-      <div
-        className="success"
-        style={{
-          display: submitted ? "" : "none",
-        }}
-      >
-        <p>Success</p>
-      </div>
-    );
-  };
-  // Showing error message if error is true
-  const errorMessage = () => {
-    return (
-      <div
-        className="error"
-        style={{
-          display: error ? "" : "none",
-        }}
-      >
-        <p>Please enter all the fields</p>
-      </div>
-    );
-  };
-
-  return (
-    <div className="form">
-      <div>
-        <h1>Sign In</h1>
-      </div>
-
-      {/* Calling to the methods */}
-      <div className="messages">
-        {errorMessage()}
-        {successMessage()}
-      </div>
-
-      <form>
-        {/* Labels and inputs for form data */}
-
-        <label className="label">Email</label>
-        <input
-          onChange={handleEmail}
-          className="input"
-          value={email}
-          type="email"
-        />
-        <label className="label">Password</label>
-        <input
-          onChange={handlePassword}
-          className="input"
-          value={password}
-          type="password"
-        />
-
-        <button
-          onClick={handleSubmit}
-          className="btn-main lead m-auto my-5"
-          type="submit"
-        >
-          Submit
-        </button>
-      </form>
-    </div>
-  );
-};
-
 const Training = () => {
   const trains = {
     one: "https://images.unsplash.com/photo-1427751840561-9852520f8ce8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=876&q=80",
     two: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=815&q=80",
     three:
       "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=455&q=80",
-  };
+  }
   return (
     <>
       <HeaderSmall />
@@ -250,8 +150,8 @@ const Training = () => {
           </Tabs>
         </div>
       </div>
-      <div className="container maindiv">
-        <div className="images ">
+      <div className="container">
+        <div className="images">
           <Carousel
             showThumbs={false}
             autoPlay={true}
@@ -263,33 +163,17 @@ const Training = () => {
             width={"100%"}
             className="curosole"
           >
-            
+            {Object.keys(trains).map((img, index) => (
               <img
-                width="300px"
-                height="300px"
-                src={trains.one}
-               
+                width="200px"
+                height="200px"
+                src={trains[i]}
+                alt={`${img}`}
+                key={index}
                 style={{ borderRadius: "10px" }}
               />
-              <img
-                width="300px"
-                height="300px"
-                src={trains.two}
-              
-                style={{ borderRadius: "10px" }}
-              />
-              <img
-                width="300px"
-                height="300px"
-                src={trains.three}
-               
-                style={{ borderRadius: "10px" }}
-              />
-            
+            ))}
           </Carousel>
-        </div>
-        <div className="signin">
-          <Form />
         </div>
       </div>
       <Footer />

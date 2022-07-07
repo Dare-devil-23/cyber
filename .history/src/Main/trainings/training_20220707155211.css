@@ -53,9 +53,7 @@ li {
   display: flex;
   justify-content: center;
 }
-.form{
-    width: 500px;
-}
+
 .error {
   display: block;
   color: red;
@@ -74,23 +72,9 @@ li {
 
 
 @media screen and (max-width: 760px) {
-    .maindiv{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-    }
-    .form{
-        width: 250px;
-    }
-    .maindiv div{
-        margin: auto;
-    }
+ 
 }
 
 .maindiv{
     display: flex;
-    justify-content: space-evenly;
-}
-.maindiv div{
-    margin: 20px;
 }

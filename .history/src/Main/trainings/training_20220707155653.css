@@ -79,12 +79,6 @@ li {
         flex-direction: column;
         justify-content: space-evenly;
     }
-    .form{
-        width: 250px;
-    }
-    .maindiv div{
-        margin: auto;
-    }
 }
 
 .maindiv{

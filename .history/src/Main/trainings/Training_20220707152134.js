@@ -143,10 +143,10 @@ const Training = () => {
       <HeaderSmall />
       <HeaderMain />
       <div
-        className="container"
+        className="container maindiv"
         style={{ minHeight: "60vh", marginTop: "15px" }}
       >
-        <div id="tabs1">
+        <div id="tabs1" >
           <Tabs fill defaultActiveKey="Training Delivery">
             <Tab
               eventKey="Training Delivery"
@@ -250,7 +250,7 @@ const Training = () => {
           </Tabs>
         </div>
       </div>
-      <div className="container maindiv">
+      <div >
         <div className="images ">
           <Carousel
             showThumbs={false}
@@ -263,29 +263,16 @@ const Training = () => {
             width={"100%"}
             className="curosole"
           >
-            
+            {Object.keys(trains).map((img, index) => (
               <img
-                width="300px"
-                height="300px"
-                src={trains.one}
-               
+                width="200px"
+                height="200px"
+                src={trains.img}
+                alt={`${img}`}
+                key={index}
                 style={{ borderRadius: "10px" }}
               />
-              <img
-                width="300px"
-                height="300px"
-                src={trains.two}
-              
-                style={{ borderRadius: "10px" }}
-              />
-              <img
-                width="300px"
-                height="300px"
-                src={trains.three}
-               
-                style={{ borderRadius: "10px" }}
-              />
-            
+            ))}
           </Carousel>
         </div>
         <div className="signin">

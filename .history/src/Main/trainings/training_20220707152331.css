@@ -24,7 +24,10 @@ li {
   color: white;
   padding: 5px;
 }
-
+.maindiv{
+    display: flex;
+    flex-direction: row;
+}
 .input {
   border: #1c1c1e;
   border-radius: 5px;
@@ -53,9 +56,7 @@ li {
   display: flex;
   justify-content: center;
 }
-.form{
-    width: 500px;
-}
+
 .error {
   display: block;
   color: red;
@@ -63,7 +64,9 @@ li {
   font-weight: 600;
   padding: 5px;
 }
-
+.images{
+    width: 40%;
+}
 .success {
   display: block;
   color: greenyellow;
@@ -71,26 +74,22 @@ li {
   font-weight: 600;
   padding: 5px;
 }
-
-
+.contact-info {
+  margin: 30px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.map-title {
+  display: flex;
+  justify-content: center;
+}
 @media screen and (max-width: 760px) {
-    .maindiv{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-    }
-    .form{
-        width: 250px;
-    }
-    .maindiv div{
-        margin: auto;
-    }
-}
-
-.maindiv{
+  .maindiv {
+    
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
-}
-.maindiv div{
-    margin: 20px;
+  }
 }

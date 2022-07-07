@@ -265,24 +265,27 @@ const Training = () => {
           >
             
               <img
-                width="300px"
-                height="300px"
+                width="200px"
+                height="200px"
                 src={trains.one}
-               
+                alt={`${img}`}
+                key={index}
                 style={{ borderRadius: "10px" }}
               />
               <img
-                width="300px"
-                height="300px"
+                width="200px"
+                height="200px"
                 src={trains.two}
-              
+                alt={`${img}`}
+                key={index}
                 style={{ borderRadius: "10px" }}
               />
               <img
-                width="300px"
-                height="300px"
+                width="200px"
+                height="200px"
                 src={trains.three}
-               
+                alt={`${img}`}
+                key={index}
                 style={{ borderRadius: "10px" }}
               />
             

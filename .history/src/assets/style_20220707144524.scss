@@ -3735,21 +3735,22 @@ img.img-rounded {
     margin-bottom: 30px;
   }
   .nav-tabs{
-    
-    .nav-item button{
-      font-weight: 600;
+    .nav-item button
+    &:hover,&:active{
       color: white;
-      background: black;
-    }
-    .nav-item button:active{
       font-weight: 600;
+    }
+    
+    .nav-item button:active{
       color: black;
-      background: white;
+      font-weight: 600;
     }
     .nav-item button:focus{
-      font-weight: 600;
       color: black;
-      background: white;
+      font-weight: 600;
+    }
+    .nav-item button{
+      font-weight: 600;
     }
   }
 }

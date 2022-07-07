@@ -260,7 +260,7 @@ const Training = () => {
             infiniteLoop={true}
             dynamicHeight={true}
             transitionTime={500}
-            width={"100%"}
+            width={"60%"}
             className="curosole"
           >
             
