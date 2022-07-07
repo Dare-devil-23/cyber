@@ -63,7 +63,7 @@ const HeaderMain = () => {
   const changeIcon = (icon) => {
     setIcon(!icon);
   };
-  isSideNav ? disableBodyScroll(document) : enableBodyScroll(document);
+  isSideNav ? disableBodyScroll(document) : enableBodyScroll(document)
   
   return (
     <div className={headerClasses} >
@@ -83,7 +83,7 @@ const HeaderMain = () => {
             <Rev data="About Us" />
           </Link>
         </div>
-        <div className="dropdown" onMouseEnter={()=>changeIcon()} onMouseLeave={()=>changeIcon(icon)} >
+        <div className="dropdown" onMouseEnter={()=>changeIcon()} onMouseLeave={()=>changeIcon(icon)}>
           <button className="dropbtn navbar-item" >
             <Rev data="Services" />
             {icon ? <IoIosArrowDown /> : <IoIosArrowUp />}

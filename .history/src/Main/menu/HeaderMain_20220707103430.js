@@ -7,7 +7,7 @@ import Rev from "../../Main/Rev";
 import "react-dropdown/style.css";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
-import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
+
 
 const useStickyHeader = (offset = 0) => {
   
@@ -30,15 +30,10 @@ const HeaderMain = () => {
   const [active, setActive] = useState("menu");
   const [icon, setIcon] = useState(true);
   const [mobIcon, setMobicon] = useState(false);
-  const [isSideNav , setIsSideNav] = useState(false);
   const navToggle = () => {
     if (active === "menu") {
       setActive("menu active");
-      setIsSideNav(true);
-    } else {
-      setActive("menu");
-      setIsSideNav(false);
-    }
+    } else setActive("menu");
 
     // Icon Toggler
     if (mobIcon === true) {
@@ -63,7 +58,7 @@ const HeaderMain = () => {
   const changeIcon = (icon) => {
     setIcon(!icon);
   };
-  isSideNav ? disableBodyScroll(document) : enableBodyScroll(document);
+ 
   
   return (
     <div className={headerClasses} >
@@ -83,7 +78,7 @@ const HeaderMain = () => {
             <Rev data="About Us" />
           </Link>
         </div>
-        <div className="dropdown" onMouseEnter={()=>changeIcon()} onMouseLeave={()=>changeIcon(icon)} >
+        <div className="dropdown" onMouseEnter={()=>changeIcon()} onMouseLeave={()=>changeIcon(icon)}>
           <button className="dropbtn navbar-item" >
             <Rev data="Services" />
             {icon ? <IoIosArrowDown /> : <IoIosArrowUp />}

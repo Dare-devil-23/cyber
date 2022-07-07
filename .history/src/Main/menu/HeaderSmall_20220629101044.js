@@ -10,7 +10,6 @@ const HeaderSmall = () => {
           {/* <div className='left-side'><Link to='/Home'><Rev data="Home" /></Link></div> */}
           <div className='right-side'>
             <div className="item"><Link to='/comingsoon'><Rev data="Media" /></Link></div>
-            <div className="item"><Link to='/comingsoon'><Rev data="Blog" /></Link></div>
             <div className="item"><Link to='/login'><Rev data="Login" /></Link></div>
           </div>
        

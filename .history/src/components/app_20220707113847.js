@@ -57,7 +57,7 @@ const PosedRouter = ({ children }) => (
   <Location>
     {({ location }) => (
       <div id='routerhang'>
-        <AnimatePresence exitBeforeEnter>
+        <AnimatePresence >
         <div key={location.key}>
           <Router location={location}>
             {children}

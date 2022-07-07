@@ -73,15 +73,15 @@
     
 }
   
-  .dropdown:hover .dropdown-content {
+  .dropdownClick .dropdown-content {
     display: block;
-    animation: fadeIn 1s;
+    animation: fadeIn 2s;
   }
   @keyframes fadeIn {
     0% { opacity: 0; }
     100% { opacity: 1; }
   }
-  .dropdown:hover .dropbtn {
+  .dropdownClick .dropbtn {
     background-color: none;
   }
   .menu{

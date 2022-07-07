@@ -75,7 +75,7 @@
   
   .dropdown:hover .dropdown-content {
     display: block;
-    animation: fadeIn 1s;
+    animation: fadeIn 2s;
   }
   @keyframes fadeIn {
     0% { opacity: 0; }
@@ -94,7 +94,7 @@
     margin:0px 20px;
   }
   .nav-toggle{
-    margin: 0px 40px;
+    margin: 0px 20px;
     display:none;
   }
   .spaces{
@@ -103,6 +103,7 @@
   } 
   @media screen and (max-width : 768px) {
     .nav-toggle{
+        top:0px;
         display: block;
         z-index: 100;
         
@@ -112,7 +113,6 @@
         justify-content: space-between;
         flex-direction: column;
         height: 30%;
-        margin-bottom: 60%;
       } 
       .menu{
         position: absolute;
@@ -122,7 +122,7 @@
         height: 100vh;
         width: 80vw;
         flex-direction: column;
-        justify-content: center;
+        justify-content: start;
         transform: translateX(100%);
         transition: 0.5s ease-in;
         z-index: 100;

@@ -31,6 +31,7 @@ const HeaderMain = () => {
   const [icon, setIcon] = useState(true);
   const [mobIcon, setMobicon] = useState(false);
   const [isSideNav , setIsSideNav] = useState(false);
+  const [downClick , setDownclick] = useState(false);
   const navToggle = () => {
     if (active === "menu") {
       setActive("menu active");
@@ -63,7 +64,7 @@ const HeaderMain = () => {
   const changeIcon = (icon) => {
     setIcon(!icon);
   };
-  isSideNav ? disableBodyScroll(document) : enableBodyScroll(document);
+  isSideNav ? disableBodyScroll(document) : enableBodyScroll(document)
   
   return (
     <div className={headerClasses} >
@@ -83,7 +84,7 @@ const HeaderMain = () => {
             <Rev data="About Us" />
           </Link>
         </div>
-        <div className="dropdown" onMouseEnter={()=>changeIcon()} onMouseLeave={()=>changeIcon(icon)} >
+        <div className="dropdown" onMouseEnter={()=>changeIcon()} onMouseLeave={()=>changeIcon(icon)} onClick={()=>setDownclick(!downClick)}>
           <button className="dropbtn navbar-item" >
             <Rev data="Services" />
             {icon ? <IoIosArrowDown /> : <IoIosArrowUp />}

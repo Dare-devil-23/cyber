@@ -39,8 +39,8 @@ import Jobdetails from '../Main/Jobdetails';
 import Contact from '../Main/Contact';
 import Training from '../Main/Training';
 import ComingSoon from '../Main/components/ComingSoon';
-import AboutNew from '../Main/AboutNew';
-import { AnimatePresence } from 'framer-motion';
+
+
 
 const GlobalStyles = createGlobalStyle`
   :root {
@@ -57,13 +57,11 @@ const PosedRouter = ({ children }) => (
   <Location>
     {({ location }) => (
       <div id='routerhang'>
-        <AnimatePresence exitBeforeEnter>
         <div key={location.key}>
           <Router location={location}>
             {children}
           </Router>
         </div>
-        </AnimatePresence>
       </div>
     )}
   </Location>
@@ -81,7 +79,7 @@ const app= () => (
         <ComingSoon path="/comingsoon"/>
         <Training path="/training" />
         <Product path="/product/:id" />
-        <AboutNew path="aboutus" />
+          
         <Carrier path="/carrier" />
         <Jobdetails path = "/jdetail" />
         <Contact path = "/contact"/>

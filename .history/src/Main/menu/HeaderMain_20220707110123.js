@@ -7,10 +7,9 @@ import Rev from "../../Main/Rev";
 import "react-dropdown/style.css";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
-import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
+import { disableBodyScroll, enableBodyScroll } from "body-scroll-lock";
 
 const useStickyHeader = (offset = 0) => {
-  
   const [stick, setStick] = useState(false);
   const handleScroll = () => {
     setStick(window.scrollY > offset);
@@ -30,7 +29,8 @@ const HeaderMain = () => {
   const [active, setActive] = useState("menu");
   const [icon, setIcon] = useState(true);
   const [mobIcon, setMobicon] = useState(false);
-  const [isSideNav , setIsSideNav] = useState(false);
+  const [isSideNav, setIsSideNav] = useState(false);
+  const [downClick, setDownclick] = useState(false);
   const navToggle = () => {
     if (active === "menu") {
       setActive("menu active");
@@ -47,7 +47,9 @@ const HeaderMain = () => {
   };
   const sticky = useStickyHeader(10);
   const headerClasses = `main-nav ${sticky ? "sticky" : ""}`;
-
+  const dropClasses = `dropbtn navbar-item ${
+    downClick ? "dropdownClick" : ""
+  }`
   const data = [
     { id: 0, lable: "Digital Services" },
     { id: 1, lable: "Cyber Security" },
@@ -64,55 +66,72 @@ const HeaderMain = () => {
     setIcon(!icon);
   };
   isSideNav ? disableBodyScroll(document) : enableBodyScroll(document);
-  
+
   return (
-    <div className={headerClasses} >
+    <div className={headerClasses}>
       <div className="logoContainer">
-        <Link to="/home"><img src={logo} alt="logo" className="cyberLogo" /></Link>
+        <Link to="/home">
+          <img src={logo} alt="logo" className="cyberLogo" />
+        </Link>
       </div>
 
-      <div className={active} >
+      <div className={active}>
         <div className="spaces">
-        <div className="navbar-item">
-          <Link to="/">
-            <Rev data="Home" />
-          </Link>
-        </div>
-        <div className="navbar-item">
-          <Link to="/aboutus">
-            <Rev data="About Us" />
-          </Link>
-        </div>
-        <div className="dropdown" onMouseEnter={()=>changeIcon()} onMouseLeave={()=>changeIcon(icon)} >
-          <button className="dropbtn navbar-item" >
-            <Rev data="Services" />
-            {icon ? <IoIosArrowDown /> : <IoIosArrowUp />}
-          </button>
-          <div className="dropdown-content">
-            {data.map((product) => (
-              <Link to={`/product/${product.lable.toLowerCase().replace(' ' , '_')}`} className="drop-item" key={product.id}>
-                <Rev data={product.lable} />
-              </Link>
-            ))}
-            
+          <div className="navbar-item">
+            <Link to="/">
+              <Rev data="Home" />
+            </Link>
           </div>
-        </div>
+          <div className="navbar-item">
+            <Link to="/aboutus">
+              <Rev data="About Us" />
+            </Link>
+          </div>
+          <div
+            className="dropdown"
+            onMouseEnter={() => changeIcon()}
+            onMouseLeave={() => changeIcon(icon)}
+          >
+            <button
+              onClick={() => {
+                setDownclick(!downClick);
+                console.log(downClick);
+              }}
+              className={dropClasses}
+            >
+              <Rev data="Services" />
+              {icon ? <IoIosArrowDown /> : <IoIosArrowUp />}
+            </button>
+            <div className="dropdown-content">
+              {data.map((product) => (
+                <Link
+                  to={`/product/${product.lable
+                    .toLowerCase()
+                    .replace(" ", "_")}`}
+                  className="drop-item"
+                  key={product.id}
+                >
+                  <Rev data={product.lable} />
+                </Link>
+              ))}
+            </div>
+          </div>
 
-        <div className="navbar-item">
-          <Link to="/carrier">
-            <Rev data="Carriers" />
-          </Link>
-        </div>
-        <div className="navbar-item">
-          <Link to="/training">
-            <Rev data="Training" />
-          </Link>
-        </div>
-        <div className="navbar-item">
-          <Link to="/contact">
-            <Rev data="Contact Us" />
-          </Link>
-        </div>
+          <div className="navbar-item">
+            <Link to="/carrier">
+              <Rev data="Carriers" />
+            </Link>
+          </div>
+          <div className="navbar-item">
+            <Link to="/training">
+              <Rev data="Training" />
+            </Link>
+          </div>
+          <div className="navbar-item">
+            <Link to="/contact">
+              <Rev data="Contact Us" />
+            </Link>
+          </div>
         </div>
       </div>
       {mobIcon ? (
@@ -120,7 +139,6 @@ const HeaderMain = () => {
       ) : (
         <AiOutlineMenu className="nav-toggle" onClick={navToggle} />
       )}
-     
     </div>
   );
 };

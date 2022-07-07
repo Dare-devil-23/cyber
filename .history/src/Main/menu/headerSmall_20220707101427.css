@@ -19,7 +19,7 @@
   justify-content: flex-end;
 }
 .item {
-  margin: 0px 30px;
+  margin: 0px 50px;
 }
 @media only screen and (max-width: 768px) {
   .top-navbar {

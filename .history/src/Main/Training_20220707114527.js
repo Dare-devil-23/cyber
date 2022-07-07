@@ -10,7 +10,7 @@ const Training = () => {
       <HeaderMain />
       <div>
         <div
-          className="container"
+          className=""
         >
           This is Training
         </div>
