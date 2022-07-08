@@ -2,8 +2,7 @@ import React, { Component } from "react";
 import Slider from "react-slick";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import cybeSecurity from "../../assets/cybersecurity.jpeg";
-import digitalServices from "../../assets/security.jpeg";
+
 
 class CustomSlide extends Component {
   render() {
@@ -77,6 +76,7 @@ export default class Responsive extends Component {
         }
       ]
     };
+
     return (
         <div className='nft-big'>
           <Slider {...settings}>
@@ -89,7 +89,7 @@ export default class Responsive extends Component {
                       </span>
                   </span>
                   <div className="nft_pic_wrap">
-                      <img  src={digitalServices} className="lazy img-fluid" alt=""/>
+                      <img  src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" className="lazy img-fluid" alt=""/>
                   </div>
               </div>
             </CustomSlide>
@@ -103,7 +103,7 @@ export default class Responsive extends Component {
                       </span>
                   </span>
                   <div className="nft_pic_wrap">
-                      <img  src={cybeSecurity} className="lazy img-fluid" alt=""/>
+                      <img  src="https://images.unsplash.com/photo-1643139114208-aeb54ff4da72?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=792&q=80" className="lazy img-fluid" alt=""/>
                   </div>
               </div>
             </CustomSlide>
