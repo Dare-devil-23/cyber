@@ -1,0 +1,96 @@
+.tabs {
+  display: flex;
+}
+.tab{
+  text-align: center;
+}
+.icon {
+  width: 60px;
+  height: 60px;
+  padding: 5px;
+  margin: 5px auto;
+}
+.tab {
+  margin: auto;
+}
+.tabText {
+  font-size: large;
+  font-weight: 600;
+}
+
+.label {
+  display: block;
+  font-size: larger;
+  color: white;
+  padding: 5px;
+}
+
+.input {
+  border: #1c1c1e;
+  border-radius: 5px;
+  outline: none;
+  font-size: larger;
+  padding: 5px;
+  margin: 2px;
+  color: white;
+  font-weight: 500;
+  width: 100%;
+  background-color: #1c1c1e;
+}
+.btn {
+  color: white;
+  border-radius: 50px;
+  font-size: larger;
+  font-weight: 600;
+  display: flex;
+  padding: 5px 30px;
+  margin: 10px auto;
+  float: right;
+  background-image: linear-gradient(rgb(255, 166, 0), rgb(255, 51, 0));
+}
+
+.messages {
+  display: flex;
+  justify-content: center;
+}
+.form{
+    width: 500px;
+}
+.error {
+  display: block;
+  color: red;
+  font-size: large;
+  font-weight: 600;
+  padding: 5px;
+}
+
+.success {
+  display: block;
+  color: greenyellow;
+  font-size: large;
+  font-weight: 600;
+  padding: 5px;
+}
+
+
+@media screen and (max-width: 760px) {
+    .maindiv{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .form{
+        width: 250px;
+    }
+    .maindiv div{
+        margin: auto;
+    }
+}
+
+.maindiv{
+    display: flex;
+    justify-content: space-evenly;
+}
+.maindiv div{
+    margin: 20px;
+}
