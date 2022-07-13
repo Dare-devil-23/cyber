@@ -3,7 +3,7 @@
 }
 .scrollanim{
     scroll-snap-align: start;
-    scroll-behavior: smooth;
+    
 }
 ::-webkit-scrollbar{
     width: 4px;
@@ -18,6 +18,4 @@
 html{
     scroll-behavior: smooth;
 }
-.wholeSections{
-    scroll-behavior: smooth;
-}
+

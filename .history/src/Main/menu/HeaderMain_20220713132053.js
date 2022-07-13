@@ -82,7 +82,7 @@ const HeaderMain = (props) => {
             <Rev data="Home" />
           </Link>
         </div>
-        <div className="navbar-item" onClick={props.onChangeRef}>
+        <div className="navbar-item" onClick={props.executeScroll}>
           {/* <Link to="/#aboutus"> */}
             <Rev data="About Us" />
           {/* </Link> */}

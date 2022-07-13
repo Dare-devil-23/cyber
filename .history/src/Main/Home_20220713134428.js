@@ -79,7 +79,7 @@ const GlobalStyles = createGlobalStyle`
   }
 `;
 const scrollToRef = (ref) => {
-  window.scrollTo({top:ref.current.offsetTop-100 , left:0 , behavior:'smooth'})
+  window.scrollTo({top:ref.current.offsetTop-10 , left:0 , behavior:'smooth'})
   // window.scrollTo(0, ref.current.offsetTop);
 };
 

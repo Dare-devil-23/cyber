@@ -77,7 +77,7 @@ const app= () => (
       <ScrollTop path="/">
         <Home exact path="/">
           <Redirect to="/home" />
-          <AboutNew path="/#aboutus" />
+          <AboutNew path="aboutus" />
         </Home>
         <ComingSoon path="/comingsoon"/>
         <Training path="/training" />

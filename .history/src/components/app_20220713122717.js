@@ -75,7 +75,7 @@ const app= () => (
     {/* <Header/> */}
       <PosedRouter>
       <ScrollTop path="/">
-        <Home exact path="/">
+        <Home exact path={["/" , "/#aboutus"]}>
           <Redirect to="/home" />
           <AboutNew path="/#aboutus" />
         </Home>

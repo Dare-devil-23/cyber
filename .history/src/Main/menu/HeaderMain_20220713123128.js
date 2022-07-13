@@ -26,11 +26,7 @@ const useStickyHeader = (offset = 0) => {
   return stick;
 };
 
-
-
-const HeaderMain = (props) => {
-  
-
+const HeaderMain = () => {
   const [active, setActive] = useState("menu");
   const [icon, setIcon] = useState(true);
   const [mobIcon, setMobicon] = useState(false);
@@ -71,7 +67,7 @@ const HeaderMain = (props) => {
   
   return (
     <div className={headerClasses} >
-      <div className="logoContainer" >
+      <div className="logoContainer">
         <Link to="/home"><img src={logo} alt="logo" className="cyberLogo" /></Link>
       </div>
 
@@ -82,10 +78,10 @@ const HeaderMain = (props) => {
             <Rev data="Home" />
           </Link>
         </div>
-        <div className="navbar-item" onClick={props.onChangeRef}>
-          {/* <Link to="/#aboutus"> */}
+        <div className="navbar-item">
+          <Link to="/#aboutus">
             <Rev data="About Us" />
-          {/* </Link> */}
+          </Link>
         </div>
         <div className="dropdown" onMouseEnter={()=>changeIcon()} onMouseLeave={()=>changeIcon(icon)} >
           <button className="dropbtn navbar-item" >

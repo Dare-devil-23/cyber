@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import SliderCarouselsingle from "../components/components/SliderCarouselsingle";
 import Footer from "./components/footer";
 import { createGlobalStyle } from "styled-components";
@@ -13,9 +13,9 @@ import HeaderSmall from "./menu/HeaderSmall";
 import "../App.css";
 import AboutNew from "./AboutNew";
 import "./scrollbar.css";
-// import { motion } from "framer-motion";
+import { motion } from "framer-motion";
 import { Link } from "@reach/router";
-// import { Parallax, ParallaxLayer } from '@react-spring/parallax';
+import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 
 const fadeInUp = keyframes`
   0% {
@@ -78,10 +78,6 @@ const GlobalStyles = createGlobalStyle`
     border-top: 1px solid rgba(255,255,255,.1);
   }
 `;
-const scrollToRef = (ref) => {
-  window.scrollTo({top:ref.current.offsetTop-100 , left:0 , behavior:'smooth'})
-  // window.scrollTo(0, ref.current.offsetTop);
-};
 
 const Home = () => {
   const [loading, setLoading] = useState(true);
@@ -100,23 +96,15 @@ const Home = () => {
     "Staffing or Recruitment",
   ];
   const [count, setCount] = useState(-1);
-
-  const myRef = useRef(null);
-  const executeScroll = () => scrollToRef(myRef);
   return (
     <div>
       {!loading && (
-        <div>
+        <div style={{display:'flex'}}>
           <HeaderSmall />
-          <HeaderMain
-            onChangeRef={() => {
-              executeScroll();
-            }}
-          />
+          <HeaderMain />
           <GlobalStyles />
-
-          <div className="wholeSections">
-            <section className="jumbotron scrollanim">
+          <Parallax pages={3} style={{minHeight:'200vh'}}>
+            <ParallaxLayer offset={0}  className="jumbotron">
               <div className="container my-0 pt-0">
                 <div className="row align-items-center">
                   <div className="col-lg-7">
@@ -170,9 +158,9 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-            </section>
+            </ParallaxLayer>
 
-            <section className="cards scrollanim">
+            <ParallaxLayer offset={1}  className="cards">
               <div className="container">
                 <div className="row">
                   <div className="col-lg-12">
@@ -181,13 +169,12 @@ const Home = () => {
                 </div>
                 <Cards />
               </div>
-            </section>
+            </ParallaxLayer>
 
-            <section className="scrollanim" ref={myRef}>
+            <ParallaxLayer offset={2} factor={1.5}  >
               <AboutNew />
-            </section>
-          </div>
-
+            </ParallaxLayer>
+          </Parallax>
           <Footer />
         </div>
       )}

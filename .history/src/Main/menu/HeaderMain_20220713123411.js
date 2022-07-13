@@ -26,10 +26,11 @@ const useStickyHeader = (offset = 0) => {
   return stick;
 };
 
+const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop)  
 
-
-const HeaderMain = (props) => {
-  
+const HeaderMain = () => {
+  const myRef = useRef(null)
+  const executeScroll = () => scrollToRef(myRef)
 
   const [active, setActive] = useState("menu");
   const [icon, setIcon] = useState(true);
@@ -71,7 +72,7 @@ const HeaderMain = (props) => {
   
   return (
     <div className={headerClasses} >
-      <div className="logoContainer" >
+      <div className="logoContainer">
         <Link to="/home"><img src={logo} alt="logo" className="cyberLogo" /></Link>
       </div>
 
@@ -82,7 +83,7 @@ const HeaderMain = (props) => {
             <Rev data="Home" />
           </Link>
         </div>
-        <div className="navbar-item" onClick={props.onChangeRef}>
+        <div className="navbar-item" onClick={executeScroll}>
           {/* <Link to="/#aboutus"> */}
             <Rev data="About Us" />
           {/* </Link> */}

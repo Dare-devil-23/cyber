@@ -3,7 +3,7 @@
 }
 .scrollanim{
     scroll-snap-align: start;
-    scroll-behavior: smooth;
+    
 }
 ::-webkit-scrollbar{
     width: 4px;
