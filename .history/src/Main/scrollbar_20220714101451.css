@@ -21,7 +21,6 @@ html{
 .wholeSections{
     scroll-behavior: smooth;
 }
-/* .cards{
-    background-color: #1c1c1e;
-    backdrop-filter: blur(6px);
-} */
+.cards{
+    background-color: white transparent;
+}

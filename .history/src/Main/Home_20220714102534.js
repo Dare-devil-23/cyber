@@ -90,9 +90,10 @@ const scrollToRef = (ref) => {
 };
 
 const Home = () => {
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState();
   useEffect(() => {
-    setInterval(() => setLoading(false), 4500);
+    localStorage.setItem('loading' , true)
+    setInterval(() => localStorage.setItem('loading' , false), 4500);
   });
   const items = [
     "Digital Services",

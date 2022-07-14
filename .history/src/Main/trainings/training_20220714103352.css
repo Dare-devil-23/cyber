@@ -59,8 +59,6 @@
   display: flex;
   justify-content: center;
   height: 20px;
-  align-items: center;
-  margin: 0%;
 }
 .form{
     width: 500px;
@@ -70,17 +68,16 @@
   color: red;
   font-size: large;
   font-weight: 600;
-  padding: 0px ;
+  padding: 0px 5px;
   margin: 0px;
 }
 
 .success {
   display: block;
-  color: green;
+  color: greenyellow;
   font-size: large;
   font-weight: 600;
-  padding: 0px ;
-  margin: 0px;
+  padding: 5px;
 }
 
 
