@@ -22,7 +22,7 @@ const ReadMore = ({ children }) => {
 const Cards = () => (
   <div className="row">
     <div className="col-lg-4 col-md-6 mb-3">
-      <Parallax speed={5}>
+      <Parallax speed={10}>
       <motion.div
         whileHover={{ rotate: -4, scale: 1.1 }}
         transition={{ duration: 1 }}
@@ -50,7 +50,7 @@ const Cards = () => (
       </Parallax>
     </div>{" "}
     <div className="col-lg-4 col-md-6 mb-3">
-    <Parallax speed={5}>
+    <Parallax speed={1}>
       <motion.div
         whileHover={{ rotate: -4, scale: 1.1 }}
         transition={{ duration: 1 }}

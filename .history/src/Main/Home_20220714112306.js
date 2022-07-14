@@ -80,7 +80,6 @@ const GlobalStyles = createGlobalStyle`
     border-top: 1px solid rgba(255,255,255,.1);
   }
 `;
-
 const scrollToRef = (ref) => {
   window.scrollTo({
     top: ref.current.offsetTop - 100,
@@ -115,23 +114,22 @@ const Home = () => {
       {!loading && (
         <div>
           <HeaderSmall />
-          
-          <GlobalStyles />
-
-          <div className="wholeSections">
           <HeaderMain
             onChangeRef={() => {
               executeScroll();
             }}
             home={true}
           />
-            <Parallax speed={5} >
+          <GlobalStyles />
+
+          <div className="wholeSections">
+            <Parallax speed={5}>
             <section className="jumbotron scrollanim herosec" >
               <div className="container my-0 pt-0">
                 <div className="row align-items-center">
                   
                   <div className="col-lg-7">
-                  <Parallax speed={-20}>
+                  <Parallax speed={-30}>
                   <div>
                     <Reveal
                       className="onStep"
@@ -183,7 +181,7 @@ const Home = () => {
                 
                   
                   <div className="col-lg-5 px-0 my-5">
-                  <Parallax speed={-20}>
+                  <Parallax speed={-10}>
                     <SliderCarouselsingle />
                     </Parallax>
                   </div>
@@ -204,13 +202,10 @@ const Home = () => {
               </div>
             </section>
             </Parallax>
-            
-            <section className="aboutsec" ref={myRef}>
-            <Parallax speed={-1}>
+
+            <section className="scrollanim" ref={myRef}>
               <AboutNew />
-              </Parallax>
             </section>
-            
           </div>
 
           <Footer />

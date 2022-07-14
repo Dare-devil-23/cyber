@@ -192,7 +192,7 @@ const Home = () => {
               </div>
             </section>
             </Parallax>
-            <Parallax speed={-10}>
+            <Parallax speed={-15}>
             <section className="cards">
               <div className="container">
                 <div className="row">

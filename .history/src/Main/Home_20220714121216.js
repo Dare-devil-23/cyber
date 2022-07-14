@@ -17,7 +17,8 @@ import "./scrollbar.css";
 import { Link } from "@reach/router";
 // import { Parallax } from "@react-spring/parallax";
 // import { Parallax, ParallaxLayer } from '@react-spring/parallax';
-import { Parallax } from "react-scroll-parallax";
+import { Parallax ,ParallaxBanner } from "react-scroll-parallax";
+import herosec from '../assets/herosec.jpg';
 
 const fadeInUp = keyframes`
   0% {
@@ -125,7 +126,8 @@ const Home = () => {
             }}
             home={true}
           />
-            <Parallax speed={5} >
+          <ParallaxBanner layers={[{image:{herosec} , speed:-15}]} />
+            <Parallax speed={5} translateY={[0,10]}>
             <section className="jumbotron scrollanim herosec" >
               <div className="container my-0 pt-0">
                 <div className="row align-items-center">

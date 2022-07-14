@@ -50,7 +50,7 @@
 }
 
 .herosec{
-  background-image: url("./assets/herosec.jpg");
+  /* background-image: url("./assets/herosec.jpg"); */
   background-size: cover;
 }
 .aboutsec{

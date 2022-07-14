@@ -80,7 +80,6 @@ const GlobalStyles = createGlobalStyle`
     border-top: 1px solid rgba(255,255,255,.1);
   }
 `;
-
 const scrollToRef = (ref) => {
   window.scrollTo({
     top: ref.current.offsetTop - 100,
@@ -125,7 +124,7 @@ const Home = () => {
             }}
             home={true}
           />
-            <Parallax speed={5} >
+            <Parallax speed={5} translateY={[0,10]}>
             <section className="jumbotron scrollanim herosec" >
               <div className="container my-0 pt-0">
                 <div className="row align-items-center">

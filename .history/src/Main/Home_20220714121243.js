@@ -125,7 +125,7 @@ const Home = () => {
             }}
             home={true}
           />
-            <Parallax speed={5} >
+            <Parallax speed={5} translateY={[0,10]}>
             <section className="jumbotron scrollanim herosec" >
               <div className="container my-0 pt-0">
                 <div className="row align-items-center">

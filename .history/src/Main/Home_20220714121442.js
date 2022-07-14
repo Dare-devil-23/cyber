@@ -131,7 +131,7 @@ const Home = () => {
                 <div className="row align-items-center">
                   
                   <div className="col-lg-7">
-                  <Parallax speed={-20}>
+                  <Parallax speed={-20} translateY={[0,30]}>
                   <div>
                     <Reveal
                       className="onStep"
@@ -183,7 +183,7 @@ const Home = () => {
                 
                   
                   <div className="col-lg-5 px-0 my-5">
-                  <Parallax speed={-20}>
+                  <Parallax speed={-20} translateY={[0,30]}>
                     <SliderCarouselsingle />
                     </Parallax>
                   </div>
