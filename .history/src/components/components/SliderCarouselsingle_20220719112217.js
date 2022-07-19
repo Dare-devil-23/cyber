@@ -7,10 +7,10 @@ import digitalServices from "../../assets/CYBER-SECURTY-2.png";
 import blockChain from '../../assets/Block-Chain_Design.png';
 import medicalIt from '../../assets/CS_03.png';
 import aiIot from "../../assets/AI-IOT.png";
-import quantumComputing from "../../assets/CYBER-SECURTY.png";
-import testingServices from "../../assets/CYBER-SECURTY-2.png";
-import staffing from '../../assets/Block-Chain_Design.png';
-import devOps from '../../assets/CS_03.png';
+import quantumComputing from "../../assets/blockchain.jpeg";
+import testingServices from "../../assets/cybersecurity.jpeg";
+import staffing from "../../assets/security.jpeg";
+import devOps from "../../assets/blockchain_02.jpeg";
 
 
 class CustomSlide extends Component {

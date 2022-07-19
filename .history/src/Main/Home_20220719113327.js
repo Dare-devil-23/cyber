@@ -131,7 +131,7 @@ const Home = () => {
                 <div className="row align-items-center">
                   
                   <div className="col-lg-7">
-                  <Parallax speed={-20} translateY={-10}>
+                  <Parallax speed={10}>
                   <div>
                     <Reveal
                       className="onStep"
