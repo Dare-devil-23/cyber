@@ -1,17 +1,14 @@
 {
   "files": {
-    "main.css": "/cyber/static/css/main.f0f780a2.css",
-    "main.js": "/cyber/static/js/main.5b86a393.js",
-    "static/media/herosec.jpg": "/cyber/static/media/herosec.ff6d3a7c33456c90aabf.jpg",
+    "main.css": "/cyber/static/css/main.15dc722b.css",
+    "main.js": "/cyber/static/js/main.9440ae48.js",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/cyber/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
     "static/media/Block-Chain_Design.png": "/cyber/static/media/Block-Chain_Design.5c85db07b0f609797921.png",
     "static/media/CYBER-SECURTY-2.png": "/cyber/static/media/CYBER-SECURTY-2.aba157617f939b30f333.png",
     "static/media/AI-IOT.png": "/cyber/static/media/AI-IOT.697e673adb360f99ad92.png",
     "static/media/ElegantIcons.svg": "/cyber/static/media/ElegantIcons.a3709f859357b50798d9.svg",
-    "static/media/aboutsec.jpg": "/cyber/static/media/aboutsec.1b74026826027e5dee42.jpg",
     "static/media/CYBER-SECURTY.png": "/cyber/static/media/CYBER-SECURTY.289fbfbb350ab693ae33.png",
     "static/media/CS_03.png": "/cyber/static/media/CS_03.5dbb8767c93f0264232a.png",
-    "static/media/cardsec.jpg": "/cyber/static/media/cardsec.9f92223cc135cba328c9.jpg",
     "static/media/et-line.svg": "/cyber/static/media/et-line.613c7311d2d5a1dd7e49.svg",
     "static/media/fontawesome-webfont.eot": "/cyber/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
     "static/media/fontawesome-webfont.ttf?v=4.7.0": "/cyber/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
@@ -32,11 +29,11 @@
     "static/media/slick.ttf": "/cyber/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/cyber/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/cyber/index.html",
-    "main.f0f780a2.css.map": "/cyber/static/css/main.f0f780a2.css.map",
-    "main.5b86a393.js.map": "/cyber/static/js/main.5b86a393.js.map"
+    "main.15dc722b.css.map": "/cyber/static/css/main.15dc722b.css.map",
+    "main.9440ae48.js.map": "/cyber/static/js/main.9440ae48.js.map"
   },
   "entrypoints": [
-    "static/css/main.f0f780a2.css",
-    "static/js/main.5b86a393.js"
+    "static/css/main.15dc722b.css",
+    "static/js/main.9440ae48.js"
   ]
 }
