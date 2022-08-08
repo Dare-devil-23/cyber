@@ -29,9 +29,9 @@ export default class Responsive extends Component {
   render() {
     var settings = {
       autoplay:true,
-      autoplaySpeed:4900,
+      autoplaySpeed:4200,
       infinite: true,
-      speed: 1500,
+      speed: 2150,
       touchMove: false,
       dots : false,
       dotsClass:"d-none",

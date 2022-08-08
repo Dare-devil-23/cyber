@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-import cybeSecurity from "../../assets/Homepage/CyberSecurity.png";
+import cybeSecurity from "../../assets/Homepage/CybeSecurity.png";
 import digitalServices from "../../assets/Homepage/Digital-Service.png";
 import blockChain from '../../assets/Homepage/Block-chain.png';
 import medicalIt from '../../assets/Homepage/Medical_IT.png';
@@ -20,6 +20,7 @@ class CustomSlide extends Component {
     return (
       <div {...props}></div>
     );
+
       
   }
 }
@@ -29,9 +30,9 @@ export default class Responsive extends Component {
   render() {
     var settings = {
       autoplay:true,
-      autoplaySpeed:4900,
+      autoplaySpeed:4200,
       infinite: true,
-      speed: 1500,
+      speed: 2000,
       touchMove: false,
       dots : false,
       dotsClass:"d-none",
@@ -90,7 +91,12 @@ export default class Responsive extends Component {
           <Slider {...settings}>
             <CustomSlide className='itm' index={1}>
               <div className="nft_pic">                            
-                  
+                  <span>
+                      <span className="nft_pic_info">
+                          <span className="nft_pic_title">Digital Services</span>
+                          <span className="nft_pic_by">Nicholas Daniels</span>
+                      </span>
+                  </span>
                   <div className="nft_pic_wrap">
                       <img  src={digitalServices} className="lazy img-fluid" alt=""/>
                   </div>
@@ -99,7 +105,12 @@ export default class Responsive extends Component {
 
             <CustomSlide className='itm' index={2}>
              <div className="nft_pic">                            
-                  
+                  <span >
+                      <span className="nft_pic_info">
+                          <span className="nft_pic_title">Cyber Security</span>
+                          <span className="nft_pic_by">Monica Lucas</span>
+                      </span>
+                  </span>
                   <div className="nft_pic_wrap">
                       <img  src={cybeSecurity} className="lazy img-fluid" alt=""/>
                   </div>
@@ -108,7 +119,12 @@ export default class Responsive extends Component {
 
             <CustomSlide className='itm' index={3}>
               <div className="nft_pic">                            
-                  
+                  <span >
+                      <span className="nft_pic_info">
+                          <span className="nft_pic_title">BlockChain Technology</span>
+                          <span className="nft_pic_by">Nicholas Daniels</span>
+                      </span>
+                  </span>
                   <div className="nft_pic_wrap">
                       <img src={blockChain} className="lazy img-fluid" alt=""/>
                   </div>
@@ -117,7 +133,12 @@ export default class Responsive extends Component {
 
             <CustomSlide className='itm' index={4}>
               <div className="nft_pic">                            
-                  
+                  <span >
+                      <span className="nft_pic_info">
+                          <span className="nft_pic_title">Qantum Computing</span>
+                          <span className="nft_pic_by">Lori Hart</span>
+                      </span>
+                  </span>
                   <div className="nft_pic_wrap">
                       <img src={quantumComputing} className="lazy img-fluid" alt=""/>
                   </div>
@@ -126,7 +147,12 @@ export default class Responsive extends Component {
 
             <CustomSlide className='itm' index={5}>
               <div className="nft_pic">                            
-                  
+                  <span >
+                      <span className="nft_pic_info">
+                          <span className="nft_pic_title">Medical IT</span>
+                          <span className="nft_pic_by">Fred Ryan</span>
+                      </span>
+                  </span>
                   <div className="nft_pic_wrap">
                       <img  src={medicalIt} className="lazy img-fluid" alt=""/>
                   </div>
@@ -134,7 +160,12 @@ export default class Responsive extends Component {
             </CustomSlide>
             <CustomSlide className='itm' index={6}>
               <div className="nft_pic">                            
-                  
+                  <span >
+                      <span className="nft_pic_info">
+                          <span className="nft_pic_title">DevOps & Automation</span>
+                          <span className="nft_pic_by">Fred Ryan</span>
+                      </span>
+                  </span>
                   <div className="nft_pic_wrap">
                       <img src={devOps} className="lazy img-fluid" alt=""/>
                   </div>
@@ -142,7 +173,12 @@ export default class Responsive extends Component {
             </CustomSlide>
             <CustomSlide className='itm' index={7}>
               <div className="nft_pic">                            
-                  
+                  <span >
+                      <span className="nft_pic_info">
+                          <span className="nft_pic_title">AI & IOT</span>
+                          <span className="nft_pic_by">Fred Ryan</span>
+                      </span>
+                  </span>
                   <div className="nft_pic_wrap">
                       <img src={aiIot} className="lazy img-fluid" alt=""/>
                   </div>
@@ -150,7 +186,12 @@ export default class Responsive extends Component {
             </CustomSlide>
             <CustomSlide className='itm' index={8}>
               <div className="nft_pic">                            
-                  
+                  <span >
+                      <span className="nft_pic_info">
+                          <span className="nft_pic_title">Testing Services</span>
+                          <span className="nft_pic_by">Fred Ryan</span>
+                      </span>
+                  </span>
                   <div className="nft_pic_wrap">
                       <img src={testingServices} className="lazy img-fluid" alt=""/>
                   </div>
@@ -158,7 +199,12 @@ export default class Responsive extends Component {
             </CustomSlide>
             <CustomSlide className='itm' index={9}>
               <div className="nft_pic">                            
-                  
+                  <span >
+                      <span className="nft_pic_info">
+                          <span className="nft_pic_title">Staffing / Recruitment</span>
+                          <span className="nft_pic_by">Fred Ryan</span>
+                      </span>
+                  </span>
                   <div className="nft_pic_wrap">
                       <img src={staffing} className="lazy img-fluid" alt=""/>
                   </div>

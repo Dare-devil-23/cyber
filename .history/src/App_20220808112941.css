@@ -4,9 +4,9 @@
 .herosec{
   padding: 0px;
 }
-.adjust{
+/* .adjust{
   padding: 110px 0px;
-}
+} */
 .our{
   display: flex;
   justify-content: center;
@@ -30,9 +30,6 @@
     width:380px;
     height: 250px;
     display: none;
-  }
-  .adjust{
-    padding: 30px;
   }
 }
 @media screen and (max-width :480px){

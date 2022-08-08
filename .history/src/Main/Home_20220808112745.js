@@ -96,7 +96,7 @@ const Home = () => {
                               className="text-success font-weight-bold heroMob"
                               style={{ textAlign: "left" }}
                               items={items}
-                              onTypingStart={() => {
+                              onTypingEnd={() => {
                                 setCount((count + 1) % items.length);
                               }}
                             />

@@ -67,11 +67,10 @@ const Home = () => {
         <div>
           <HeaderSmall />
           <div className="wholeSections">
-            <div className="scrollanim herosec">
+            <section className="scrollanim herosec">
               <Parallax
                 bgImage={process.env.PUBLIC_URL + "/scroll/ph8.jpg"}
                 strength={500}
-                
               >
                 <HeaderMain
                   onChangeRef={() => {
@@ -79,7 +78,7 @@ const Home = () => {
                   }}
                   home={true}
                 />
-                <div className="container my-0 pt-0 adjust">
+                <div className="container my-0 pt-0">
                   <div className="row align-items-center">
                     <div className="col-lg-7">
                       <div>
@@ -96,7 +95,7 @@ const Home = () => {
                               className="text-success font-weight-bold heroMob"
                               style={{ textAlign: "left" }}
                               items={items}
-                              onTypingStart={() => {
+                              onTypingEnd={() => {
                                 setCount((count + 1) % items.length);
                               }}
                             />
@@ -136,11 +135,13 @@ const Home = () => {
                   </div>
                 </div>
               </Parallax>
-            </div>
+            </section>
 
             <section className="cards">
               <div className="container">
-                
+                <div className="row">
+                  <div className="col-lg-12"></div>
+                </div>
                 <Cards />
               </div>
             </section>

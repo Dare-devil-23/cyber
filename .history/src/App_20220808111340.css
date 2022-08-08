@@ -2,10 +2,7 @@
   text-align: center;
 }
 .herosec{
-  padding: 0px;
-}
-.adjust{
-  padding: 110px 0px;
+  padding: 0%;
 }
 .our{
   display: flex;
@@ -31,9 +28,6 @@
     height: 250px;
     display: none;
   }
-  .adjust{
-    padding: 30px;
-  }
 }
 @media screen and (max-width :480px){
   .m-stories{
@@ -53,7 +47,7 @@
 }
 .cards{
   padding-top: 0rem;
-  /* transform: translateY(50px); */
+  transform: translateY(50px);
   /* background-image: url("./assets/cardsec.jpg") ;
   background-size: cover;*/
 } 

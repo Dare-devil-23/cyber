@@ -47,14 +47,14 @@ const Home = () => {
     setInterval(() => setLoading(false), 4500);
   });
   const items = [
-    "Digital Services       ",
-    "Cyber Security         ",
-    "BlockChain Technology  ",
-    "Qantum Computing       ",
-    "Medical IT             ",
-    "DevOps & Automation    ",
-    "AI & IOT               ",
-    "Testing Services       ",
+    "Digital Services      ",
+    "Cyber Security",
+    "BlockChain Technology",
+    "Qantum Computing",
+    "Medical IT",
+    "DevOps & Automation",
+    "AI & IOT",
+    "Testing Services",
     "Staffing or Recruitment",
   ];
   const [count, setCount] = useState(-1);
@@ -71,7 +71,6 @@ const Home = () => {
               <Parallax
                 bgImage={process.env.PUBLIC_URL + "/scroll/ph8.jpg"}
                 strength={500}
-                
               >
                 <HeaderMain
                   onChangeRef={() => {
@@ -79,7 +78,7 @@ const Home = () => {
                   }}
                   home={true}
                 />
-                <div className="container my-0 pt-0 adjust">
+                <div className="container my-0 pt-0">
                   <div className="row align-items-center">
                     <div className="col-lg-7">
                       <div>
@@ -96,7 +95,7 @@ const Home = () => {
                               className="text-success font-weight-bold heroMob"
                               style={{ textAlign: "left" }}
                               items={items}
-                              onTypingStart={() => {
+                              onTypingEnd={() => {
                                 setCount((count + 1) % items.length);
                               }}
                             />
@@ -140,7 +139,9 @@ const Home = () => {
 
             <section className="cards">
               <div className="container">
-                
+                <div className="row">
+                  <div className="col-lg-12"></div>
+                </div>
                 <Cards />
               </div>
             </section>
