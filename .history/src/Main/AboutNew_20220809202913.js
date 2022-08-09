@@ -35,7 +35,11 @@ const AboutNew = () => {
             />
           </div>
         </div>
-      
+      </Parallax>
+      <Parallax
+        bgImage={process.env.PUBLIC_URL + "/scroll/ph8.jpg"}
+        strength={500}
+      >
       <div className="sec container">
         <div className="spimg-1">
           <motion.img
@@ -68,7 +72,11 @@ const AboutNew = () => {
           />
         </div>
       </div>
-      
+      </Parallax>
+      <Parallax
+        bgImage={process.env.PUBLIC_URL + "/scroll/ph8.jpg"}
+        strength={500}
+      >
       <div className="sec container">
         <div className="content">
           <h1 className="">3.Scalability</h1>

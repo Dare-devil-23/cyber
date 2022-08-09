@@ -39,7 +39,7 @@ const Cards = () => (
                   by an authorized person and kept away from those not 
                   authorized to possess them. It is implemented using 
                   security mechanisms such as usernames, passwords, 
-                  access control lists (ACLs), and encryption.
+                  access control lists (ACLs), and encryption
               </ReadMore>
             </div>
           </div>

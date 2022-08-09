@@ -113,7 +113,15 @@ class Footer extends Component {
                     <li>
                       <a href="/">ios App</a>
                     </li>
-                    
+                    <li>
+                      <a href="/">Desktop</a>
+                    </li>
+                    <li>
+                      <a href="/">Projects</a>
+                    </li>
+                    <li>
+                      <a href="/">My tasks</a>
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -135,7 +143,15 @@ class Footer extends Component {
                     <li>
                       <a href="/">Reporting</a>
                     </li>
-                    
+                    <li>
+                      <a href="/">Documentation</a>
+                    </li>
+                    <li>
+                      <a href="/">Support Policy</a>
+                    </li>
+                    <li>
+                      <a href="/">Privacy</a>
+                    </li>
                   </ul>
                 </div>
               </div>
