@@ -137,7 +137,7 @@ const Home = () => {
                 </div>
               </Parallax>
             </div>
-            <div className="line"><hr /></div>
+            <div className="line"></div>
             <section className="cards">
               <div className="container">
                 <Cards />
@@ -148,7 +148,6 @@ const Home = () => {
               <AboutNew />
             </section>
           </div>
-          
 
           <Footer />
         </div>

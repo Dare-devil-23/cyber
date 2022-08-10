@@ -98,7 +98,7 @@ const Cards = () => (
               </ReadMore>
             </div>
           </div>
-          <i className="wm icon_balance"></i>
+          <i className="wm icon_wallet"></i>
         </div>
       </motion.div>
       </Parallax>

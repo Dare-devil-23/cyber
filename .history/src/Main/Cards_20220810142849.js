@@ -57,7 +57,7 @@ const Cards = () => (
           transition={{ duration: 0.5 }}
       >
         <div className="feature-box f-boxed style-3">
-          <i className=" bg-color-2 i-boxed icon_clock"></i>
+          <i className=" bg-color-2 i-boxed icon_circle_selected"></i>
 
           <div className="text">
             <h4 className="">Availability</h4>

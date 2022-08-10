@@ -148,7 +148,7 @@ const Home = () => {
               <AboutNew />
             </section>
           </div>
-          
+          <div className="line"><hr /></div>
 
           <Footer />
         </div>

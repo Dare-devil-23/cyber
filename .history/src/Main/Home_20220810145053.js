@@ -148,7 +148,6 @@ const Home = () => {
               <AboutNew />
             </section>
           </div>
-          
 
           <Footer />
         </div>

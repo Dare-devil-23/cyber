@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./cards.css";
 import { motion } from "framer-motion";
 import { Parallax } from "react-scroll-parallax";
+import { TiDeviceLaptop } from "react-icons/ti";
 
 const ReadMore = ({ children }) => {
   const text = children;
@@ -28,8 +29,8 @@ const Cards = () => (
         transition={{ duration: 0.5 }}
       >
         <div className="feature-box f-boxed style-3">
-        
-          <i className="bg-color-2 i-boxed icon_shield_alt"></i>
+        <TiDeviceLaptop className="bg-color-2 i-boxed"/>
+          <i className=" bg-color-2 i-boxed icon_cloud-upload_alt"></i>
 
           <div className="text">
             <h4 className="">Confidentiality</h4>
@@ -44,8 +45,8 @@ const Cards = () => (
               </ReadMore>
             </div>
           </div>
-          
-          <i className="wm icon_shield_alt"></i>
+          <TiDeviceLaptop className="wm icon_cloud-upload_alt"/>
+          <i className="wm icon_cloud-upload_alt"></i>
         </div>
       </motion.div>
       </Parallax>
@@ -57,7 +58,7 @@ const Cards = () => (
           transition={{ duration: 0.5 }}
       >
         <div className="feature-box f-boxed style-3">
-          <i className=" bg-color-2 i-boxed icon_clock"></i>
+          <i className=" bg-color-2 i-boxed icon_tags_alt"></i>
 
           <div className="text">
             <h4 className="">Availability</h4>
@@ -72,7 +73,7 @@ const Cards = () => (
               </ReadMore>
             </div>
           </div>
-          <i className="wm icon_clock"></i>
+          <i className="wm icon_tags_alt"></i>
         </div>
       </motion.div>
       </Parallax>
@@ -84,7 +85,7 @@ const Cards = () => (
          transition={{ duration: 0.5 }}
       >
         <div className="feature-box f-boxed style-3">
-          <i className=" bg-color-2 i-boxed icon_balance"></i>
+          <i className=" bg-color-2 i-boxed icon_wallet"></i>
 
           <div className="text">
             <h4 className="">Integrity</h4>
@@ -98,7 +99,7 @@ const Cards = () => (
               </ReadMore>
             </div>
           </div>
-          <i className="wm icon_balance"></i>
+          <i className="wm icon_wallet"></i>
         </div>
       </motion.div>
       </Parallax>
