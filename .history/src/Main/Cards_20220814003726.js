@@ -11,7 +11,7 @@ const ReadMore = ({ children }) => {
   };
   return (
     <div className="text-hide">
-      {isReadMore ? text.slice(0, 160) : text}
+      {isReadMore ? text.slice(0, 150) : text}
       <p onClick={toggleReadMore} className="read-or-hide">
         {isReadMore ? "read more" : "show less"}
       </p>
@@ -29,7 +29,7 @@ const Cards = () => (
       >
         <div className="feature-box f-boxed style-3">
         
-          <div className="cardicon"><i className="bg-color-2 i-boxed icon_shield_alt  "></i></div>
+          <i className="bg-color-2 i-boxed icon_shield_alt cardicon"></i>
 
           <div className="text">
             <div className="cardtitle">
@@ -60,7 +60,7 @@ const Cards = () => (
           transition={{ duration: 0.5 }}
       >
         <div className="feature-box f-boxed style-3">
-          <div className="cardicon"><i className=" bg-color-2 i-boxed icon_clock  "></i></div>
+          <i className=" bg-color-2 i-boxed icon_clock cardicon"></i>
 
           <div className="text">
             <div className="cardtitle">
@@ -88,7 +88,7 @@ const Cards = () => (
          transition={{ duration: 0.5 }}
       >
         <div className="feature-box f-boxed style-3">
-          <div className="cardicon"><i className=" bg-color-2 i-boxed icon_balance  "></i></div>
+          <i className=" bg-color-2 i-boxed icon_balance cardicon"></i>
 
           <div className="text">
             <div className="cardtitle">

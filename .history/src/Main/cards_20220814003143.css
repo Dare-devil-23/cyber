@@ -21,17 +21,12 @@
     }
     .cardtitle{
         display: flex;
-        justify-content: center;
     }
-    .cardtitle > h3{
-        justify-items: center;
-        font-size: x-large;
+    .cardtitle h3{
+        width: 80%;
+        margin: 5px auto;
     }
     .cardicon{
-        display: flex;
-        justify-content: center;
-        
-    }
-    .cardicon > i{
-        width: 50px;
+        width:50%;
+        height: 150px;
     }

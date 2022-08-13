@@ -2355,7 +2355,7 @@ i.font60 {
   position: absolute;
   top: 0%;
   width: 100%;
-  left: 30%;
+  left: 50%;
   transition: 2s ease;
   &:hover {
     transition: 2s ease;
@@ -2459,9 +2459,8 @@ i.font60 {
 }
 .feature-box i.i-boxed {
   border-radius: 5px;
-  height: 80px;
-  width:80px;
-  font-size: 50px;
+  height: 150px;
+  width:150px;
 }
 .feature-box-small-icon.center {
   text-align: center;

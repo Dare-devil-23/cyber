@@ -19,19 +19,12 @@
         margin-top: 0%;
         padding-top: 0%;
     }
-    .cardtitle{
+    .cardtitle div{
         display: flex;
-        justify-content: center;
-    }
-    .cardtitle > h3{
         justify-items: center;
-        font-size: x-large;
-    }
-    .cardicon{
-        display: flex;
-        justify-content: center;
         
     }
-    .cardicon > i{
-        width: 50px;
+    .cardicon{
+        width:50%;
+        height: 150px;
     }

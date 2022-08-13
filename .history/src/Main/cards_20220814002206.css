@@ -20,18 +20,10 @@
         padding-top: 0%;
     }
     .cardtitle{
-        display: flex;
-        justify-content: center;
-    }
-    .cardtitle > h3{
         justify-items: center;
-        font-size: x-large;
+        font-size: xx-large;
     }
     .cardicon{
-        display: flex;
-        justify-content: center;
-        
-    }
-    .cardicon > i{
-        width: 50px;
+        width:50%;
+        height: 150px;
     }

@@ -21,10 +21,10 @@
     }
     .cardtitle{
         display: flex;
-        justify-content: center;
     }
     .cardtitle > h3{
-        justify-items: center;
+        width: 80%;
+        margin: 10px auto;
         font-size: x-large;
     }
     .cardicon{
