@@ -35,7 +35,6 @@
 }
 .readMoreColor {
   /* color: linear-gradient(rgba(255, 166, 0, 0.945), rgb(255, 30, 0)); */
-  font-size: larger;
   background: -webkit-linear-gradient(rgba(255, 166, 0, 0.945), rgb(255, 30, 0));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

@@ -11,8 +11,8 @@ const ReadMore = ({ children }) => {
   };
   return (
     <div className="text-hide">
-      {isReadMore ? text.slice(0, 150) : text}
-      <p onClick={toggleReadMore} className="read-or-hide">
+      {isReadMore ? text.slice(0, 160) : text}
+      <p onClick={toggleReadMore} className="read-or-hide readMoreColor" >
         {isReadMore ? "read more" : "show less"}
       </p>
     </div>
@@ -28,23 +28,27 @@ const Cards = () => (
         transition={{ duration: 0.5 }}
       >
         <div className="feature-box f-boxed style-3">
-          <i className=" bg-color-2 i-boxed icon_cloud-upload_alt"></i>
+        
+          <div className="cardicon"><i className="bg-color-2 i-boxed icon_shield_alt  "></i></div>
 
           <div className="text">
-            <h4 className="">Add your NFT's</h4>
+            <div className="cardtitle">
+            <h3>Confidentiality</h3>
+            </div>
+            
 
             <div className="break-text">
               <ReadMore>
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem.accusantium
-                doloremque laudantium, totam rem. Sed ut perspiciatis unde omnis
-                iste natus error sit voluptatem accusantium doloremque
-                laudantium, totam rem.accusantium doloremque laudantium, totam
-                rem.
+                  Ensures that sensitive information are accessed only 
+                  by an authorized person and kept away from those not 
+                  authorized to possess them. It is implemented using 
+                  security mechanisms such as usernames, passwords, 
+                  access control lists (ACLs), and encryption.
               </ReadMore>
             </div>
           </div>
-          <i className="wm icon_cloud-upload_alt"></i>
+          
+          <i className="wm icon_shield_alt"></i>
         </div>
       </motion.div>
       </Parallax>
@@ -56,23 +60,23 @@ const Cards = () => (
           transition={{ duration: 0.5 }}
       >
         <div className="feature-box f-boxed style-3">
-          <i className=" bg-color-2 i-boxed icon_tags_alt"></i>
+          <div className="cardicon"><i className=" bg-color-2 i-boxed icon_clock  "></i></div>
 
           <div className="text">
-            <h4 className="">Add your NFT's</h4>
-
+            <div className="cardtitle">
+            <h3>Availability</h3>
+            </div>
             <div className="break-text">
               <ReadMore>
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem.accusantium
-                doloremque laudantium, totam rem. Sed ut perspiciatis unde omnis
-                iste natus error sit voluptatem accusantium doloremque
-                laudantium, totam rem.accusantium doloremque laudantium, totam
-                rem.
+                  Availability – ensures that information and 
+                  resources are available to those who need them. 
+                  It is implemented using methods such as 
+                  hardware maintenance, software patching 
+                  and network optimization
               </ReadMore>
             </div>
           </div>
-          <i className="wm icon_tags_alt"></i>
+          <i className="wm icon_clock"></i>
         </div>
       </motion.div>
       </Parallax>
@@ -84,23 +88,24 @@ const Cards = () => (
          transition={{ duration: 0.5 }}
       >
         <div className="feature-box f-boxed style-3">
-          <i className=" bg-color-2 i-boxed icon_wallet"></i>
+          <div className="cardicon"><i className=" bg-color-2 i-boxed icon_balance  "></i></div>
 
           <div className="text">
-            <h4 className="">Add your NFT's</h4>
+            <div className="cardtitle">
+            <h3>Integrity</h3>
+            </div>
+            
 
             <div className="break-text">
               <ReadMore>
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem.accusantium
-                doloremque laudantium, totam rem. Sed ut perspiciatis unde omnis
-                iste natus error sit voluptatem accusantium doloremque
-                laudantium, totam rem.accusantium doloremque laudantium, totam
-                rem.
+                  Ensures that information are in a format 
+                  that is true and correct to its original purposes. 
+                  The receiver of the information must have the 
+                  information the creator intended him to have.
               </ReadMore>
             </div>
           </div>
-          <i className="wm icon_wallet"></i>
+          <i className="wm icon_balance"></i>
         </div>
       </motion.div>
       </Parallax>
