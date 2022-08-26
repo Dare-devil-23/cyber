@@ -12,7 +12,7 @@ export const data = [
     lable: "Digital Services",
     images: {
       one: "/img/LandingPageImages/Digital-Services_01.jpg",
-      two: "/img/LandingPageImages/Digital-Services_02.jpg",
+      two: "../../assets/LandingPageImages/Digital-Services_02.jpg",
     },
   },
   {
@@ -26,8 +26,8 @@ export const data = [
     id: 1,
     lable: "Cyber Security",
     images: {
-      one: "/img/LandingPageImages/cyber-security-1.jpg",
-      two: "/img/LandingPageImages/cyber-security-2.jpg",
+      one: "../../assets/LandingPageImages/Digital-Services_01.jpg",
+      two: "../../assets/LandingPageImages/Digital-Services_02.jpg",
     },
   },
   {
@@ -41,8 +41,8 @@ export const data = [
     id: 2,
     lable: "BlockChain Technology",
     images: {
-      one: "/img/LandingPageImages/Block-Chain_01.jpg",
-      two: "/img/LandingPageImages/Block-Chain_02.jpg",
+      one: "../../assets/LandingPageImages/Digital-Services_01.jpg",
+      two: "../../assets/LandingPageImages/Digital-Services_02.jpg",
     },
   },
   {
@@ -56,8 +56,8 @@ export const data = [
     id: 3,
     lable: "Qantum Computing",
     images: {
-      one: "/img/LandingPageImages/quantum-compuring_01.jpg",
-      two: "/img/LandingPageImages/quantum-compuring_02.jpg",
+      one: "../../assets/LandingPageImages/Digital-Services_01.jpg",
+      two: "../../assets/LandingPageImages/Digital-Services_02.jpg",
     },
   },
   {
@@ -71,8 +71,8 @@ export const data = [
     id: 4,
     lable: "Medical IT",
     images: {
-      one: "/img/LandingPageImages/Medical-IT-1.jpg",
-      two: "/img/LandingPageImages/Medical-IT-2.jpg",
+      one: "../../assets/LandingPageImages/Digital-Services_01.jpg",
+      two: "../../assets/LandingPageImages/Digital-Services_02.jpg",
     },
   },
   {
@@ -86,8 +86,8 @@ export const data = [
     id: 5,
     lable: "DevOps & Automation",
     images: {
-      one: "/img/LandingPageImages/Devops-automation-1.jpg",
-      two: "/img/LandingPageImages/Devops-automation-2.jpg",
+      one: "../../assets/LandingPageImages/Digital-Services_01.jpg",
+      two: "../../assets/LandingPageImages/Digital-Services_02.jpg",
     },
   },
   {
@@ -101,8 +101,8 @@ export const data = [
     id: 6,
     lable: "AI & IOT",
     images: {
-      one: "/img/LandingPageImages/Ai-IOT-1.jpg",
-      two: "/img/LandingPageImages/Ai-IOT-2.jpg",
+      one: "../../assets/LandingPageImages/Digital-Services_01.jpg",
+      two: "../../assets/LandingPageImages/Digital-Services_02.jpg",
     },
   },
   {
@@ -116,8 +116,8 @@ export const data = [
     id: 7,
     lable: "Testing Services",
     images: {
-      one: "/img/LandingPageImages/Testing-services-1.jpg",
-      two: "/img/LandingPageImages/Testing-services-2.jpg",
+      one: "../../assets/LandingPageImages/Digital-Services_01.jpg",
+      two: "../../assets/LandingPageImages/Digital-Services_02.jpg",
     },
   },
   {
@@ -131,8 +131,8 @@ export const data = [
     id: 8,
     lable: "Staffing or Recruitment",
     images: {
-      one: "/img/LandingPageImages/Staff-Service_01.jpg",
-      two: "/img/LandingPageImages/Staff-Service_02.jpg",
+      one: "../../assets/LandingPageImages/Digital-Services_01.jpg",
+      two: "../../assets/LandingPageImages/Digital-Services_02.jpg",
     },
   },
 ];

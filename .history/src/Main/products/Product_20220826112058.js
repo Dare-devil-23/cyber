@@ -6,7 +6,6 @@ import { Carousel } from "react-responsive-carousel";
 import HeaderSmall from "../menu/HeaderSmall";
 import HeaderMain from "../menu/HeaderMain";
 import BreadCrumbNav from "../BreadCrumbNav";
-
 import Reveal from "react-awesome-reveal";
 import { keyframes } from "@emotion/react";
 import "./product.css";
@@ -31,14 +30,14 @@ const fadeLeft = keyframes`
 `;
 
 const Product = (props) => {
-  
+  console.log(process.env.PUBLIC_URL+data[0].images.one)
   return (
     <>
       <HeaderSmall />
       <HeaderMain />
-      {data.map((product,i) => {
+      {data.map((product, i) => {
         {
-          if (product.lable.toLowerCase().replace(" ", "_") === props.id)
+          if (product.lable.toLowerCase().replace(" ", "_") === props.id) {
             return (
               <div key={i}>
                 <section className="image-section">
@@ -60,16 +59,19 @@ const Product = (props) => {
                       width={"100%"}
                       className="curosole"
                     >
-                      {Object.keys(product.images).map((img, index) => (
-                        <img
+                      {Object.keys(product.images).map((img, index) => {
+                        
+                        return(
+                          <img
                           width="400px"
                           height="350px"
-                          src={product.images[img]}
+                          src={process.env.PUBLIC_URL+product.images[img]}
                           alt={`${img}`}
                           key={index}
-                          style={{borderRadius:"10px"}}
+                          style={{ borderRadius: "10px" }}
                         />
-                      ))}
+                        )
+                    })}
                     </Carousel>
                   </div>
                 </section>
@@ -127,6 +129,7 @@ const Product = (props) => {
                 <Footer />
               </div>
             );
+          }
         }
       })}
     </>

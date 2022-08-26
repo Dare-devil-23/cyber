@@ -62,7 +62,7 @@ const Product = (props) => {
                         <img
                           width="400px"
                           height="350px"
-                          src={product.images[img]}
+                          src={process.env.PUBLIC_URL+product.images[img]}
                           alt={`${img}`}
                           key={index}
                           style={{ borderRadius: "10px" }}
