@@ -52,15 +52,14 @@ const Product = (props) => {
                   </div>
                   <div className="images">
                     <Carousel
+
                       activeIndex={index} onSelect={handleSelect}
                       className="curosole"
-                      
-                      controls={false}
                     >
                       {Object.keys(product.images).map((img, index) => {
                         
                         return(
-                          <Carousel.Item  key={index}>
+                          <Carousel.Item className="" key={index}>
                           <img
                           width="400px"
                           height="350px"

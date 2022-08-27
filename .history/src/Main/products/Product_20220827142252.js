@@ -1,4 +1,4 @@
-import React , {useState} from "react";
+import React from "react";
 import Footer from "../components/footer";
 import { Tabs, Tab } from "react-bootstrap";
 import { Carousel } from "react-bootstrap";
@@ -54,13 +54,11 @@ const Product = (props) => {
                     <Carousel
                       activeIndex={index} onSelect={handleSelect}
                       className="curosole"
-                      
-                      controls={false}
                     >
                       {Object.keys(product.images).map((img, index) => {
                         
                         return(
-                          <Carousel.Item  key={index}>
+                          <Carousel.Item>
                           <img
                           width="400px"
                           height="350px"

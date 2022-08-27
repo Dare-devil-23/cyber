@@ -54,16 +54,14 @@ const Product = (props) => {
                     <Carousel
                       activeIndex={index} onSelect={handleSelect}
                       className="curosole"
-                      
-                      controls={false}
                     >
                       {Object.keys(product.images).map((img, index) => {
                         
                         return(
-                          <Carousel.Item  key={index}>
+                          <Carousel.Item>
                           <img
                           width="400px"
-                          height="350px"
+                          
                           src={process.env.PUBLIC_URL+product.images[img]}
                           alt={`${img}`}
                           key={index}
