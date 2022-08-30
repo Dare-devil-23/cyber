@@ -3068,8 +3068,8 @@ i.font60 {
   .slick-prev {
     left: 10px;
     display: block;
-    width: 40%;
-    height: 60%;
+    width: 40px;
+    height: 60px;
     overflow: hidden;
     line-height: 60px;
     z-index: 1;
@@ -3083,9 +3083,9 @@ i.font60 {
       font-weight: normal;
       color: $black;
       position: relative;
-      line-height: 60%;
-      width: 60%;
-      height: 60%;
+      line-height: 60px;
+      width: 60px;
+      height: 60px;
       padding-left: 20px;
       border-radius: 60px;
       background: $white;
@@ -3096,9 +3096,9 @@ i.font60 {
   .slick-next {
     right: 9px;
     display: block;
-    width: 40%;
-    height: 60%;
-    line-height: 60%;
+    width: 40px;
+    height: 60px;
+    line-height: 60px;
     overflow: hidden;
     transition: all 0.3s ease;
     &::before {
@@ -3110,9 +3110,9 @@ i.font60 {
       font-weight: normal;
       color: $black;
       position: relative;
-      line-height: 60%;
-      width: 60%;
-      height: 60%;
+      line-height: 60px;
+      width: 60px;
+      height: 60px;
       padding-right: 20px;
       border-radius: 60px;
       background: $white;
@@ -4032,9 +4032,9 @@ img.img-rounded {
       color: $white;
     }
   }
-  // #myHeader .container {
-  //   max-width: unset !important;
-  // }
+  #myHeader .container {
+    max-width: unset !important;
+  }
 }
 @media only screen and (max-width: 1024px) {
   .m-10-hor {

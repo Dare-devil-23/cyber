@@ -18,7 +18,6 @@ import { Link } from "@reach/router";
 // import { Parallax } from "@react-spring/parallax";
 // import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 import { Parallax } from "react-parallax";
-import CustomCarousel from "./CustomCarousel";
 
 const fadeInUp = keyframes`
   0% {
@@ -80,7 +79,7 @@ const Home = () => {
                   }}
                   home={true}
                 />
-                <div className="container my-0 pt-0 adjust">
+                <div className=" my-0 pt-0 adjust">
                   <div className="row align-items-center">
                     <div className="col-lg-7">
                       <div>
@@ -132,8 +131,7 @@ const Home = () => {
                     </div>
 
                     <div className="col-lg-5 px-0 my-5">
-                      {/* <SliderCarouselsingle /> */}
-                      <CustomCarousel />
+                      <SliderCarouselsingle />
                     </div>
                   </div>
                 </div>
