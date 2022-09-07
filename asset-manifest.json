@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/cyber/static/css/main.1250d0e1.css",
-    "main.js": "/cyber/static/js/main.52750f73.js",
+    "main.css": "/cyber/static/css/main.b9290bbe.css",
+    "main.js": "/cyber/static/js/main.2e9e022c.js",
     "static/media/Quantum-computing.png": "/cyber/static/media/Quantum-computing.806f5e5672f8005b2356.png",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/cyber/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
     "static/media/Block-chain.png": "/cyber/static/media/Block-chain.47828d81adeaecae06cb.png",
@@ -17,6 +17,7 @@
     "static/media/fontawesome-webfont.woff?v=4.7.0": "/cyber/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
     "static/media/fontawesome-webfont.woff2?v=4.7.0": "/cyber/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
     "static/media/ElegantIcons.woff": "/cyber/static/media/ElegantIcons.941bf29b415d3a9b7099.woff",
+    "static/media/ph8.jpg": "/cyber/static/media/ph8.065288325582a42cce97.jpg",
     "static/media/ElegantIcons.eot": "/cyber/static/media/ElegantIcons.78ba4ad1289e5a66ca11.eot",
     "static/media/ElegantIcons.ttf": "/cyber/static/media/ElegantIcons.4555dd9ce623f8fd6d72.ttf",
     "static/media/CyberSecurity.png": "/cyber/static/media/CyberSecurity.f9719b98cf62c2d2d450.png",
@@ -33,11 +34,11 @@
     "static/media/slick.ttf": "/cyber/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/cyber/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/cyber/index.html",
-    "main.1250d0e1.css.map": "/cyber/static/css/main.1250d0e1.css.map",
-    "main.52750f73.js.map": "/cyber/static/js/main.52750f73.js.map"
+    "main.b9290bbe.css.map": "/cyber/static/css/main.b9290bbe.css.map",
+    "main.2e9e022c.js.map": "/cyber/static/js/main.2e9e022c.js.map"
   },
   "entrypoints": [
-    "static/css/main.1250d0e1.css",
-    "static/js/main.52750f73.js"
+    "static/css/main.b9290bbe.css",
+    "static/js/main.2e9e022c.js"
   ]
 }
