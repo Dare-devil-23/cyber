@@ -14,6 +14,7 @@ import FindJobs from "./carriers/FindJobs";
 import OurValues from "./carriers/OurValues";
 import Benifits from "./carriers/Benifits";
 import Stories from "./carriers/Stories";
+import background from "../assets/ph8.jpg";
 
 const fadeLeft = keyframes`
   0% {
@@ -98,7 +99,7 @@ class Carrier extends Component {
                         className="container my-5"
                         
                     >
-                        <div id="tabs1">
+                        <div id="tabs1" style={{backgroundImage:{background}}}>
                             <Tabs fill defaultActiveKey="Find_jobs">
                                 <Tab eventKey="Find_jobs" title="Find Jobs">
                                     <Reveal

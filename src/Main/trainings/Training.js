@@ -10,7 +10,7 @@ import { HiOutlineClipboardCheck } from "react-icons/hi";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 import { Tabs, Tab } from "react-bootstrap";
-
+import background from "../../assets/ph8.jpg";
 import Reveal from "react-awesome-reveal";
 import { keyframes } from "@emotion/react";
 
@@ -145,6 +145,7 @@ const Training = () => {
       <div
         className="container"
         // style={{ minHeight: "60vh", marginTop: "15px" }}
+        style={{backgroundImage:{background}}}
       >
         <div >
           <div className="tabs">

@@ -86,7 +86,7 @@ const app= () => (
         <Training path="/training" />
         <Product path="/product/:id" />
         
-        <Carrier path="/carrier" />
+        <Carrier path="/careers" />
         <Jobdetails path = "/jdetail" />
         <Contact path = "/contact"/>
         <ImageGallery path="/img" />

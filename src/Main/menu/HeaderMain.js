@@ -48,13 +48,13 @@ const HeaderMain = (props) => {
   const headerClasses = `main-nav ${sticky ? "sticky" : ""}`;
 
   const data = [
-    { id: 0, lable: "Digital Services" },
-    { id: 1, lable: "Cyber Security" },
+    { id: 0, lable: "AI & IOT" },
+    { id: 1, lable: "Qantum Computing" },
     { id: 2, lable: "BlockChain Technology" },
-    { id: 3, lable: "Qantum Computing" },
-    { id: 4, lable: "Medical IT" },
+    { id: 3, lable: "Cyber Security" },
+    { id: 4, lable: "Digital Services" },
     { id: 5, lable: "DevOps & Automation" },
-    { id: 6, lable: "AI & IOT" },
+    { id: 6, lable: "Medical IT" },
     { id: 7, lable: "Testing Services" },
     { id: 8, lable: "Staffing or Recruitment" },
   ];
@@ -115,8 +115,8 @@ const HeaderMain = (props) => {
           </div>
 
           <div className="navbar-item">
-            <Link to="/carrier">
-              <Rev data="Carriers" />
+            <Link to="/careers">
+              <Rev data="Careers" />
             </Link>
           </div>
           <div className="navbar-item">

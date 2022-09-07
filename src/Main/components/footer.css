@@ -1,6 +1,7 @@
 .wavefoot {
   height: 200px;
 }
+
 @media only screen and (max-width: 768px) {
   .wavefoot {
     height: 90px;

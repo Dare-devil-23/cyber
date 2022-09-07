@@ -2,16 +2,12 @@ import React from "react";
 import { Component } from "react";
 import { keyframes } from "@emotion/react";
 import "../../App.css";
-import "./footer.css"
+import "./footer.css";
 
 import "./footerlogo.scss";
 
-import {
-  FaFacebook,
-  FaInstagram,
-  FaTwitterSquare,
-  FaPinterest,
-} from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { Link } from "@reach/router";
 
 class Footer extends Component {
   render() {
@@ -39,52 +35,61 @@ class Footer extends Component {
                   </h3>
                   <p className="f_600 f_size_18">
                     Don't miss any new updates on Cyber Security and
-                    technologies.!
+                    technologies.! Follow us on social media.
                   </p>
-                  
                 </div>
               </div>
-              <div className="col-lg-3 col-md-6" style={{marginBottom:"20px"}}>
+              <div
+                className="col-lg-3 col-md-6"
+                style={{ marginBottom: "20px" }}
+              >
                 <div
                   className="f_widget about-widget pl_70 wow fadeInLeft"
                   data-wow-delay="0.4s"
                   keyframes={fadeInLeft}
                   animation-delay={"0.4s"}
                 >
-                  <h3 className="f-title f_600 t_color f_size_18">Download</h3>
+                  <h3 className="f-title f_600 t_color f_size_18">
+                    Technologies
+                  </h3>
                   <ul className="list-unstyled f_list">
                     <li>
-                      <a href="/comingsoon">Company</a>
+                      <Link to={`/product/ai_&%20iot`}>AI & IOT</Link>
                     </li>
                     <li>
-                      <a href="/comingsoon">Android App</a>
+                      <Link to={`/product/cyber_security`}>Cyber Security</Link>
                     </li>
                     <li>
-                      <a href="/comingsoon">ios App</a>
+                      <Link to={`/product/qantum_computing`}>
+                        Qantum Computing
+                      </Link>
                     </li>
-                    
+                    <li>
+                      <Link to={`/product/devops_&%20automation`}>Devops</Link>
+                    </li>
+                    <li>
+                      <Link to={`/product/testing_services`}>IT Services</Link>
+                    </li>
                   </ul>
                 </div>
               </div>
-              <div className="col-lg-3 col-md-6" style={{marginBottom:"20px"}}>
+              <div
+                className="col-lg-3 col-md-6"
+                style={{ marginBottom: "20px" }}
+              >
                 <div
                   className="f_widget about-widget pl_70 wow fadeInLeft"
                   data-wow-delay="0.6s"
                   keyframes={fadeInLeft}
                   animation-delay={"0.6s"}
                 >
-                  <h3 className="f-title f_600 t_color f_size_18 ">Help</h3>
+                  <h3 className="f-title f_600 t_color f_size_18 ">
+                    <Link to="careers">Careers</Link>
+                  </h3>
                   <ul className="list-unstyled f_list">
                     <li>
-                      <a href="/comingsoon">FAQ</a>
+                      <Link to="/contact">Contact Us</Link>
                     </li>
-                    <li>
-                      <a href="/comingsoon">Term &amp; conditions</a>
-                    </li>
-                    <li>
-                      <a href="/comingsoon">Reporting</a>
-                    </li>
-                    
                   </ul>
                 </div>
               </div>
@@ -98,18 +103,21 @@ class Footer extends Component {
                   <h3 className="f-title f_600 t_color f_size_18">
                     Team Solutions
                   </h3>
-                  <div className="f_social_icon">
-                    <span className={circleClasses}>
-                      <FaFacebook style={iconStyles} />
+                  <div>
+                    <span >
+                      <a href="https://www.facebook.com/CYBERINFOTEAM">
+                        <FaFacebook style={iconStyles} />
+                      </a>
                     </span>
-                    <span className={circleClasses}>
-                      <FaTwitterSquare style={iconStyles} />
+                    <span >
+                      <a href="https://instagram.com/cyberinfoinc?igshid=YmMyMTA2M2Y">
+                        <FaInstagram style={iconStyles} />
+                      </a>
                     </span>
-                    <span className={circleClasses}>
-                      <FaInstagram style={iconStyles} />
-                    </span>
-                    <span className={circleClasses}>
-                      <FaPinterest style={iconStyles} />
+                    <span >
+                      <a href="https://www.linkedin.com/company/cyber-info/">
+                        <FaLinkedin style={iconStyles} />
+                      </a>
                     </span>
                   </div>
                 </div>
@@ -165,20 +173,24 @@ class Footer extends Component {
             ></use>
             <defs>
               <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
-                <stop offset="0%" style={{stopColor:"rgb(255,255,0)",stopOpacity:'1'}} />
-                <stop offset="100%" style={{stopColor:"rgb(255,0,0)",stopOpacity:'1'}} />
+                <stop
+                  offset="0%"
+                  style={{ stopColor: "rgb(255,255,0)", stopOpacity: "1" }}
+                />
+                <stop
+                  offset="100%"
+                  style={{ stopColor: "rgb(255,0,0)", stopOpacity: "1" }}
+                />
               </linearGradient>
             </defs>
-            
+
             <g className="gooeff">
               <use id="wave1" className="wave" xlinkHref="#wave" x="0" y="1" />
             </g>
             <g className="toplogo">
-              <text
-                x="70"
-                y="8"
-                fill="url(#grad1)"
-              >CyberInfo</text>
+              <text x="70" y="8" fill="url(#grad1)">
+                CyberInfo
+              </text>
             </g>
           </svg>
         </div>
