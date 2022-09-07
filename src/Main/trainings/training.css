@@ -1,3 +1,17 @@
+.button{
+  background-color: transparent;
+  border:none;
+  font-size: larger;
+  font-weight: 800;
+  color: white;
+}
+.spinner{
+  font-size: larger;
+}
+.margins{
+  padding: 0%;
+  margin: 0%;
+}
 .tabs {
   display: flex;
 }

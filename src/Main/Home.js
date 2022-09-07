@@ -19,7 +19,7 @@ import { Link } from "@reach/router";
 // import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 import { Parallax } from "react-parallax";
 import CustomCarousel from "./CustomCarousel";
-
+import ProgressBar from "react-progressbar-on-scroll";
 const fadeInUp = keyframes`
   0% {
     opacity: 0;
@@ -66,13 +66,13 @@ const Home = () => {
     <div className="homemain">
       {!loading && (
         <div>
+          <ProgressBar color="white" />
           <HeaderSmall />
           <div className="wholeSections">
             <div className="scrollanim herosec">
               <Parallax
                 bgImage={process.env.PUBLIC_URL + "/scroll/ph8.jpg"}
                 strength={500}
-                
               >
                 <HeaderMain
                   onChangeRef={() => {
@@ -150,7 +150,6 @@ const Home = () => {
               <AboutNew />
             </section>
           </div>
-          
 
           <Footer />
         </div>

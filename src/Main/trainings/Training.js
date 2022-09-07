@@ -13,7 +13,7 @@ import { Tabs, Tab } from "react-bootstrap";
 import background from "../../assets/ph8.jpg";
 import Reveal from "react-awesome-reveal";
 import { keyframes } from "@emotion/react";
-
+import ButtonLoader from "./ButtonLoader";
 const fadeLeft = keyframes`
   0% {
     opacity: 0;
@@ -121,10 +121,10 @@ const Form = () => {
 
         <button
           onClick={handleSubmit}
-          className="btn-main lead m-auto my-5"
+          className="btn-main lead m-auto my-5 py-0"
           type="submit"
         >
-          Submit
+          <ButtonLoader />
         </button>
       </form>
     </div>
@@ -170,107 +170,6 @@ const Training = () => {
               <p>Learning Strategy</p>
             </div>
           </div>
-          {/* <Tabs fill defaultActiveKey="Training Delivery">
-            <Tab
-              eventKey="Training Delivery"
-              title={
-                <span >
-                  <GiTeacher className="icon" />
-                  <br />
-                  <p style={{width:'60%' , margin:'auto'}}>Training Delivery</p>
-                </span>
-              }
-              className="tabText"
-            >
-              <Reveal
-                className="onStep"
-                keyframes={fadeLeft}
-                duration={600}
-                triggerOnce
-              >
-                <div></div>
-              </Reveal>
-            </Tab>
-            <Tab
-              eventKey="Instructional Designers"
-              title={
-                <span >
-                  <TbBulb className="icon" />
-                  <br />
-                  <p style={{width:'60%' , margin:'auto'}}>Instructional Designers</p>
-                </span>
-              }
-            >
-              <Reveal
-                className="onStep"
-                keyframes={fadeLeft}
-                duration={600}
-                triggerOnce
-              >
-                <div></div>
-              </Reveal>
-            </Tab>
-            <Tab
-              eventKey="Custom Learning Solutions"
-              title={
-                <span >
-                  <SiFuturelearn className="icon" />
-                  <br />
-                  <p style={{width:'60%' , margin:'auto'}}>Custom Learning Solutions</p>
-                </span>
-              }
-            >
-              <Reveal
-                className="onStep"
-                keyframes={fadeLeft}
-                delay={300}
-                duration={600}
-                triggerOnce
-              >
-                <div></div>
-              </Reveal>
-            </Tab>
-            <Tab
-              eventKey="Managed Learning Services"
-              title={
-                <span >
-                  <HiOutlineClipboardCheck className="icon" />
-                  <br />
-                  <p style={{width:'60%' , margin:'auto'}}>Managed Learning Services</p>
-                </span>
-              }
-            >
-              <Reveal
-                className="onStep"
-                keyframes={fadeLeft}
-                delay={300}
-                duration={600}
-                triggerOnce
-              >
-                <div></div>
-              </Reveal>
-            </Tab>
-            <Tab
-              eventKey="Learning Strategy"
-              title={
-                <span >
-                  <GiBeveledStar className="icon" />
-                  <br />
-                  <p style={{width:'60%' , margin:'auto'}}>Learning Strategy</p>
-                </span>
-              }
-            >
-              <Reveal
-                className="onStep"
-                keyframes={fadeLeft}
-                delay={300}
-                duration={600}
-                triggerOnce
-              >
-                <div></div>
-              </Reveal>
-            </Tab>
-          </Tabs> */}
         </div>
       </div>
       <div className="container maindiv">
