@@ -6,7 +6,7 @@ import Footer from "./components/footer";
 import { Tabs, Tab } from "react-bootstrap";
 import { keyframes } from "@emotion/react";
 import Reveal from "react-awesome-reveal";
-
+import ProgressBar from "react-progressbar-on-scroll";
 // import Gallery1 from "./Gallery1";
 
 import Locations from "./carriers/Locations";
@@ -92,7 +92,7 @@ class Carrier extends Component {
                 <HeaderSmall />
                 <HeaderMain />
                 <div>
-                    
+                    <ProgressBar color="white"/>
                     <GlobalStyles />
 
                     <div

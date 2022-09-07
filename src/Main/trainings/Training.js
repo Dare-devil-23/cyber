@@ -12,6 +12,7 @@ import { Carousel } from "react-responsive-carousel";
 import { Tabs, Tab } from "react-bootstrap";
 import background from "../../assets/ph8.jpg";
 import Reveal from "react-awesome-reveal";
+import ProgressBar from "react-progressbar-on-scroll";
 import { keyframes } from "@emotion/react";
 import ButtonLoader from "./ButtonLoader";
 const fadeLeft = keyframes`
@@ -119,13 +120,13 @@ const Form = () => {
           type="password"
         />
 
-        <button
+        <div
           onClick={handleSubmit}
-          className="btn-main lead m-auto my-5 py-0"
+          className="btn-main m-auto my-5 button"
           type="submit"
         >
           <ButtonLoader />
-        </button>
+        </div>
       </form>
     </div>
   );
@@ -140,6 +141,7 @@ const Training = () => {
   };
   return (
     <>
+      <ProgressBar color="white" />
       <HeaderSmall />
       <HeaderMain />
       <div

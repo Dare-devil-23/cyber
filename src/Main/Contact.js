@@ -6,6 +6,8 @@ import { keyframes } from "@emotion/react";
 import Reveal from "react-awesome-reveal";
 import "./contact.css";
 import { useJsApiLoader, GoogleMap } from "@react-google-maps/api";
+import ProgressBar from "react-progressbar-on-scroll";
+import ButtonLoader from "./trainings/ButtonLoader";
 
 const fadeLeft = keyframes`
   0% {
@@ -144,7 +146,7 @@ const Form = () => {
         />
 
         <button onClick={handleSubmit} className="btn-main lead m-auto my-5" type="submit">
-          Submit
+          <ButtonLoader />
         </button>
       </form>
     </div>
@@ -179,6 +181,7 @@ class Contact extends Component {
     };
     return (
       <>
+        <ProgressBar color="white"/>
         <HeaderSmall />
         <HeaderMain />
         <div className="contact">
