@@ -1,0 +1,5 @@
+.breadcrumb-item + .breadcrumb-item::before {
+    content: ">" !important;
+    font-weight: 500 !important;
+    color: white !important;
+  }

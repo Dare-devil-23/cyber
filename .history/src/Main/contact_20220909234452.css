@@ -1,0 +1,74 @@
+.label {
+  display: block;
+  font-size: larger;
+  color: white;
+  padding: 5px;
+}
+.contact{
+  background: transparent !important;
+}
+
+.input {
+  border: #1c1c1e;
+  border-radius: 5px;
+  outline: none;
+  font-size: larger;
+  padding: 5px;
+  margin: 2px;
+  color: white;
+  font-weight: 500;
+  width: 100%;
+  background-color: #1c1c1e;
+}
+.btn {
+  color: white;
+  border-radius: 50px;
+  font-size: larger;
+  font-weight: 600;
+  display: flex;
+  padding: 5px 30px;
+  margin: 10px auto;
+  float: right;
+  background-image: linear-gradient(rgb(255, 166, 0) , rgb(255, 51, 0));
+}
+
+.messages {
+  display: flex;
+  justify-content: center;
+}
+
+.error {
+  display: block;
+  color: red;
+  font-size: large;
+  font-weight: 600;
+  padding: 5px;
+}
+
+.success {
+  display: block;
+  color: greenyellow;
+  font-size: large;
+  font-weight: 600;
+  padding: 5px;
+}
+.contact-info{
+  margin: 30px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.map-title{
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 760px) {
+  .contact-info{
+    margin: 30px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+}

@@ -1,0 +1,127 @@
+.button{
+  background-color: transparent;
+  border:none;
+  font-size: large;
+  font-weight: 600;
+  color: white;
+  margin:10px;
+  padding: 0px 2px ;
+}
+.spinner{
+  font-size: larger;
+}
+.margins{
+  padding: 0%;
+  margin: 0%;
+}
+.tabs {
+  display: flex;
+}
+.tab{
+  text-align: center;
+  border-radius: 10px;
+  cursor:default
+}
+.tab:hover{
+  color: black;
+  background-color: white;
+}
+.icon {
+  width: 60px;
+  height: 60px;
+  padding: 5px;
+  margin: 5px auto;
+}
+.tab {
+  margin: auto;
+}
+.tabText {
+  font-size: large;
+  font-weight: 600;
+}
+
+.label {
+  display: block;
+  font-size: larger;
+  color: white;
+  padding: 5px;
+}
+
+.input {
+  border: #1c1c1e;
+  border-radius: 5px;
+  outline: none;
+  font-size: larger;
+  padding: 5px;
+  margin: 2px;
+  color: white;
+  font-weight: 500;
+  width: 100%;
+  background-color: #1c1c1e;
+}
+.btn {
+  color: white;
+  border-radius: 50px;
+  font-size: larger;
+  font-weight: 600;
+  display: flex;
+  padding: 5px 30px;
+  margin: 10px auto;
+  float: right;
+  background-image: linear-gradient(rgb(255, 166, 0), rgb(255, 51, 0));
+}
+
+.messages {
+  display: flex;
+  justify-content: center;
+  height: 20px;
+  align-items: center;
+  margin: 0%;
+}
+.form{
+    width: 500px;
+}
+.error {
+  display: block;
+  color: red;
+  font-size: large;
+  font-weight: 600;
+  padding: 0px ;
+  margin: 0px;
+}
+
+.success {
+  display: block;
+  color: green;
+  font-size: large;
+  font-weight: 600;
+  padding: 0px ;
+  margin: 0px;
+}
+
+
+@media screen and (max-width: 760px) {
+    .maindiv{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        overflow-x: hidden;
+    }
+    .form{
+        width: 250px;
+    }
+    .maindiv div{
+        margin: auto;
+    }
+    .tabs{
+      flex-direction: column;
+    }
+}
+
+.maindiv{
+    display: flex;
+    justify-content: space-evenly;
+}
+.maindiv div{
+    margin: 20px;
+}
