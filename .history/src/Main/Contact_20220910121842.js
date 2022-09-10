@@ -106,6 +106,12 @@ const Form = () => {
         <h1>User Registration</h1>
       </div>
 
+      {/* Calling to the methods */}
+      <div className="messages">
+        {errorMessage()}
+        {successMessage()}
+      </div>
+
       <form>
         {/* Labels and inputs for form data */}
         <label className="label">First Name</label>
@@ -139,14 +145,10 @@ const Form = () => {
           value={query}
           type="text"
         />
-        {/* Calling to the methods */}
-      <div className="messages mt-5 mb-3">
-        {errorMessage()}
-        {successMessage()}
-      </div>
+
         <button
           onClick={handleSubmit}
-          className="btn-main lead m-auto"
+          className="btn-main lead m-auto my-5"
           type="submit"
         >
           <ButtonLoader />

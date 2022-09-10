@@ -140,13 +140,13 @@ const Form = () => {
           type="text"
         />
         {/* Calling to the methods */}
-      <div className="messages mt-5 mb-3">
+      <div className="messages">
         {errorMessage()}
         {successMessage()}
       </div>
         <button
           onClick={handleSubmit}
-          className="btn-main lead m-auto"
+          className="btn-main lead m-auto my-5"
           type="submit"
         >
           <ButtonLoader />

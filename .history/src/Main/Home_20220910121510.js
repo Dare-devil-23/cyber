@@ -70,7 +70,7 @@ const Home = () => {
             color="#FFA600"
             gradient={true}
             gradientColor="#FF1E00"
-            position="100px"
+            position="-100px"
           />
           <HeaderSmall />
           <div className="wholeSections">

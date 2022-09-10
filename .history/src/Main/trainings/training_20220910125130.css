@@ -65,7 +65,6 @@
   font-size: larger;
   font-weight: 600;
   display: flex;
-  padding: 5px 30px;
   margin: 10px auto;
   float: right;
   background-image: linear-gradient(rgb(255, 166, 0), rgb(255, 51, 0));

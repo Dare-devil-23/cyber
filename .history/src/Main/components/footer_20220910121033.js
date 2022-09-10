@@ -103,10 +103,10 @@ class Footer extends Component {
                 >
                   <ul className="list-unstyled f_list">
                     <li className="f-title f_600 t_color f_size_18 ">
-                      <Link to="careers" style={{fontSize:"18px", fontWeight:"600"}}>Careers</Link>
+                      <Link to="careers">Careers</Link>
                     </li>
                     <li>
-                      <Link to="/contact" style={{fontSize:"18px", fontWeight:"600"}}>Contact Us</Link>
+                      <Link to="/contact" style={{fontSize:"18px"}}>Contact Us</Link>
                     </li>
                     <li></li>
                     <li>9319 LBJ Freeway</li>
@@ -119,7 +119,7 @@ class Footer extends Component {
               </div>
               <div className="credits">
                   <p>
-                    <MdCopyright /> {new Date().getFullYear()} CyberInfoInc. All
+                    <MdCopyright /> {new Date().getFullYear()} CyberInfo. All
                     Rights Reserved.
                   </p>
                 </div>

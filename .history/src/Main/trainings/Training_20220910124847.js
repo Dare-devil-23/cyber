@@ -118,7 +118,7 @@ const Form = () => {
       </div>
         <div
           onClick={handleSubmit}
-          className="btn-main m-auto mt-1 mb-5  button"
+          className="btn-main m-auto mt-1 mb-5 px-2 py-1 button"
           type="submit"
         >
           <ButtonLoader />

@@ -1,0 +1,6 @@
+.breadcrumb-item + .breadcrumb-item::before {
+    font-family: Arial, Helvetica, sans-serif !important;
+    content: ">" !important;
+    font-weight: 500 !important;
+    color: white !important;
+  }

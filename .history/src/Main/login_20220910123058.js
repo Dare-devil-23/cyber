@@ -21,7 +21,18 @@ const GlobalStyles = createGlobalStyle`
     display:float;
     justify-content:center; 
   }
-
+  .input{
+    border: #1c1c1e;
+  border-radius: 5px;
+  outline: none;
+  font-size: larger;
+  padding: 15px;
+  margin-bottom: 10px;
+  color: white;
+  font-weight: 500;
+  width: 100%;
+  background-color: #1c1c1e;
+  }
 `;
 const Form = () => {
   // States for registration
@@ -103,13 +114,13 @@ const Form = () => {
           type="password"
         />
         {/* Calling to the methods */}
-      <div className="messages mt-5 mb-0">
+      <div className="messages">
         {errorMessage()}
         {successMessage()}
       </div>
         <div
           onClick={handleSubmit}
-          className="btn-main px-2 py-1 m-auto mt-1 mb-5 button"
+          className="btn-main m-auto my-5 button"
           type="submit"
         >
           <ButtonLoader />
@@ -131,7 +142,7 @@ const logintwo = () => (
     }}
     >
     <div
-      className="mainform"
+      className="d-flex m-auto my-5"
       style={{ backgroundImage: `url(${"./img/background/6.jpg"})` }}
     >
       <Form />

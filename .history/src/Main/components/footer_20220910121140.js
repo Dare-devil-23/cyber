@@ -119,7 +119,7 @@ class Footer extends Component {
               </div>
               <div className="credits">
                   <p>
-                    <MdCopyright /> {new Date().getFullYear()} CyberInfoInc. All
+                    <MdCopyright /> {new Date().getFullYear()} CyberInfo. All
                     Rights Reserved.
                   </p>
                 </div>

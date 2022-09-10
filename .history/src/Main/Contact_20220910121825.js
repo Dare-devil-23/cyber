@@ -106,6 +106,12 @@ const Form = () => {
         <h1>User Registration</h1>
       </div>
 
+      {/* Calling to the methods */}
+      <div className="messages">
+        {errorMessage()}
+        {successMessage()}
+      </div>
+
       <form>
         {/* Labels and inputs for form data */}
         <label className="label">First Name</label>
@@ -139,14 +145,10 @@ const Form = () => {
           value={query}
           type="text"
         />
-        {/* Calling to the methods */}
-      <div className="messages mt-5 mb-3">
-        {errorMessage()}
-        {successMessage()}
-      </div>
+
         <button
           onClick={handleSubmit}
-          className="btn-main lead m-auto"
+          className="btn-main lead m-auto my-5"
           type="submit"
         >
           <ButtonLoader />
@@ -179,7 +181,7 @@ class Contact extends Component {
       width: "150px",
       height: "150px",
     };
-    const iframe = '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3349.40166585048!2d-96.73947088543058!3d32.91398448429738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c1fee73400001%3A0x47ff73f2d26a5964!2s9319%20Lyndon%20B%20Johnson%20Fwy%20Suite%20116%2C%20Dallas%2C%20TX%2075243%2C%20USA!5e0!3m2!1sen!2sin!4v1662753015416!5m2!1sen!2sin" width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
+    const iframe = '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3349.40166585048!2d-96.73947088543058!3d32.91398448429738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c1fee73400001%3A0x47ff73f2d26a5964!2s9319%20Lyndon%20B%20Johnson%20Fwy%20Suite%20116%2C%20Dallas%2C%20TX%2075243%2C%20USA!5e0!3m2!1sen!2sin!4v1662753015416!5m2!1sen!2sin" width="550" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
     return (
       <>
         <Parallax

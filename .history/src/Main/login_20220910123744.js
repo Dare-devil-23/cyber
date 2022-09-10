@@ -103,13 +103,13 @@ const Form = () => {
           type="password"
         />
         {/* Calling to the methods */}
-      <div className="messages mt-5 mb-0">
+      <div className="messages">
         {errorMessage()}
         {successMessage()}
       </div>
         <div
           onClick={handleSubmit}
-          className="btn-main px-2 py-1 m-auto mt-1 mb-5 button"
+          className="btn-main m-auto my-5 button"
           type="submit"
         >
           <ButtonLoader />

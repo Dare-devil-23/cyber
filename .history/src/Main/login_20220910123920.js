@@ -109,7 +109,7 @@ const Form = () => {
       </div>
         <div
           onClick={handleSubmit}
-          className="btn-main px-2 py-1 m-auto mt-1 mb-5 button"
+          className="btn-main px-2 py-1 m-auto my-5 button"
           type="submit"
         >
           <ButtonLoader />
