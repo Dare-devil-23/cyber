@@ -33,7 +33,7 @@ const fadeLeft = keyframes`
 const Product = (props) => {
   return (
     <>
-      <HeaderSmall />
+      {/* <HeaderSmall /> */}
       <HeaderMain />
       <ProgressBar color="#FFA600"
             gradient={true}

@@ -193,7 +193,7 @@ class Contact extends Component {
             gradientColor="#FF1E00"
             position="100px"
           />
-          <HeaderSmall />
+          {/* <HeaderSmall /> */}
           <HeaderMain />
           <div className="contact">
             <div className="mb-5 pb-5">

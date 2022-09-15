@@ -72,7 +72,7 @@ const Home = () => {
             gradientColor="#FF1E00"
             position="100px"
           />
-          <HeaderSmall />
+          {/* <HeaderSmall /> */}
           <div className="wholeSections">
             <div className="scrollanim herosec">
               <Parallax
@@ -117,11 +117,11 @@ const Home = () => {
                           duration={600}
                           triggerOnce
                         >
-                          <p className="lead">
+                          {/* <p className="lead">
                             Unit of data stored on a digital ledger, called a
                             blockchain, that certifies a digital asset to be
                             unique and therefore not interchangeable
-                          </p>
+                          </p> */}
                         </Reveal>
                         <div className="spacer-10"></div>
                         <Link

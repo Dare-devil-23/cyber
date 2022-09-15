@@ -94,7 +94,7 @@ class Carrier extends Component {
                 strength={2000}
                 bgImageStyle={{height:"100vh" , width:"100vw"}}
               >
-        <HeaderSmall />
+        {/* <HeaderSmall /> */}
         <HeaderMain />
         <div>
           <ProgressBar

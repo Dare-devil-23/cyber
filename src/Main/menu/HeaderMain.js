@@ -70,6 +70,7 @@ const HeaderMain = (props) => {
         <Link to="/home">
           <img src={logo} alt="logo" className="cyberLogo" />
         </Link>
+        <h3>CYBER INFO INC</h3>
       </div>
 
       <div className={active}>

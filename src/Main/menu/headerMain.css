@@ -33,6 +33,15 @@
     padding: 5px;
     margin-left: 50px;
 }
+.logoContainer{
+  display: flex;
+  align-items: center;
+}
+.logoContainer > h3{
+  padding-top: 20px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
 .dropbtn {
     font-weight: 600;
     color: white;

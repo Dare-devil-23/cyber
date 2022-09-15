@@ -82,7 +82,7 @@ function Jobdetails() {
 
   return ( 
     <>
-                <HeaderSmall />
+                {/* <HeaderSmall /> */}
 
                 <div>
                     <HeaderMain />

@@ -138,7 +138,7 @@ const Training = () => {
   return (
     <>
       <ProgressBar color="#FFA600" gradient={true} gradientColor="#FF1E00" />
-      <HeaderSmall />
+      {/* <HeaderSmall /> */}
       <HeaderMain />
       <Parallax
         bgImage={process.env.PUBLIC_URL + "/scroll/ph8.jpg"}
