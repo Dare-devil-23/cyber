@@ -76,4 +76,7 @@
     flex-direction: column;
     justify-content: space-evenly;
   }
+  .map{
+    margin-top: 50px;
+  }
 }

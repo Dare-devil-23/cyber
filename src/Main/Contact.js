@@ -1,4 +1,4 @@
-import React, { Component, useState } from "react";
+import React, { Component, useState , useRef} from "react";
 import HeaderSmall from "./menu/HeaderSmall";
 import HeaderMain from "./menu/HeaderMain";
 import Footer from "./components/footer";
@@ -7,6 +7,7 @@ import Reveal from "react-awesome-reveal";
 import "./contact.css";
 import ButtonLoader from "./trainings/ButtonLoader";
 import { Parallax } from "react-parallax";
+import emailjs from '@emailjs/browser';
 
 const fadeLeft = keyframes`
   0% {
@@ -60,12 +61,13 @@ const Form = () => {
   };
 
   // Handling the form submission
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (firstName === "" || lastName === "" || email === "" || query === "") {
       setError(true);
     } else {
       setSubmitted(true);
+      await sendEmail(e);
       setError(false);
     }
   };
@@ -97,14 +99,25 @@ const Form = () => {
       </div>
     );
   };
+  const refForm = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
 
+    emailjs.sendForm('service_935o13l', 'template_vp2v5zk', refForm.current, '0TeX8hTnpJi742IKP')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+      e.target.reset();
+  };
   return (
     <div className="form">
       <div>
         <h1>User Registration</h1>
       </div>
 
-      <form>
+      <form ref = {refForm} onSubmit= {sendEmail}>
         {/* Labels and inputs for form data */}
         <label className="label">First Name</label>
         <input
@@ -112,6 +125,7 @@ const Form = () => {
           className="input"
           value={firstName}
           type="text"
+          name="from_name"
         />
 
         <label className="label">Last Name</label>
@@ -128,6 +142,7 @@ const Form = () => {
           className="input"
           value={email}
           type="email"
+          name="email"
         />
 
         <label className="label">Message</label>
@@ -136,6 +151,7 @@ const Form = () => {
           className="input"
           value={query}
           type="text"
+          name="message"
         />
         {/* Calling to the methods */}
       <div className="messages mt-5 mb-3">
@@ -177,6 +193,7 @@ class Contact extends Component {
       width: "150px",
       height: "150px",
     };
+    
     const iframe = '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3349.40166585048!2d-96.73947088543058!3d32.91398448429738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c1fee73400001%3A0x47ff73f2d26a5964!2s9319%20Lyndon%20B%20Johnson%20Fwy%20Suite%20116%2C%20Dallas%2C%20TX%2075243%2C%20USA!5e0!3m2!1sen!2sin!4v1662753015416!5m2!1sen!2sin" width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
     return (
       <>
@@ -299,10 +316,10 @@ class Contact extends Component {
           >
             <div className="contact-info ">
               <div>
-                <Form />
+                <Form  />
               </div>
-              <div>
-                <Maps iframe={iframe}/>
+              <div className="map">
+                <Maps iframe={iframe} />
               </div>
             </div>
           </Reveal>
