@@ -18,6 +18,7 @@ export default function CustomCarousel() {
       className="curosole"
       controls={false}
       indicators={false}
+      touch={false}
       pause={false}
     >
       <Carousel.Item interval={4500}>

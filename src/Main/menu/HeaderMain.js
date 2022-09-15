@@ -29,6 +29,7 @@ const useStickyHeader = (offset = 0) => {
 const HeaderMain = (props) => {
   const [active, setActive] = useState("menu");
   const [icon, setIcon] = useState(true);
+  const [aboutIcon , setAboutIcon] = useState(true);
   const [mobIcon, setMobicon] = useState(false);
   const [isSideNav, setIsSideNav] = useState(false);
   const navToggle = () => {
@@ -63,6 +64,9 @@ const HeaderMain = (props) => {
   const changeIcon = (icon) => {
     setIcon(!icon);
   };
+  const changeIconAbout = (aboutIcon) => {
+    setAboutIcon(!aboutIcon);
+  };
   isSideNav ? disableBodyScroll(document) : enableBodyScroll(document);
   const completion = useReadingProgress();
   return (
@@ -81,17 +85,31 @@ const HeaderMain = (props) => {
               <Rev data="Home" />
             </Link>
           </div>
-          {props.home ? (
-            <div className="navbar-item" onClick={props.onChangeRef} style={{cursor:'pointer'}}>
-              <Rev data="About Us" />
+
+          <div
+            className="dropdown"
+            onMouseEnter={() => changeIconAbout()}
+            onMouseLeave={() => changeIconAbout(aboutIcon)}
+          >
+            <button className="dropbtn navbar-item">
+              {props.home ? (
+                <span onClick={props.onChangeRef} style={{ cursor: 'pointer' }}>
+                  <Rev data="About Us" />
+                </span>
+              ) : (
+                <span >
+                  <Link to="/#aboutus">
+                    <Rev data="About Us" />
+                  </Link>
+                </span>
+              )}
+              {aboutIcon ? <IoIosArrowDown /> : <IoIosArrowUp />}
+            </button>
+            <div className="dropdown-content">
+              <Link to="/login" > <Rev data="Login" /></Link>
+              <Link to="/comingsoon" > <Rev data="Blog" /></Link>
             </div>
-          ) : (
-            <div className="navbar-item">
-              <Link to="/#aboutus">
-                <Rev data="About Us" />
-              </Link>
-            </div>
-          )}
+          </div>
           <div
             className="dropdown"
             onMouseEnter={() => changeIcon()}
@@ -138,9 +156,9 @@ const HeaderMain = (props) => {
       ) : (
         <AiOutlineMenu className="nav-toggle" onClick={navToggle} />
       )}
-      <span 
-        style={{transform: `translateX(${completion - 100}%)`}}
-        className = "progressbar"
+      <span
+        style={{ transform: `translateX(${completion - 100}%)` }}
+        className="progressbar"
       />
     </div>
   );
