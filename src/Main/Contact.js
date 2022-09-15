@@ -5,8 +5,6 @@ import Footer from "./components/footer";
 import { keyframes } from "@emotion/react";
 import Reveal from "react-awesome-reveal";
 import "./contact.css";
-import { useJsApiLoader, GoogleMap } from "@react-google-maps/api";
-import ProgressBar from "react-progressbar-on-scroll";
 import ButtonLoader from "./trainings/ButtonLoader";
 import { Parallax } from "react-parallax";
 
@@ -187,12 +185,7 @@ class Contact extends Component {
           strength={2000}
           bgImageStyle={{ height: "100vh", width: "100%" }}
         >
-          <ProgressBar
-            color="#FFA600"
-            gradient={true}
-            gradientColor="#FF1E00"
-            position="100px"
-          />
+          
           {/* <HeaderSmall /> */}
           <HeaderMain />
           <div className="contact">

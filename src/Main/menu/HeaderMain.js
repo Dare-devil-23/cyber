@@ -8,6 +8,7 @@ import "react-dropdown/style.css";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { disableBodyScroll, enableBodyScroll } from "body-scroll-lock";
+import useReadingProgress from "./useReadingProgress";
 
 const useStickyHeader = (offset = 0) => {
   const [stick, setStick] = useState(false);
@@ -63,7 +64,7 @@ const HeaderMain = (props) => {
     setIcon(!icon);
   };
   isSideNav ? disableBodyScroll(document) : enableBodyScroll(document);
-
+  const completion = useReadingProgress();
   return (
     <div className={headerClasses}>
       <div className="logoContainer">
@@ -137,6 +138,10 @@ const HeaderMain = (props) => {
       ) : (
         <AiOutlineMenu className="nav-toggle" onClick={navToggle} />
       )}
+      <span 
+        style={{transform: `translateX(${completion - 100}%)`}}
+        className = "progressbar"
+      />
     </div>
   );
 };

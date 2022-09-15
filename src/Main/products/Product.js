@@ -9,7 +9,6 @@ import Reveal from "react-awesome-reveal";
 import { keyframes } from "@emotion/react";
 import "./product.css";
 import { data } from "./productData";
-import  ProgressBar  from "react-progressbar-on-scroll";
 import { Parallax } from "react-parallax";
 
 const fadeLeft = keyframes`
@@ -35,9 +34,7 @@ const Product = (props) => {
     <>
       {/* <HeaderSmall /> */}
       <HeaderMain />
-      <ProgressBar color="#FFA600"
-            gradient={true}
-            gradientColor="#FF1E00" />
+      
             
       {data.map((product, i) => {
         {

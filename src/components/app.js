@@ -74,6 +74,7 @@ const PosedRouter = ({ children }) => (
 
 const app= () => (
   <div className="wraper">
+    
   <GlobalStyles />
     {/* <Header/> */}
       <PosedRouter>

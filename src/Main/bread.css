@@ -2,4 +2,6 @@
     content: ">" !important;
     font-weight: 500 !important;
     color: white !important;
+    font-family: '' !important;
+    margin-top: 2px;
   }

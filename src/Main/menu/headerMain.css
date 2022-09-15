@@ -42,6 +42,13 @@
   margin-top: 10px;
   margin-left: 10px;
 }
+.progressbar{
+  position: absolute;
+  background-image: linear-gradient(orange , orangered);
+  height: 3px;
+  width: 100%;
+  top:80px;
+}
 .dropbtn {
     font-weight: 600;
     color: white;

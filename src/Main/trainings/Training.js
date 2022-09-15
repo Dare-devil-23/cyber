@@ -10,8 +10,6 @@ import { HiOutlineClipboardCheck } from "react-icons/hi";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 import { Parallax } from "react-parallax";
-import background from "../../assets/ph8.jpg";
-import ProgressBar from "react-progressbar-on-scroll";
 import { keyframes } from "@emotion/react";
 import ButtonLoader from "./ButtonLoader";
 const fadeLeft = keyframes`
@@ -137,7 +135,7 @@ const Training = () => {
   };
   return (
     <>
-      <ProgressBar color="#FFA600" gradient={true} gradientColor="#FF1E00" />
+      
       {/* <HeaderSmall /> */}
       <HeaderMain />
       <Parallax
