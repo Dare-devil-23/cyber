@@ -88,19 +88,21 @@ const Form = () => {
       <form>
         {/* Labels and inputs for form data */}
 
-        <label className="label">Email</label>
+        {/* <label className="label">Email</label> */}
         <input
           onChange={handleEmail}
           className="input"
           value={email}
           type="email"
+          placeholder="Email"
         />
-        <label className="label">Password</label>
+        {/* <label className="label">Password</label> */}
         <input
           onChange={handlePassword}
           className="input"
           value={password}
           type="password"
+          placeholder="Password"
         />
         {/* Calling to the methods */}
       <div className="messages mt-5 mb-0">
@@ -109,7 +111,7 @@ const Form = () => {
       </div>
         <div
           onClick={handleSubmit}
-          className="btn-main px-2 py-1 m-auto mt-1 mb-5 button"
+          className=" px-2 py-1 m-auto mt-1 mb-5 "
           type="submit"
         >
           <ButtonLoader />

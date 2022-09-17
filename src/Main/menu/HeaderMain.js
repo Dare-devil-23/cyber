@@ -1,6 +1,8 @@
 import React, { useRef } from "react";
 import "./headerMain.css";
 import logo from "../../assets/logo.png";
+import cyberInfo from "../../assets/CYBERINFO.png";
+import augmented from "../../assets/AUGMENTED.png";
 import { Link } from "@reach/router";
 import { useState, useLayoutEffect } from "react";
 import Rev from "../../Main/Rev";
@@ -29,7 +31,7 @@ const useStickyHeader = (offset = 0) => {
 const HeaderMain = (props) => {
   const [active, setActive] = useState("menu");
   const [icon, setIcon] = useState(true);
-  const [aboutIcon , setAboutIcon] = useState(true);
+  const [aboutIcon, setAboutIcon] = useState(true);
   const [mobIcon, setMobicon] = useState(false);
   const [isSideNav, setIsSideNav] = useState(false);
   const navToggle = () => {
@@ -71,13 +73,21 @@ const HeaderMain = (props) => {
   const completion = useReadingProgress();
   return (
     <div className={headerClasses}>
-      <div className="logoContainer">
+      
         <Link to="/home">
-          <img src={logo} alt="logo" className="cyberLogo" />
-        </Link>
-        <h3>CYBER INFO INC</h3>
-      </div>
+        <div className="logoContainer">
+          <div className="logodiv">
+            <div><img src={logo} alt="logo" className="cyberLogo" /></div>
+          </div>
+          <div className="textdiv">
+            <div><img src={cyberInfo} alt="cyberinfo" className="cyberText" /></div>
+            <div><img src={augmented} alt="augmented" className="augmentedText" /></div>
+          </div>
+          </div>
 
+        </Link>
+
+      
       <div className={active}>
         <div className="spaces">
           <div className="navbar-item">

@@ -114,44 +114,49 @@ const Form = () => {
   return (
     <div className="form">
       <div>
-        <h1>User Registration</h1>
+        <h1>Let's Connect</h1>
       </div>
 
       <form ref = {refForm} onSubmit= {sendEmail}>
         {/* Labels and inputs for form data */}
-        <label className="label">First Name</label>
+        {/* <label className="label">First Name</label> */}
         <input
           onChange={handleFirstName}
           className="input"
           value={firstName}
           type="text"
           name="from_name"
+          placeholder="First Name"
         />
 
-        <label className="label">Last Name</label>
+        {/* <label className="label">Last Name</label> */}
         <input
           onChange={handleLastName}
           className="input"
           value={lastName}
           type="text"
+          placeholder="Last Name"
         />
 
-        <label className="label">Email</label>
+        {/* <label className="label">Email</label> */}
         <input
           onChange={handleEmail}
           className="input"
           value={email}
           type="email"
           name="email"
+          placeholder="Email"
         />
 
-        <label className="label">Message</label>
-        <input
+        {/* <label className="label">Message</label> */}
+        <textarea
           onChange={handleQuery}
           className="input"
           value={query}
           type="text"
           name="message"
+          
+          placeholder="Message"
         />
         {/* Calling to the methods */}
       <div className="messages mt-5 mb-3">

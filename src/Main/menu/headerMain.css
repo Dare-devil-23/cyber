@@ -31,16 +31,36 @@
 .cyberLogo{
     width: 80px;
     padding: 5px;
+    height: 100%;
     margin-left: 50px;
+}
+.cyberText{
+  width:200px;
+  height: 40px;
+}
+.augmentedText{
+  width: 200px;
+  height: 30px;
+}
+.logodiv{
+  display: flex;
+  /* flex-direction: column; */
+}
+.textdiv{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.textdiv > div{
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
 }
 .logoContainer{
   display: flex;
+  flex-direction: row;
   align-items: center;
-}
-.logoContainer > h3{
-  padding-top: 20px;
-  margin-top: 10px;
-  margin-left: 10px;
 }
 .progressbar{
   position: absolute;
@@ -118,6 +138,7 @@
     display: flex;
     justify-content: space-between;
   } 
+  
   @media screen and (max-width : 768px) {
     .nav-toggle{
         display: block;
