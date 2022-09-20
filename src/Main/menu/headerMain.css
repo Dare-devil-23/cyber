@@ -32,11 +32,12 @@
     width: 80px;
     padding: 5px;
     height: 100%;
-    margin-left: 50px;
+    margin-left: 30px;
+    margin-right: 0px;
 }
 .cyberText{
-  width:200px;
-  height: 40px;
+  width:225px;
+  height: 65px;
 }
 .augmentedText{
   width: 250px;
@@ -50,6 +51,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: 0px;
 }
 .textdiv > div{
   margin: 0px;

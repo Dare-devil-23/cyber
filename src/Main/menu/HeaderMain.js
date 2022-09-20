@@ -81,7 +81,7 @@ const HeaderMain = (props) => {
           </div>
           <div className="textdiv">
             <div><img src={cyberInfo} alt="cyberinfo" className="cyberText" /></div>
-            <div><img src={augmented} alt="augmented" className="augmentedText" /></div>
+            {/* <div><img src={augmented} alt="augmented" className="augmentedText" /></div> */}
           </div>
           </div>
 

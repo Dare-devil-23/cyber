@@ -114,7 +114,7 @@ const Form = () => {
   return (
     <div className="form">
       <div>
-        <h1>Let's Connect</h1>
+        <h1>Let's Connect...</h1>
       </div>
 
       <form ref = {refForm} onSubmit= {sendEmail}>
