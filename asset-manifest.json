@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/cyber/static/css/main.df5b1e9c.css",
-    "main.js": "/cyber/static/js/main.392e021e.js",
+    "main.css": "/cyber/static/css/main.72b88b9f.css",
+    "main.js": "/cyber/static/js/main.ef993434.js",
     "static/media/Quantum-computing.png": "/cyber/static/media/Quantum-computing.806f5e5672f8005b2356.png",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/cyber/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
     "static/media/Block-chain.png": "/cyber/static/media/Block-chain.47828d81adeaecae06cb.png",
@@ -26,7 +26,7 @@
     "static/media/et-line.eot": "/cyber/static/media/et-line.3f5eecf9f3326c4d6d81.eot",
     "static/media/et-line.ttf": "/cyber/static/media/et-line.cc7129c849c81d254698.ttf",
     "static/media/Thermal-Regular.ttf": "/cyber/static/media/Thermal-Regular.d5d23cf3ade55e542bf6.ttf",
-    "static/media/CYBERINFO.png": "/cyber/static/media/CYBERINFO.83ffcaa4479e7b2a219a.png",
+    "static/media/CYBERINFO.png": "/cyber/static/media/CYBERINFO.6e2a67b17611bf0f7201.png",
     "static/media/revicons.eot": "/cyber/static/media/revicons.a77de540a38981833f9e.eot",
     "static/media/revicons.ttf": "/cyber/static/media/revicons.57fd05d4ae650374c8de.ttf",
     "static/media/revicons.woff": "/cyber/static/media/revicons.e8746a624ed098489406.woff",
@@ -35,11 +35,11 @@
     "static/media/slick.ttf": "/cyber/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/cyber/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/cyber/index.html",
-    "main.df5b1e9c.css.map": "/cyber/static/css/main.df5b1e9c.css.map",
-    "main.392e021e.js.map": "/cyber/static/js/main.392e021e.js.map"
+    "main.72b88b9f.css.map": "/cyber/static/css/main.72b88b9f.css.map",
+    "main.ef993434.js.map": "/cyber/static/js/main.ef993434.js.map"
   },
   "entrypoints": [
-    "static/css/main.df5b1e9c.css",
-    "static/js/main.392e021e.js"
+    "static/css/main.72b88b9f.css",
+    "static/js/main.ef993434.js"
   ]
 }
