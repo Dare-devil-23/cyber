@@ -122,7 +122,6 @@ const Form = () => {
 };
 const logintwo = () => (
   <div>
-    <HeaderSmall />
     <HeaderMain />
     <GlobalStyles />
     <Parallax

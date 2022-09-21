@@ -9,7 +9,6 @@ import Cards from "./Cards";
 import HeaderMain from "./menu/HeaderMain";
 import Loading from "./Loading.js";
 import { useState, useEffect } from "react";
-import HeaderSmall from "./menu/HeaderSmall";
 import "../App.css";
 import AboutNew from "./AboutNew";
 import "./scrollbar.css";
@@ -47,14 +46,14 @@ const Home = () => {
     setInterval(() => setLoading(false), 4500);
   });
   const items = [
-    "Digital Services       ",
-    "Cyber Security         ",
-    "BlockChain Technology  ",
-    "Qantum Computing       ",
-    "Medical IT             ",
-    "DevOps & Automation    ",
-    "AI & IOT               ",
-    "Testing Services       ",
+    "Digital Services",
+    "Cyber Security",
+    "BlockChain Technology",
+    "Qantum Computing",
+    "Medical IT",
+    "DevOps & Automation",
+    "AI & IOT",
+    "Testing Services",
     "Staffing or Recruitment",
   ];
   const [count, setCount] = useState(-1);
@@ -92,7 +91,7 @@ const Home = () => {
                           <h1>
                             Is it &nbsp;
                             <ReactRotatingText
-                              className="text-success font-weight-bold heroMob"
+                              className="fontCyber heroMob"
                               style={{ textAlign: "left" }}
                               items={items}
                               onTypingStart={() => {

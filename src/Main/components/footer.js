@@ -30,13 +30,14 @@ class Footer extends Component {
                   keyframes={fadeInLeft}
                   animation-delay={"0.2s"}
                 >
-                  <h3 className="f-title f_600 t_color f_size_18">
+                  <h3 className="f-title f_600 t_color f_size_20">
                     Get in Touch
                   </h3>
                   <p className="getintouch">
                     Don't miss any new updates on Cyber Security and
                     technologies.! Follow us on social media.
                   </p>
+                  
                 </div>
                 <div>
                   <span>
@@ -54,6 +55,12 @@ class Footer extends Component {
                       <FaLinkedin style={iconStyles} />
                     </a>
                   </span>
+                  <div className="credits">
+                  <p>
+                    <MdCopyright /> {new Date().getFullYear()} CyberInfoInc. All
+                    Rights Reserved.
+                  </p>
+                </div>
                 </div>
               </div>
 
@@ -67,7 +74,7 @@ class Footer extends Component {
                   keyframes={fadeInLeft}
                   animation-delay={"0.4s"}
                 >
-                  <h3 className="f-title f_600 t_color f_size_18">
+                  <h3 className="f-title f_600 t_color f_size_20">
                     Technologies
                   </h3>
                   <ul className="list-unstyled f_list">
@@ -101,28 +108,24 @@ class Footer extends Component {
                   keyframes={fadeInLeft}
                   animation-delay={"0.6s"}
                 >
+                   <h3 className="f-title f_600 t_color f_size_20">
+                    Contact
+                  </h3>
                   <ul className="list-unstyled f_list">
                     <li className="f-title f_600 t_color f_size_18 ">
-                      <Link to="careers" style={{fontSize:"18px", fontWeight:"600"}}>Careers</Link>
+                      {/* <Link to="careers" style={{fontSize:"18px", fontWeight:"600"}}>Careers</Link> */}
                     </li>
-                    <li>
-                      <Link to="/contact" style={{fontSize:"18px", fontWeight:"600"}}>Contact Us</Link>
-                    </li>
+                   
                     <li></li>
                     <li>9319 LBJ Freeway</li>
-                    <li>Suite 116. Dallas, TX 75243</li>
-                    <li>+1 (972)-757-8767</li>
+                    <li>Suite 116, Dallas, TX 75243</li>
+                    <li>+1(972)-757-8767</li>
                     <li>admin@cyberinfoinc.com</li>
                   </ul>
                 </div>
                 
               </div>
-              <div className="credits">
-                  <p>
-                    <MdCopyright /> {new Date().getFullYear()} CyberInfoInc. All
-                    Rights Reserved.
-                  </p>
-                </div>
+              
             </div>
           </div>
         </div>

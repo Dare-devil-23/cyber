@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import "./headerMain.css";
 import logo from "../../assets/logo.png";
 import cyberInfo from "../../assets/CYBERINFO.png";
-import augmented from "../../assets/AUGMENTED.png";
+// import augmented from "../../assets/AUGMENTED.png";
 import { Link } from "@reach/router";
 import { useState, useLayoutEffect } from "react";
 import Rev from "../../Main/Rev";
@@ -80,7 +80,8 @@ const HeaderMain = (props) => {
             <div><img src={logo} alt="logo" className="cyberLogo" /></div>
           </div>
           <div className="textdiv">
-            <div><img src={cyberInfo} alt="cyberinfo" className="cyberText" /></div>
+            {/* <div><img src={cyberInfo} alt="cyberinfo" className="cyberText" /></div> */}
+            <div className="fontCyber">CYBER INFO</div>
             {/* <div><img src={augmented} alt="augmented" className="augmentedText" /></div> */}
           </div>
           </div>

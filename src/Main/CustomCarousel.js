@@ -21,31 +21,31 @@ export default function CustomCarousel() {
       touch={false}
       pause={false}
     >
-      <Carousel.Item interval={4500}>
+      <Carousel.Item interval={4200}>
         <img src={digitalServices} />
       </Carousel.Item>
-      <Carousel.Item interval={4500}>
+      <Carousel.Item interval={3700}>
         <img src={cybeSecurity} />
       </Carousel.Item>
-      <Carousel.Item interval={4500}>
+      <Carousel.Item interval={4000}>
         <img src={blockChain} />
       </Carousel.Item>
-      <Carousel.Item interval={4500}>
+      <Carousel.Item interval={3600}>
         <img src={quantumComputing} />
       </Carousel.Item>
-      <Carousel.Item interval={4500}>
+      <Carousel.Item interval={3000}>
         <img src={medicalIt} />
       </Carousel.Item>
-      <Carousel.Item interval={4500}>
+      <Carousel.Item interval={3900}>
         <img src={devOps} />
       </Carousel.Item>
-      <Carousel.Item interval={4500}>
+      <Carousel.Item interval={2700}>
         <img src={aiIot} />
       </Carousel.Item>
-      <Carousel.Item interval={4500}>
+      <Carousel.Item interval={3700}>
         <img src={testingServices} />
       </Carousel.Item>
-      <Carousel.Item interval={4500}>
+      <Carousel.Item interval={4100}>
         <img src={staffing} />
       </Carousel.Item>
     </Carousel>

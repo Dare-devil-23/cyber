@@ -1,12 +1,11 @@
 import React from 'react';
 import { createGlobalStyle } from "styled-components";
-import HeaderSmall from "./menu/HeaderSmall";
 import HeaderMain from "./menu/HeaderMain";
 import Footer from "./components/footer";
 import { Tabs, Tab } from "react-bootstrap";
 import { keyframes } from "@emotion/react";
 import Reveal from "react-awesome-reveal";
-
+import { Parallax } from "react-parallax";
 import { useLocation } from '@reach/router';
 
 const fadeLeft = keyframes`
@@ -80,83 +79,92 @@ function Jobdetails() {
 
   const data = location.state.from;
 
-  return ( 
+  return (
     <>
-                {/* <HeaderSmall /> */}
+      <HeaderMain />
+      {/* <HeaderSmall /> */}
+      <Parallax
+        bgImage={process.env.PUBLIC_URL + "/scroll/ph8.jpg"}
+        strength={500}
+        bgImageStyle={{
+          height: "110vh", width: "100%",
 
-                <div>
-                    <HeaderMain />
-                    <GlobalStyles />
-                    <section className="contianer" style={{ backgroundImage: `url(${'./img/background/7.jpg'})` }}>
-                        <br />
+        }} >
+        <div>
 
-                        <div className='jdetail'>
-                            <h1>[Contract] {data.name}</h1>
-                            <h6>{data.address}</h6>
-                        </div>
 
-                    </section>
-                    <div
-                        className="container"
-                        style={{ minHeight: "60vh" }}
-                    >
-                      <div id="tabs1">
-                            <Tabs  defaultActiveKey="Role OverView">
-                               
-                               
-                                <Tab eventKey="Role OverView" title="Role OverView">
-                                    <Reveal
-                                        className="onStep"
-                                        keyframes={fadeLeft}
-                                        delay={300}
-                                        duration={600}
-                                        triggerOnce
-                                    >
-                                        <div>
-                                            <p>
-                                                Est quis nulla laborum officia ad nisi ex nostrud culpa
-                                                Lorem excepteur aliquip dolor aliqua irure ex. Nulla ut
-                                                duis ipsum nisi elit fugiat commodo sunt reprehenderit
-                                                laborum veniam eu veniam. Eiusmod minim exercitation
-                                                fugiat irure ex labore incididunt do fugiat commodo
-                                                aliquip sit id deserunt reprehenderit aliquip nostrud.
-                                                Amet ex cupidatat excepteur aute veniam incididunt
-                                                mollit cupidatat esse irure officia elit do ipsum
-                                                ullamco Lorem.
-                                            </p>
-                                        </div>
-                                    </Reveal>
-                                </Tab>
-                                <Tab eventKey="Application" title="Application">
-                                    <Reveal
-                                        className="onStep"
-                                        keyframes={fadeLeft}
-                                        delay={300}
-                                        duration={600}
-                                        triggerOnce
-                                    >
-                                        <div>
-                                            <p>
-                                                Est quis nulla laborum officia ad nisi ex nostrud culpa
-                                                Lorem excepteur aliquip dolor aliqua irure ex. Nulla ut
-                                                duis ipsum nisi elit fugiat commodo sunt reprehenderit
-                                                laborum veniam eu veniam. Eiusmod minim exercitation
-                                                fugiat irure ex labore incididunt do fugiat commodo
-                                                aliquip sit id deserunt reprehenderit aliquip nostrud.
-                                                Amet ex cupidatat excepteur aute veniam incididunt
-                                                mollit cupidatat esse irure officia elit do ipsum
-                                                ullamco Lorem.
-                                            </p>
-                                        </div>
-                                    </Reveal>
-                                </Tab>
-                            </Tabs>
-                        </div>
+          {/* <GlobalStyles /> */}
+          <section className="contianer" >
+            <br />
+
+            <div className='jdetail'>
+              <h1>[Contract] {data.name}</h1>
+              <h6>{data.address}</h6>
+            </div>
+
+          </section>
+          <div
+            className="container"
+            style={{ minHeight: "60vh" }}
+          >
+            <div id="tabs1">
+              <Tabs defaultActiveKey="Role OverView">
+
+
+                <Tab eventKey="Role OverView" title="Role OverView">
+                  <Reveal
+                    className="onStep"
+                    keyframes={fadeLeft}
+                    delay={300}
+                    duration={600}
+                    triggerOnce
+                  >
+                    <div>
+                      <p>
+                        Est quis nulla laborum officia ad nisi ex nostrud culpa
+                        Lorem excepteur aliquip dolor aliqua irure ex. Nulla ut
+                        duis ipsum nisi elit fugiat commodo sunt reprehenderit
+                        laborum veniam eu veniam. Eiusmod minim exercitation
+                        fugiat irure ex labore incididunt do fugiat commodo
+                        aliquip sit id deserunt reprehenderit aliquip nostrud.
+                        Amet ex cupidatat excepteur aute veniam incididunt
+                        mollit cupidatat esse irure officia elit do ipsum
+                        ullamco Lorem.
+                      </p>
                     </div>
-                </div>
-                <Footer />
-            </>
-   );
+                  </Reveal>
+                </Tab>
+                <Tab eventKey="Application" title="Application">
+                  <Reveal
+                    className="onStep"
+                    keyframes={fadeLeft}
+                    delay={300}
+                    duration={600}
+                    triggerOnce
+                  >
+                    <div>
+                      <p>
+                        Est quis nulla laborum officia ad nisi ex nostrud culpa
+                        Lorem excepteur aliquip dolor aliqua irure ex. Nulla ut
+                        duis ipsum nisi elit fugiat commodo sunt reprehenderit
+                        laborum veniam eu veniam. Eiusmod minim exercitation
+                        fugiat irure ex labore incididunt do fugiat commodo
+                        aliquip sit id deserunt reprehenderit aliquip nostrud.
+                        Amet ex cupidatat excepteur aute veniam incididunt
+                        mollit cupidatat esse irure officia elit do ipsum
+                        ullamco Lorem.
+                      </p>
+                    </div>
+                  </Reveal>
+                </Tab>
+              </Tabs>
+            </div>
+          </div>
+        </div>
+      </Parallax>
+      <Footer />
+    </>
+  );
 }
 
 export default Jobdetails;

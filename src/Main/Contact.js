@@ -159,7 +159,7 @@ const Form = () => {
           placeholder="Message"
         />
         {/* Calling to the methods */}
-      <div className="messages mt-5 mb-3">
+      <div className="messages mt-1 mb-3">
         {errorMessage()}
         {successMessage()}
       </div>
@@ -243,11 +243,11 @@ class Contact extends Component {
                       proident est nisi.
                     </span>
                     <div
-                      onClick={() => window.open("/comingsoon", "_self")}
                       className="btn-main lead m-auto my-5"
                     >
-                      Request A Demo
+                     <a target="_blank" rel="nofollow" href='mailto:admin@cyberinfoinc.com?subject=Request A Demo : Cyber Info'>Request A Demo</a> 
                     </div>
+                    
                   </div>
                 </div>
                 <div className="col">
@@ -273,10 +273,11 @@ class Contact extends Component {
                       proident est nisi.
                     </span>
                     <div
-                      onClick={() => window.open("/comingsoon", "_self")}
                       className="btn-main lead m-auto my-5"
                     >
-                      Sales Inquiry
+                      
+                      <a target="_blank" rel="nofollow" href='mailto:admin@cyberinfoinc.com?subject=Sales Inquiry : Cyber Info'>Sales Inquiry</a> 
+
                     </div>
                   </div>
                 </div>
@@ -303,10 +304,10 @@ class Contact extends Component {
                       proident est nisi.
                     </span>
                     <div
-                      onClick={() => window.open("/comingsoon", "_self")}
                       className="btn-main lead m-auto my-5"
                     >
-                      Customer Support
+                     
+                      <a target="_blank" rel="nofollow" href='mailto:admin@cyberinfoinc.com?subject=Customer Support : Cyber Info'>Customer Support</a> 
                     </div>
                   </div>
                 </div>
