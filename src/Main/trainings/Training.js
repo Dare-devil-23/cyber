@@ -118,7 +118,7 @@ const Form = () => {
       </div>
         <div
           onClick={handleSubmit}
-          className="m-auto mt-1 mb-5"
+          className="btn-main mx-auto"
           type="submit"
         >
           <ButtonLoader />
@@ -172,7 +172,7 @@ const Training = () => {
           </div>
         </div>
         <div className="container maindiv">
-          <div className="images ">
+          <div className="images">
             <Carousel
               showThumbs={false}
               autoPlay={true}
@@ -205,7 +205,7 @@ const Training = () => {
             </Carousel>
           </div>
           <div className="signin">
-            <Form />
+            <Form className="form"/>
           </div>
         </div>
         <Footer />

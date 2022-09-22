@@ -38,6 +38,7 @@
 .cyberText{
   width:190px;
   height: 50px;
+  
 }
 .augmentedText{
   width: 250px;
@@ -61,12 +62,14 @@
   flex-direction: column;
   justify-content: center;
   margin: 0px;
+  
 }
 .textdiv > div{
   margin: 0px;
   padding: 0px;
   display: flex;
   justify-content: center;
+  
 }
 .logoContainer{
   display: flex;

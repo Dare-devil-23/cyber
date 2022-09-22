@@ -40,6 +40,7 @@ import Contact from '../Main/Contact';
 import Training from '../Main/trainings/Training';
 import ComingSoon from '../Main/components/ComingSoon';
 import AboutNew from '../Main/AboutNew';
+import Blog from '../Main/blog/Blog';
 import { AnimatePresence } from 'framer-motion';
 import { ParallaxProvider } from 'react-scroll-parallax';
 
@@ -107,6 +108,7 @@ const app= () => (
         <Price path="/price" />
         <Works path="/works" />
         <News path="/news" />
+        <Blog path="/blog" />
         <Create path="/create" />
         <Auction path="/Auction" />
         <Activity path="/activity" />

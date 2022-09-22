@@ -77,7 +77,7 @@ const Home = () => {
                   }}
                   home={true}
                 />
-                <div className="container my-0 pt-0 adjust">
+                <div className="container my-5 pt-0 adjust">
                   <div className="row align-items-center">
                     <div className="col-lg-7">
                       <div>

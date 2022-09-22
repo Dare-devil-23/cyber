@@ -105,13 +105,13 @@ const Form = () => {
           placeholder="Password"
         />
         {/* Calling to the methods */}
-      <div className="messages mt-5 mb-0">
+      <div className="messages mt-2 mb-1">
         {errorMessage()}
         {successMessage()}
       </div>
         <div
           onClick={handleSubmit}
-          className=" px-2 py-1 m-auto mt-1 mb-5 "
+          className="btn-main m-auto mb-5"
           type="submit"
         >
           <ButtonLoader />
@@ -121,7 +121,7 @@ const Form = () => {
   );
 };
 const logintwo = () => (
-  <div>
+  <div >
     <HeaderMain />
     <GlobalStyles />
     <Parallax
@@ -132,8 +132,8 @@ const logintwo = () => (
     }}
     >
     <div
-      className="mainform"
-      style={{ backgroundImage: `url(${"./img/background/6.jpg"})` }}
+      className="mainform "
+      style={{ backgroundImage: `url(${"./img/background/6.jpg"})` ,minHeight:"80vh" , alignContent:"center"}}
     >
       <Form />
       </div>

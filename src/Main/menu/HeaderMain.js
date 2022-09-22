@@ -80,8 +80,8 @@ const HeaderMain = (props) => {
             <div><img src={logo} alt="logo" className="cyberLogo" /></div>
           </div>
           <div className="textdiv">
-            {/* <div><img src={cyberInfo} alt="cyberinfo" className="cyberText" /></div> */}
-            <div className="fontCyber">CYBER INFO</div>
+            <div><img src={cyberInfo} alt="cyberinfo" className="cyberText" /></div>
+            {/* <div className="fontCyber">CYBER INFO</div> */}
             {/* <div><img src={augmented} alt="augmented" className="augmentedText" /></div> */}
           </div>
           </div>
@@ -118,7 +118,7 @@ const HeaderMain = (props) => {
             </button>
             <div className="dropdown-content">
               <Link to="/login" > <Rev data="Login" /></Link>
-              <Link to="/comingsoon" > <Rev data="Blog" /></Link>
+              <Link to="/blog" > <Rev data="Blog" /></Link>
             </div>
           </div>
           <div

@@ -18,16 +18,16 @@ export default class ButtonLoader extends Component {
     const { loading } = this.state;
 
     return (
-      <div className="margins">
-        <p className="button px-3 py-2 m-auto" onClick={this.fetchData} disabled={loading}>
+      <div className="spin-btn">
+        <span  onClick={this.fetchData} disabled={loading}>
           {loading && (
             <i
-              className="fa fa-refresh fa-spin spinner"
+              className="fa fa-refresh fa-spin spinner submitinside"
             />
           )}
           {loading && <span></span>}
-          {!loading && <span className="">Submit</span>}
-        </p>
+          {!loading && <span className="submitinside">Submit</span>}
+        </span>
       </div>
     );
   }

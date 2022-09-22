@@ -10,9 +10,8 @@
 .spinner{
   font-size: larger;
 }
-.margins{
-  padding: 0%;
-  margin: 0%;
+.spin-btn{
+  
 }
 .tabs {
   display: flex;
@@ -59,14 +58,14 @@
   width: 100%;
   background-color: #1c1c1e;
 }
-.btn {
+.btn-train {
   color: white;
   border-radius: 50px;
   font-size: larger;
   font-weight: 600;
   display: flex;
   padding: 5px 30px;
-  margin: 10px auto;
+  margin: 10px auto !important;
   float: right;
   background-image: linear-gradient(rgb(255, 166, 0), rgb(255, 51, 0));
 }
@@ -106,7 +105,11 @@
         flex-direction: column;
         justify-content: space-evenly;
     }
-    
+    .messages{
+      width:100%;
+      padding: 20px 0px;
+      margin: 20px 0px !important;
+    }
     .form{
         width: 250px;
     }
@@ -124,4 +127,10 @@
 }
 .maindiv div{
     margin: 20px;
+}
+.spin-btn{
+  margin: 0px !important;
+}
+.submitinside{
+  margin-bottom:0px !important;
 }
