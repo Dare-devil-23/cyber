@@ -2,7 +2,7 @@ import React , {useState} from "react";
 import Footer from "../components/footer";
 import { Tabs, Tab } from "react-bootstrap";
 import { Carousel } from "react-bootstrap";
-import HeaderSmall from "../menu/HeaderSmall";
+// import HeaderSmall from "../menu/HeaderSmall";
 import HeaderMain from "../menu/HeaderMain";
 import BreadCrumbNav from "../BreadCrumbNav";
 import Reveal from "react-awesome-reveal";
@@ -48,7 +48,7 @@ const Product = (props) => {
               >
                 <section className="image-section">
                   <div className="container my-4">
-                    <BreadCrumbNav data={["services", "Products"]} />
+                    <BreadCrumbNav data={["Products"]} />
                   </div>
                   <div className="container">
                     <h1>{product.lable}</h1>
