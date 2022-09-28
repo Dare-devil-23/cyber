@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/cyber/static/css/main.694d54a3.css",
-    "main.js": "/cyber/static/js/main.372fe7d9.js",
+    "main.js": "/cyber/static/js/main.29b58016.js",
     "static/media/Quantum-computing.png": "/cyber/static/media/Quantum-computing.806f5e5672f8005b2356.png",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/cyber/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
     "static/media/Block-chain.png": "/cyber/static/media/Block-chain.47828d81adeaecae06cb.png",
@@ -36,10 +36,10 @@
     "static/media/slick.woff": "/cyber/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/cyber/index.html",
     "main.694d54a3.css.map": "/cyber/static/css/main.694d54a3.css.map",
-    "main.372fe7d9.js.map": "/cyber/static/js/main.372fe7d9.js.map"
+    "main.29b58016.js.map": "/cyber/static/js/main.29b58016.js.map"
   },
   "entrypoints": [
     "static/css/main.694d54a3.css",
-    "static/js/main.372fe7d9.js"
+    "static/js/main.29b58016.js"
   ]
 }
