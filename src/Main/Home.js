@@ -70,6 +70,9 @@ const Home = () => {
               <Parallax
                 bgImage={process.env.PUBLIC_URL + "/scroll/ph8.jpg"}
                 strength={500}
+                // bgImageStyle={{
+                //   height: "100vh", width: "100%",
+                // }}
               >
                 <HeaderMain
                   onChangeRef={() => {

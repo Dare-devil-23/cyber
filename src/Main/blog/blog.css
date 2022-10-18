@@ -2,3 +2,9 @@
     display: flex;
     justify-content: end;
 }
+
+.header{
+    padding: 30px;
+    font-size: larger;
+    font-weight: 600;
+}

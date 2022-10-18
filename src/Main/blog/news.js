@@ -11,7 +11,7 @@ export const news = [
         original:"This article was originally published on"
     },
     {
-        title:"How IT talent is being found is being transformed by 6 hiring trendsTitle3",
+        title:"How IT talent is being found is being transformed by 6 hiring trends",
         posted:"Posted on Feb 11, 2020 by admin",
         original:"This article was originally published on"
     },

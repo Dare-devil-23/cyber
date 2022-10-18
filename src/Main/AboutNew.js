@@ -13,10 +13,10 @@ const AboutNew = () => {
       >
         <div className="sec container">
           <div className="content">
-            <h1>Who we are?</h1>
+            <h1>Who are we?</h1>
 
             <p>
-              CYBERINFO  Focal point is unlock a client remarkable application which has high potential with ease and perfect adaptability.
+              CYBERINFO Focal point is unlock a client remarkable application which has high potential with ease and perfect adaptability.
               We have accurate intelligence, for all customer business needs to transform into perfect shape. We are ready to deliver the Professional Services for all MSP works.
               We at CYBERINFO are thriving to establish a strong international presence, and building a remarkable record of success that now includes satisfied customers. CYBERINFO,
               leadership continues to celebrate its customer success as our own success.
