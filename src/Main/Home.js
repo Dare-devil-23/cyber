@@ -53,7 +53,7 @@ const Home = () => {
     "Medical IT",
     "DevOps & Automation",
     "AI & IOT",
-    "Testing Services",
+    "Cloud Services",
     "Staffing or Recruitment",
   ];
   const [count, setCount] = useState(-1);

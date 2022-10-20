@@ -19,3 +19,9 @@
 
     }
 }
+.datapart{
+    min-height: 60vh;
+    margin-top: 15px;
+    width: 70%;
+    margin: auto;
+}

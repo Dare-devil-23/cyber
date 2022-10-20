@@ -59,7 +59,7 @@ const HeaderMain = (props) => {
     { id: 4, lable: "Digital Services" },
     { id: 5, lable: "DevOps & Automation" },
     { id: 6, lable: "Medical IT" },
-    { id: 7, lable: "Testing Services" },
+    { id: 7, lable: "Cloud Services" },
     { id: 8, lable: "Staffing or Recruitment" },
   ];
 
