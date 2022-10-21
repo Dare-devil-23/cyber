@@ -103,7 +103,7 @@ const Form = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_935o13l', 'template_vp2v5zk', refForm.current, '0TeX8hTnpJi742IKP')
+    emailjs.sendForm('service_qv5jngs', 'template_mfb6b6b', refForm.current, 'Wwfx-Y2G5l9Qhig6w')
       .then((result) => {
           console.log(result.text);
       }, (error) => {
