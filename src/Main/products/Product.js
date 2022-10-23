@@ -1,33 +1,33 @@
-import React, { useState } from "react";
+import React from "react";
 import Footer from "../components/footer";
-import { Tabs, Tab, Card } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 import { Carousel } from "react-bootstrap";
 // import HeaderSmall from "../menu/HeaderSmall";
 import HeaderMain from "../menu/HeaderMain";
 import BreadCrumbNav from "../BreadCrumbNav";
-import Reveal from "react-awesome-reveal";
-import { keyframes } from "@emotion/react";
+// import Reveal from "react-awesome-reveal";
+// import { keyframes } from "@emotion/react";
 import "./product.css";
 import { data } from "./productData";
 import { Parallax } from "react-parallax";
 
-const fadeLeft = keyframes`
-  0% {
-    opacity: 0;
-    -webkit-transform: translateX(40px);
-    transform: translateX(40px);
-  }
-  50% {
-    opacity: 0;
-    -webkit-transform: translateX(80px);
-    transform: translateX(80px);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-`;
+// const fadeLeft = keyframes`
+//   0% {
+//     opacity: 0;
+//     -webkit-transform: translateX(40px);
+//     transform: translateX(40px);
+//   }
+//   50% {
+//     opacity: 0;
+//     -webkit-transform: translateX(80px);
+//     transform: translateX(80px);
+//   }
+//   100% {
+//     opacity: 1;
+//     -webkit-transform: translateX(0);
+//     transform: translateX(0);
+//   }
+// `;
 
 const Product = (props) => {
   return (
@@ -136,7 +136,7 @@ const Product = (props) => {
                       product.lable === "BlockChain Technology" ? 
                       <div >
                       <Card bg="dark" className="p-4 mt-5">
-                        <h2>{product.lable}</h2>
+                        
                         <ul>
                           {product.info.points.map((d , i)=>{
                             return(
@@ -171,7 +171,7 @@ const Product = (props) => {
                       product.lable === "Cyber Security"?
                       <div>
                         <Card bg="dark" className="p-4 mt-5">
-                          <h2>{product.lable}</h2>
+                          
                           {product.info.points.map((d,i)=>{
                             return(
                               <Card.Text key={i} className="p-3">
@@ -182,9 +182,9 @@ const Product = (props) => {
                         </Card>
                       </div>:
                       product.lable === "Digital Services" ? 
-                       <div>
+                       <div className="mb-5">
                         <Card bg="dark" className="p-4 mt-5">
-                          <h2>{product.lable}</h2>
+                          
                           <Card.Text className="p-3">{product.info.point}</Card.Text>
                           <Card.Title>Addressing Your Challenges:</Card.Title>
                           <Card.Text className="p-3">{product.info.challenge}</Card.Text>
@@ -243,7 +243,7 @@ const Product = (props) => {
                       product.lable === "Qantum Computing"?
                        <div>
                         <Card bg="dark" className="p-4 mt-5">
-                          <h2>{product.lable}</h2>
+                          
                           <ul>
                             {product.info.points.map((d,i)=>{
                               return(
@@ -274,14 +274,14 @@ const Product = (props) => {
                       product.lable === "Medical IT" ? 
                        <div>
                         <Card bg="dark" className="p-4 mt-5">
-                          <h2>{product.lable}</h2>
+                          
                           <Card.Text className="p-3">{product.info.data}</Card.Text>
                         </Card>
                       </div>:
                       product.lable === "DevOps & Automation"?
                        <div>
                         <Card bg="dark" className="p-4 mt-5">
-                          <h2>{product.lable}</h2>
+                          
                           
                           <Card.Text className="p-3">{product.info.data}</Card.Text>
                           <Card.Title>Improve collaboration:</Card.Title>
@@ -325,7 +325,7 @@ const Product = (props) => {
                       product.lable === "AI & IOT" ? 
                        <div>
                         <Card bg="dark" className="p-4 mt-5">
-                          <h2>{product.lable}</h2>
+                          
                           {product.info.points.map((d,i)=>{
                             return(
                               <Card.Text key={i} className="px-3 pt-3">
@@ -364,7 +364,7 @@ const Product = (props) => {
                       product.lable === "Cloud Services"?
                        <div>
                         <Card bg="dark" className="p-4 mt-5">
-                          <h2>{product.lable}</h2>
+                          
                           <Card.Text className="p-3">{product.info.data}</Card.Text>
                           <Card.Title className="py-3">{product.info.support}</Card.Title>
                           <ul>{product.info.points.map((d,i)=>{
@@ -405,7 +405,7 @@ const Product = (props) => {
                       product.lable === "Staffing or Recruitment" ? 
                        <div>
                         <Card bg="dark" className="p-4 mt-5">
-                          <h2>{product.lable}</h2>
+                          
                           {product.info.points.map((d,i)=>{
                             return(
                               <Card.Text key={i} className="px-3 pt-3">
