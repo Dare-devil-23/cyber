@@ -134,8 +134,8 @@ const Product = (props) => {
                   >
                     {
                       product.lable === "BlockChain Technology" ? 
-                      <div >
-                      <Card bg="dark" className="p-4 mt-5">
+                      <div>
+                      <Card bg="dark" className="p-4 my-5">
                         
                         <ul>
                           {product.info.points.map((d , i)=>{

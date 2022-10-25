@@ -210,13 +210,13 @@ class Contact extends Component {
           
           {/* <HeaderSmall /> */}
           <HeaderMain />
-          <div className="contact">
-            <div className="mb-5 pb-5">
+          {/*<div className="contact">
+             <div className="mb-5 pb-5">
               <h1 className="mx-5 px-2"> Reason for inquiry</h1>
               <span>
                 <center>Please select the purpose for your inquiry</center>
               </span>
-            </div>
+            </div> 
             <div className="container">
               <div className="row">
                 <div className="col">
@@ -229,7 +229,7 @@ class Contact extends Component {
                         alt=""
                       />
                     </span>
-                    {/* <i className="fa fa-check"></i> */}
+                    
                   </div>
                   <div className="nft_coll_info">
                     <span onClick={() => window.open("/home", "_self")}>
@@ -259,7 +259,7 @@ class Contact extends Component {
                         alt=""
                       />
                     </span>
-                    {/* <i className="fa fa-check"></i> */}
+                  
                   </div>
                   <div className="nft_coll_info">
                     <span>
@@ -290,7 +290,7 @@ class Contact extends Component {
                         alt=""
                       />
                     </span>
-                    {/* <i className="fa fa-check"></i> */}
+                  
                   </div>
                   <div className="nft_coll_info">
                     <span>
@@ -311,9 +311,9 @@ class Contact extends Component {
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> 
             </div>
-          </div>
+          </div>*/}
           <Reveal
             className="onStep"
             keyframes={fadeLeft}

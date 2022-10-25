@@ -101,7 +101,16 @@ class Carrier extends Component {
 
           <div className="container my-5">
             <div id="tabs1" style={{ backgroundImage: { background } }}>
-              <Tabs fill defaultActiveKey="Find_jobs">
+                  <Reveal
+                    className="onStep"
+                    keyframes={fadeLeft}
+                    // delay={300}
+                    duration={600}
+                    triggerOnce
+                  >
+                    <FindJobs />
+                  </Reveal>
+              {/* <Tabs fill defaultActiveKey="Find_jobs">
                 <Tab eventKey="Find_jobs" title="Find Jobs">
                   <Reveal
                     className="onStep"
@@ -157,12 +166,12 @@ class Carrier extends Component {
                     triggerOnce
                   >
                     <div>
-                      {/* <Gallery1 /> */}
+                      
                       <Stories />
                     </div>
                   </Reveal>
                 </Tab>
-              </Tabs>
+              </Tabs> */}
             </div>
           </div>
         </div>

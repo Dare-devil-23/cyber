@@ -5,6 +5,7 @@ import Footer from "../components/footer";
 import Card from 'react-bootstrap/Card';
 import {news} from "./news";
 import "./blog.css";
+import { Parallax } from "react-parallax";
 
 const ReadMore = ({ children }) => {
     const text = children;
@@ -39,7 +40,12 @@ const Blog = () => {
     return(
         <div className="m-0 p-0">
             <HeaderMain />
-            <div className="container newsroom mt-5">
+            <Parallax
+                  bgImage={process.env.PUBLIC_URL + "/scroll/ph8.jpg"}
+                  strength={500}
+                  bgImageStyle={{ height: "90%", width: "100%" }}
+                >
+            <div className="container newsroom my-5">
              {
                 news.map((n,i)=>{
                     return(
@@ -48,6 +54,7 @@ const Blog = () => {
                 })
              }
             </div>
+            </Parallax>
             <Footer />   
         </div>
     )
