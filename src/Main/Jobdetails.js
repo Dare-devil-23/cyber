@@ -2,7 +2,7 @@ import React from 'react';
 import { createGlobalStyle } from "styled-components";
 import HeaderMain from "./menu/HeaderMain";
 import Footer from "./components/footer";
-import { Tabs, Tab } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 import { keyframes } from "@emotion/react";
 import Reveal from "react-awesome-reveal";
 import { Parallax } from "react-parallax";
@@ -78,6 +78,7 @@ function Jobdetails() {
   const location = useLocation()
 
   const data = location.state.from;
+  const empty = location.state.empty;
 
   return (
     <>
@@ -94,72 +95,55 @@ function Jobdetails() {
 
 
           {/* <GlobalStyles /> */}
-          <section className="contianer" >
+          <section className="contianer mx-5 my-3" >
             <br />
 
             <div className='jdetail'>
-              <h1>[Contract] {data.name}</h1>
-              <h6>{data.address}</h6>
+              <h2>{data?.role}</h2>
+              <h6>{data?.location}</h6>
+              <Card bg="dark" className='p-4'>
+                {
+                 data?.respo &&
+                 <>
+                   <Card.Title>
+                     Responsibilities:
+                   </Card.Title>
+                   <Card.Text className="px-3" style={{fontSize:"18px"}}>
+                     {data?.respo}
+                   </Card.Text>
+                 </>}{
+               data?.duties  &&
+                 <>
+                   <Card.Title>
+                     Job Duties:
+                   </Card.Title>
+                   <Card.Text className="px-3" style={{fontSize:"18px"}}>
+                     <ul>{data?.duties.map((d , i)=>{
+                         return(
+                           <li key={i}>{d}</li>
+                         )
+                     })}</ul>
+                   </Card.Text>
+                 </> }{
+                 data?.quali &&
+                 <>
+                 <Card.Title>
+                   Qualifications:
+                   </Card.Title>
+                   <Card.Text className="px-3" style={{fontSize:"18px"}}>
+                     <ul>{data?.quali.map((d , i)=>{
+                         return(
+                           <li key={i}>{d}</li>
+                         )
+                     })}</ul>
+                   </Card.Text></> 
+                }
+              </Card>
+              
             </div>
 
           </section>
-          <div
-            className="container"
-            style={{ minHeight: "60vh" }}
-          >
-            <div id="tabs1">
-              <Tabs defaultActiveKey="Role OverView">
-
-
-                <Tab eventKey="Role OverView" title="Role OverView">
-                  <Reveal
-                    className="onStep"
-                    keyframes={fadeLeft}
-                    delay={300}
-                    duration={600}
-                    triggerOnce
-                  >
-                    <div>
-                      <p>
-                        Est quis nulla laborum officia ad nisi ex nostrud culpa
-                        Lorem excepteur aliquip dolor aliqua irure ex. Nulla ut
-                        duis ipsum nisi elit fugiat commodo sunt reprehenderit
-                        laborum veniam eu veniam. Eiusmod minim exercitation
-                        fugiat irure ex labore incididunt do fugiat commodo
-                        aliquip sit id deserunt reprehenderit aliquip nostrud.
-                        Amet ex cupidatat excepteur aute veniam incididunt
-                        mollit cupidatat esse irure officia elit do ipsum
-                        ullamco Lorem.
-                      </p>
-                    </div>
-                  </Reveal>
-                </Tab>
-                <Tab eventKey="Application" title="Application">
-                  <Reveal
-                    className="onStep"
-                    keyframes={fadeLeft}
-                    delay={300}
-                    duration={600}
-                    triggerOnce
-                  >
-                    <div>
-                      <p>
-                        Est quis nulla laborum officia ad nisi ex nostrud culpa
-                        Lorem excepteur aliquip dolor aliqua irure ex. Nulla ut
-                        duis ipsum nisi elit fugiat commodo sunt reprehenderit
-                        laborum veniam eu veniam. Eiusmod minim exercitation
-                        fugiat irure ex labore incididunt do fugiat commodo
-                        aliquip sit id deserunt reprehenderit aliquip nostrud.
-                        Amet ex cupidatat excepteur aute veniam incididunt
-                        mollit cupidatat esse irure officia elit do ipsum
-                        ullamco Lorem.
-                      </p>
-                    </div>
-                  </Reveal>
-                </Tab>
-              </Tabs>
-            </div>
-          </div>
+         
         </div>
       </Parallax>
       <Footer />

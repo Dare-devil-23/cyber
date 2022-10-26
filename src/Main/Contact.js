@@ -33,6 +33,7 @@ const Form = () => {
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
   const [query, setQuery] = useState("");
+  const [loading, setLoading]  = useState(false);
 
   // States for checking the errors
   const [submitted, setSubmitted] = useState(false);
@@ -66,9 +67,7 @@ const Form = () => {
     if (firstName === "" || lastName === "" || email === "" || query === "") {
       setError(true);
     } else {
-      setSubmitted(true);
-      await sendEmail(e);
-      setError(false);
+      sendEmail(e);
     }
   };
 
@@ -102,12 +101,17 @@ const Form = () => {
   const refForm = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
-
+    setLoading(true)
     emailjs.sendForm('service_qv5jngs', 'template_mfb6b6b', refForm.current, 'Wwfx-Y2G5l9Qhig6w')
       .then((result) => {
           console.log(result.text);
-      }, (error) => {
-          console.log(error.text);
+          setError(false)
+          setSubmitted(true)
+          setLoading(false)
+      }, (e) => {
+          console.error(e.text);
+          setError(true)
+          setLoading(false)
       });
       e.target.reset();
   };
@@ -160,15 +164,24 @@ const Form = () => {
         />
         {/* Calling to the methods */}
       <div className="messages mt-1 mb-3">
-        {errorMessage()}
-        {successMessage()}
+        {
+          error ? 
+          <>{errorMessage()}</>:
+          <>{successMessage()}</>
+        }
       </div>
         <button
           onClick={handleSubmit}
           className="btn-main lead m-auto"
           type="submit"
         >
-          <ButtonLoader />
+          {
+            loading ?
+             <>
+             <i className="fa fa-refresh fa-spin spinner submitinside"/>
+             </> :
+             <><span className="submitinside">Submit</span></>
+          }
         </button>
       </form>
     </div>
@@ -207,8 +220,6 @@ class Contact extends Component {
           strength={2000}
           bgImageStyle={{ height: "100vh", width: "100%" }}
         >
-          
-          {/* <HeaderSmall /> */}
           <HeaderMain />
           {/*<div className="contact">
              <div className="mb-5 pb-5">

@@ -66,7 +66,8 @@ const initialDetails = [
       id: 4,
       role: "Sr JAVA FULL STACK DEVELOPER",
       location: "Remote",
-      quali:"Strong Java Full Stack Developer with 8+ years of experience in Java 1.8 ,Spring Core , Spring Boot, JQuery, Java script. Experience with Spring, Spring MVC, Hibernate, web services – REST/SOAP, JMS, JPA, MDB, CXF, SLF4J,c and other Java frameworks / open source libraries.",
+      quali:
+        ["Strong Java Full Stack Developer with 8+ years of experience in Java 1.8 ,Spring Core , Spring Boot, JQuery, Java script. Experience with Spring, Spring MVC, Hibernate, web services – REST/SOAP, JMS, JPA, MDB, CXF, SLF4J,c and other Java frameworks / open source libraries."],
       duties:[
         "Understanding of design patterns and NTier architectures", 
         "Experience in handling JSON, XML types. Good understanding in Data binding frameworks such as JAXB, Jackson and etc", 
