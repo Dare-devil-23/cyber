@@ -16,7 +16,13 @@
 @media only screen and (max-width: 480px) {
     .curosole{
         height: fit-content;
-
+    }
+    .whole{
+        background-image: none !important;
+    }
+    .datapart{
+        width: 100% !important;
+        margin: 0% !important;
     }
 }
 .datapart{

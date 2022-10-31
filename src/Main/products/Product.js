@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState , useEffect} from "react";
 import Footer from "../components/footer";
 import { Card } from "react-bootstrap";
 import { Carousel } from "react-bootstrap";
@@ -30,6 +30,15 @@ import { Parallax } from "react-parallax";
 // `;
 
 const Product = (props) => {
+  const [bodyWidth , setBodyWidth] = useState();
+  useEffect(() => {
+    function handleResize() {
+      setBodyWidth(window.innerWidth);  
+  }
+  window.addEventListener('resize', handleResize);
+  return _ => {
+    window.removeEventListener('resize', handleResize)}
+},[bodyWidth])
   return (
     <>
       {/* <HeaderSmall /> */}
@@ -42,7 +51,7 @@ const Product = (props) => {
             return (
               <div key={i} className="whole">
                 <Parallax
-                  bgImage={process.env.PUBLIC_URL + "/scroll/ph8.jpg"}
+                  bgImage={bodyWidth > 500 ? process.env.PUBLIC_URL + "/scroll/ph8.jpg" : ""}
                   strength={500}
                   bgImageStyle={{ height: "90%", width: "100%" }}
                 >
@@ -418,8 +427,9 @@ const Product = (props) => {
                       <></>
                     }
                   </div>
-                  <Footer />
+                  
                 </Parallax>
+                <Footer />
               </div>
             );
           }
